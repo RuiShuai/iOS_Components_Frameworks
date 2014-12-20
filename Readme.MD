@@ -26,7 +26,7 @@ MessageBoard
 
 ******************************
 
-01- UIKit Dynamics
+01- UIKit Dynamics [Dynamics]
 第1章　UIKit Dynamics 1 
 1.1 示例应用 1 
 1.2 UIKit Dynamics简介 2 
@@ -55,6 +55,7 @@ Properties物理属性
 
 
 ******************************
+02 - Core Location, MapKit, and Geofencing [FavoritePlaces]
 第2章　Core Location、MapKit和地理围栏 13 
 2.1 示例应用 13 
 2.2 获取用户的位置 13 
@@ -84,6 +85,7 @@ Properties物理属性
 2.8 小结 46 
 2.9 练习 46 
 
+FavoritePlaces
 
 ******************************
 第3章　排行榜 47 
