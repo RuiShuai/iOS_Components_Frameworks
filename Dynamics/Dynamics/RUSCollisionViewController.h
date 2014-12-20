@@ -1,6 +1,6 @@
 //
 //  RUSCollisionViewController.h
-//  Dynamics
+//  Dynamics 碰撞效果
 //
 //  Created by taotao on 14/12/20.
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
