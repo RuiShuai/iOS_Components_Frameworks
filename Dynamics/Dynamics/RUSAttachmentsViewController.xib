@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RUSAttachmentsViewController">
+            <connections>
+                <outlet property="dragonImageView" destination="40B-T4-9nq" id="DmK-c7-UG3"/>
+                <outlet property="frogImageView" destination="AUA-2I-TR7" id="aDN-Zf-M3U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DF.png" translatesAutoresizingMaskIntoConstraints="NO" id="40B-T4-9nq">
+                    <rect key="frame" x="123" y="261" width="74" height="76"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="6Hk-i4-6aq" appends="YES" id="Uq2-9e-r0O"/>
+                    </connections>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Emp.png" translatesAutoresizingMaskIntoConstraints="NO" id="AUA-2I-TR7">
+                    <rect key="frame" x="121" y="70" width="79" height="87"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="6Hk-i4-6aq" appends="YES" id="8HQ-GY-IvV"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="6Hk-i4-6aq" appends="YES" id="c5l-Mr-PRE"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="447"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="6Hk-i4-6aq">
+            <connections>
+                <action selector="handleAttachmentGesture:" destination="-1" id="F9u-gn-MjT"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="DF.png" width="100" height="102"/>
+        <image name="Emp.png" width="200" height="200"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

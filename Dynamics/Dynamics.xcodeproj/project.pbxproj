@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B524AAE1A451E5C00AFEF92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AAD1A451E5C00AFEF92 /* main.m */; };
+		1B524AB71A451E5C00AFEF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AB51A451E5C00AFEF92 /* Main.storyboard */; };
+		1B524AB91A451E5C00AFEF92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AB81A451E5C00AFEF92 /* Images.xcassets */; };
+		1B524ABC1A451E5C00AFEF92 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524ABA1A451E5C00AFEF92 /* LaunchScreen.xib */; };
+		1B524AC81A451E5C00AFEF92 /* DynamicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AC71A451E5C00AFEF92 /* DynamicsTests.m */; };
+		1B524AD41A451FE700AFEF92 /* RUSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AD31A451FE700AFEF92 /* RUSAppDelegate.m */; };
+		1B524AD81A45217100AFEF92 /* RUSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AD61A45217100AFEF92 /* RUSViewController.m */; };
+		1B524AD91A45217100AFEF92 /* RUSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AD71A45217100AFEF92 /* RUSViewController.xib */; };
+		1B524ADD1A45276C00AFEF92 /* RUSGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524ADB1A45276C00AFEF92 /* RUSGravityViewController.m */; };
+		1B524ADE1A45276C00AFEF92 /* RUSGravityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524ADC1A45276C00AFEF92 /* RUSGravityViewController.xib */; };
+		1B524AE51A45279B00AFEF92 /* RUSCollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AE31A45279B00AFEF92 /* RUSCollisionViewController.m */; };
+		1B524AE61A45279B00AFEF92 /* RUSCollisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AE41A45279B00AFEF92 /* RUSCollisionViewController.xib */; };
+		1B524AED1A4527C300AFEF92 /* RUSAttachmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AEB1A4527C300AFEF92 /* RUSAttachmentsViewController.m */; };
+		1B524AEE1A4527C300AFEF92 /* RUSAttachmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AEC1A4527C300AFEF92 /* RUSAttachmentsViewController.xib */; };
+		1B524AF21A4527D500AFEF92 /* RUSSpringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AF01A4527D500AFEF92 /* RUSSpringViewController.m */; };
+		1B524AF31A4527D500AFEF92 /* RUSSpringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AF11A4527D500AFEF92 /* RUSSpringViewController.xib */; };
+		1B524AF71A4527E600AFEF92 /* RUSSnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AF51A4527E600AFEF92 /* RUSSnapViewController.m */; };
+		1B524AF81A4527E600AFEF92 /* RUSSnapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AF61A4527E600AFEF92 /* RUSSnapViewController.xib */; };
+		1B524AFC1A4527F500AFEF92 /* RUSForceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AFA1A4527F500AFEF92 /* RUSForceViewController.m */; };
+		1B524AFD1A4527F500AFEF92 /* RUSForceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524AFB1A4527F500AFEF92 /* RUSForceViewController.xib */; };
+		1B524B011A45280400AFEF92 /* RUSPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B524AFF1A45280400AFEF92 /* RUSPropertiesViewController.m */; };
+		1B524B021A45280400AFEF92 /* RUSPropertiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B524B001A45280400AFEF92 /* RUSPropertiesViewController.xib */; };
+		1B524B051A452B5500AFEF92 /* DF.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B524B031A452B5500AFEF92 /* DF.png */; };
+		1B524B061A452B5500AFEF92 /* Emp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B524B041A452B5500AFEF92 /* Emp.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B524AC21A451E5C00AFEF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B524AA01A451E5B00AFEF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B524AA71A451E5C00AFEF92;
+			remoteInfo = Dynamics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B524AA81A451E5C00AFEF92 /* Dynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B524AAC1A451E5C00AFEF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B524AAD1A451E5C00AFEF92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B524AB61A451E5C00AFEF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B524AB81A451E5C00AFEF92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B524ABB1A451E5C00AFEF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B524AC11A451E5C00AFEF92 /* DynamicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B524AC61A451E5C00AFEF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B524AC71A451E5C00AFEF92 /* DynamicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsTests.m; sourceTree = "<group>"; };
+		1B524AD21A451FE700AFEF92 /* RUSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSAppDelegate.h; sourceTree = "<group>"; };
+		1B524AD31A451FE700AFEF92 /* RUSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSAppDelegate.m; sourceTree = "<group>"; };
+		1B524AD51A45217100AFEF92 /* RUSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSViewController.h; sourceTree = "<group>"; };
+		1B524AD61A45217100AFEF92 /* RUSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSViewController.m; sourceTree = "<group>"; };
+		1B524AD71A45217100AFEF92 /* RUSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSViewController.xib; sourceTree = "<group>"; };
+		1B524ADA1A45276C00AFEF92 /* RUSGravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSGravityViewController.h; sourceTree = "<group>"; };
+		1B524ADB1A45276C00AFEF92 /* RUSGravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSGravityViewController.m; sourceTree = "<group>"; };
+		1B524ADC1A45276C00AFEF92 /* RUSGravityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSGravityViewController.xib; sourceTree = "<group>"; };
+		1B524AE21A45279B00AFEF92 /* RUSCollisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSCollisionViewController.h; sourceTree = "<group>"; };
+		1B524AE31A45279B00AFEF92 /* RUSCollisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSCollisionViewController.m; sourceTree = "<group>"; };
+		1B524AE41A45279B00AFEF92 /* RUSCollisionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSCollisionViewController.xib; sourceTree = "<group>"; };
+		1B524AEA1A4527C300AFEF92 /* RUSAttachmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSAttachmentsViewController.h; sourceTree = "<group>"; };
+		1B524AEB1A4527C300AFEF92 /* RUSAttachmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSAttachmentsViewController.m; sourceTree = "<group>"; };
+		1B524AEC1A4527C300AFEF92 /* RUSAttachmentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSAttachmentsViewController.xib; sourceTree = "<group>"; };
+		1B524AEF1A4527D500AFEF92 /* RUSSpringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSSpringViewController.h; sourceTree = "<group>"; };
+		1B524AF01A4527D500AFEF92 /* RUSSpringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSSpringViewController.m; sourceTree = "<group>"; };
+		1B524AF11A4527D500AFEF92 /* RUSSpringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSSpringViewController.xib; sourceTree = "<group>"; };
+		1B524AF41A4527E600AFEF92 /* RUSSnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSSnapViewController.h; sourceTree = "<group>"; };
+		1B524AF51A4527E600AFEF92 /* RUSSnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSSnapViewController.m; sourceTree = "<group>"; };
+		1B524AF61A4527E600AFEF92 /* RUSSnapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSSnapViewController.xib; sourceTree = "<group>"; };
+		1B524AF91A4527F500AFEF92 /* RUSForceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSForceViewController.h; sourceTree = "<group>"; };
+		1B524AFA1A4527F500AFEF92 /* RUSForceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSForceViewController.m; sourceTree = "<group>"; };
+		1B524AFB1A4527F500AFEF92 /* RUSForceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSForceViewController.xib; sourceTree = "<group>"; };
+		1B524AFE1A45280400AFEF92 /* RUSPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSPropertiesViewController.h; sourceTree = "<group>"; };
+		1B524AFF1A45280400AFEF92 /* RUSPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSPropertiesViewController.m; sourceTree = "<group>"; };
+		1B524B001A45280400AFEF92 /* RUSPropertiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUSPropertiesViewController.xib; sourceTree = "<group>"; };
+		1B524B031A452B5500AFEF92 /* DF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DF.png; sourceTree = "<group>"; };
+		1B524B041A452B5500AFEF92 /* Emp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emp.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B524AA51A451E5C00AFEF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B524ABE1A451E5C00AFEF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B524A9F1A451E5B00AFEF92 = {
+			isa = PBXGroup;
+			children = (
+				1B524AAA1A451E5C00AFEF92 /* Dynamics */,
+				1B524AC41A451E5C00AFEF92 /* DynamicsTests */,
+				1B524AA91A451E5C00AFEF92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B524AA91A451E5C00AFEF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B524AA81A451E5C00AFEF92 /* Dynamics.app */,
+				1B524AC11A451E5C00AFEF92 /* DynamicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B524AAA1A451E5C00AFEF92 /* Dynamics */ = {
+			isa = PBXGroup;
+			children = (
+				1B524AAB1A451E5C00AFEF92 /* Supporting Files */,
+				1B524AD21A451FE700AFEF92 /* RUSAppDelegate.h */,
+				1B524AD31A451FE700AFEF92 /* RUSAppDelegate.m */,
+				1B524AD51A45217100AFEF92 /* RUSViewController.h */,
+				1B524AD61A45217100AFEF92 /* RUSViewController.m */,
+				1B524AD71A45217100AFEF92 /* RUSViewController.xib */,
+				1B524ADA1A45276C00AFEF92 /* RUSGravityViewController.h */,
+				1B524ADB1A45276C00AFEF92 /* RUSGravityViewController.m */,
+				1B524ADC1A45276C00AFEF92 /* RUSGravityViewController.xib */,
+				1B524AE21A45279B00AFEF92 /* RUSCollisionViewController.h */,
+				1B524AE31A45279B00AFEF92 /* RUSCollisionViewController.m */,
+				1B524AE41A45279B00AFEF92 /* RUSCollisionViewController.xib */,
+				1B524AEA1A4527C300AFEF92 /* RUSAttachmentsViewController.h */,
+				1B524AEB1A4527C300AFEF92 /* RUSAttachmentsViewController.m */,
+				1B524AEC1A4527C300AFEF92 /* RUSAttachmentsViewController.xib */,
+				1B524AEF1A4527D500AFEF92 /* RUSSpringViewController.h */,
+				1B524AF01A4527D500AFEF92 /* RUSSpringViewController.m */,
+				1B524AF11A4527D500AFEF92 /* RUSSpringViewController.xib */,
+				1B524AF41A4527E600AFEF92 /* RUSSnapViewController.h */,
+				1B524AF51A4527E600AFEF92 /* RUSSnapViewController.m */,
+				1B524AF61A4527E600AFEF92 /* RUSSnapViewController.xib */,
+				1B524AF91A4527F500AFEF92 /* RUSForceViewController.h */,
+				1B524AFA1A4527F500AFEF92 /* RUSForceViewController.m */,
+				1B524AFB1A4527F500AFEF92 /* RUSForceViewController.xib */,
+				1B524AFE1A45280400AFEF92 /* RUSPropertiesViewController.h */,
+				1B524AFF1A45280400AFEF92 /* RUSPropertiesViewController.m */,
+				1B524B001A45280400AFEF92 /* RUSPropertiesViewController.xib */,
+			);
+			path = Dynamics;
+			sourceTree = "<group>";
+		};
+		1B524AAB1A451E5C00AFEF92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B524B031A452B5500AFEF92 /* DF.png */,
+				1B524B041A452B5500AFEF92 /* Emp.png */,
+				1B524AB51A451E5C00AFEF92 /* Main.storyboard */,
+				1B524ABA1A451E5C00AFEF92 /* LaunchScreen.xib */,
+				1B524AB81A451E5C00AFEF92 /* Images.xcassets */,
+				1B524AAC1A451E5C00AFEF92 /* Info.plist */,
+				1B524AAD1A451E5C00AFEF92 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B524AC41A451E5C00AFEF92 /* DynamicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B524AC71A451E5C00AFEF92 /* DynamicsTests.m */,
+				1B524AC51A451E5C00AFEF92 /* Supporting Files */,
+			);
+			path = DynamicsTests;
+			sourceTree = "<group>";
+		};
+		1B524AC51A451E5C00AFEF92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B524AC61A451E5C00AFEF92 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B524AA71A451E5C00AFEF92 /* Dynamics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B524ACB1A451E5C00AFEF92 /* Build configuration list for PBXNativeTarget "Dynamics" */;
+			buildPhases = (
+				1B524AA41A451E5C00AFEF92 /* Sources */,
+				1B524AA51A451E5C00AFEF92 /* Frameworks */,
+				1B524AA61A451E5C00AFEF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dynamics;
+			productName = Dynamics;
+			productReference = 1B524AA81A451E5C00AFEF92 /* Dynamics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B524AC01A451E5C00AFEF92 /* DynamicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B524ACE1A451E5C00AFEF92 /* Build configuration list for PBXNativeTarget "DynamicsTests" */;
+			buildPhases = (
+				1B524ABD1A451E5C00AFEF92 /* Sources */,
+				1B524ABE1A451E5C00AFEF92 /* Frameworks */,
+				1B524ABF1A451E5C00AFEF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B524AC31A451E5C00AFEF92 /* PBXTargetDependency */,
+			);
+			name = DynamicsTests;
+			productName = DynamicsTests;
+			productReference = 1B524AC11A451E5C00AFEF92 /* DynamicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B524AA01A451E5B00AFEF92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RUS;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1B524AA71A451E5C00AFEF92 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1B524AC01A451E5C00AFEF92 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1B524AA71A451E5C00AFEF92;
+					};
+				};
+			};
+			buildConfigurationList = 1B524AA31A451E5C00AFEF92 /* Build configuration list for PBXProject "Dynamics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B524A9F1A451E5B00AFEF92;
+			productRefGroup = 1B524AA91A451E5C00AFEF92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B524AA71A451E5C00AFEF92 /* Dynamics */,
+				1B524AC01A451E5C00AFEF92 /* DynamicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B524AA61A451E5C00AFEF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B524AF31A4527D500AFEF92 /* RUSSpringViewController.xib in Resources */,
+				1B524B021A45280400AFEF92 /* RUSPropertiesViewController.xib in Resources */,
+				1B524AB71A451E5C00AFEF92 /* Main.storyboard in Resources */,
+				1B524ADE1A45276C00AFEF92 /* RUSGravityViewController.xib in Resources */,
+				1B524AEE1A4527C300AFEF92 /* RUSAttachmentsViewController.xib in Resources */,
+				1B524AE61A45279B00AFEF92 /* RUSCollisionViewController.xib in Resources */,
+				1B524AFD1A4527F500AFEF92 /* RUSForceViewController.xib in Resources */,
+				1B524B061A452B5500AFEF92 /* Emp.png in Resources */,
+				1B524ABC1A451E5C00AFEF92 /* LaunchScreen.xib in Resources */,
+				1B524AB91A451E5C00AFEF92 /* Images.xcassets in Resources */,
+				1B524AF81A4527E600AFEF92 /* RUSSnapViewController.xib in Resources */,
+				1B524AD91A45217100AFEF92 /* RUSViewController.xib in Resources */,
+				1B524B051A452B5500AFEF92 /* DF.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B524ABF1A451E5C00AFEF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B524AA41A451E5C00AFEF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B524ADD1A45276C00AFEF92 /* RUSGravityViewController.m in Sources */,
+				1B524AFC1A4527F500AFEF92 /* RUSForceViewController.m in Sources */,
+				1B524AF21A4527D500AFEF92 /* RUSSpringViewController.m in Sources */,
+				1B524AE51A45279B00AFEF92 /* RUSCollisionViewController.m in Sources */,
+				1B524AED1A4527C300AFEF92 /* RUSAttachmentsViewController.m in Sources */,
+				1B524AD41A451FE700AFEF92 /* RUSAppDelegate.m in Sources */,
+				1B524B011A45280400AFEF92 /* RUSPropertiesViewController.m in Sources */,
+				1B524AF71A4527E600AFEF92 /* RUSSnapViewController.m in Sources */,
+				1B524AD81A45217100AFEF92 /* RUSViewController.m in Sources */,
+				1B524AAE1A451E5C00AFEF92 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B524ABD1A451E5C00AFEF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B524AC81A451E5C00AFEF92 /* DynamicsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B524AC31A451E5C00AFEF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B524AA71A451E5C00AFEF92 /* Dynamics */;
+			targetProxy = 1B524AC21A451E5C00AFEF92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B524AB51A451E5C00AFEF92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B524AB61A451E5C00AFEF92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B524ABA1A451E5C00AFEF92 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B524ABB1A451E5C00AFEF92 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B524AC91A451E5C00AFEF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B524ACA1A451E5C00AFEF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B524ACC1A451E5C00AFEF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dynamics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B524ACD1A451E5C00AFEF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dynamics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B524ACF1A451E5C00AFEF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dynamics.app/Dynamics";
+			};
+			name = Debug;
+		};
+		1B524AD01A451E5C00AFEF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DynamicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dynamics.app/Dynamics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B524AA31A451E5C00AFEF92 /* Build configuration list for PBXProject "Dynamics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B524AC91A451E5C00AFEF92 /* Debug */,
+				1B524ACA1A451E5C00AFEF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B524ACB1A451E5C00AFEF92 /* Build configuration list for PBXNativeTarget "Dynamics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B524ACC1A451E5C00AFEF92 /* Debug */,
+				1B524ACD1A451E5C00AFEF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B524ACE1A451E5C00AFEF92 /* Build configuration list for PBXNativeTarget "DynamicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B524ACF1A451E5C00AFEF92 /* Debug */,
+				1B524AD01A451E5C00AFEF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B524AA01A451E5B00AFEF92 /* Project object */;
+}
