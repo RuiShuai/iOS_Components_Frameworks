@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B1452871A4AB8D8008F3E64 /* FavoritePlaces.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1B1452861A4AB8D8008F3E64 /* FavoritePlaces.sqlite */; };
+		1B7B669B1A47F95600DEFD5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669A1A47F95600DEFD5C /* main.m */; };
+		1B7B669E1A47F95600DEFD5C /* RUSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669D1A47F95600DEFD5C /* RUSAppDelegate.m */; };
+		1B7B66A11A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669F1A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld */; };
+		1B7B66A71A47F95600DEFD5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66A51A47F95600DEFD5C /* Main.storyboard */; };
+		1B7B66A91A47F95600DEFD5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66A81A47F95600DEFD5C /* Images.xcassets */; };
+		1B7B66AC1A47F95600DEFD5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66AA1A47F95600DEFD5C /* LaunchScreen.xib */; };
+		1B7B66B81A47F95700DEFD5C /* FavoritePlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66B71A47F95700DEFD5C /* FavoritePlacesTests.m */; };
+		1B7B66C31A47F9E200DEFD5C /* RUSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66C21A47F9E200DEFD5C /* RUSMainViewController.m */; };
+		1B7B66C51A47FA9F00DEFD5C /* Denver Art Museum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66C41A47FA9F00DEFD5C /* Denver Art Museum.gpx */; };
+		1B7B66C71A47FAA500DEFD5C /* DMNS.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66C61A47FAA500DEFD5C /* DMNS.gpx */; };
+		1B7B66CD1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66CC1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m */; };
+		1B7B66D01A47FB7B00DEFD5C /* RUSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66CF1A47FB7B00DEFD5C /* RUSLocationManager.m */; };
+		1B7B66D31A47FB9D00DEFD5C /* RUSDateStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D21A47FB9D00DEFD5C /* RUSDateStarter.m */; };
+		1B7B66D61A47FD6400DEFD5C /* RUSFavoritePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D51A47FD6400DEFD5C /* RUSFavoritePlace.m */; };
+		1B7B66D91A4803DD00DEFD5C /* RUSCoreDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D81A4803DD00DEFD5C /* RUSCoreDataDAO.m */; };
+		1B7B66DC1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66DB1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m */; };
+		1BEB122C1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB122B1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B7B66B21A47F95600DEFD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B7B668D1A47F95600DEFD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B7B66941A47F95600DEFD5C;
+			remoteInfo = FavoritePlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B1452861A4AB8D8008F3E64 /* FavoritePlaces.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FavoritePlaces.sqlite; sourceTree = "<group>"; };
+		1B7B66951A47F95600DEFD5C /* FavoritePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoritePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7B66991A47F95600DEFD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7B669A1A47F95600DEFD5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B7B669C1A47F95600DEFD5C /* RUSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUSAppDelegate.h; sourceTree = "<group>"; };
+		1B7B669D1A47F95600DEFD5C /* RUSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUSAppDelegate.m; sourceTree = "<group>"; };
+		1B7B66A01A47F95600DEFD5C /* FavoritePlaces.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritePlaces.xcdatamodel; sourceTree = "<group>"; };
+		1B7B66A61A47F95600DEFD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B7B66A81A47F95600DEFD5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B7B66AB1A47F95600DEFD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B7B66B11A47F95600DEFD5C /* FavoritePlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritePlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7B66B61A47F95700DEFD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7B66B71A47F95700DEFD5C /* FavoritePlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritePlacesTests.m; sourceTree = "<group>"; };
+		1B7B66C11A47F9E200DEFD5C /* RUSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSMainViewController.h; sourceTree = "<group>"; };
+		1B7B66C21A47F9E200DEFD5C /* RUSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSMainViewController.m; sourceTree = "<group>"; };
+		1B7B66C41A47FA9F00DEFD5C /* Denver Art Museum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Denver Art Museum.gpx"; sourceTree = "<group>"; };
+		1B7B66C61A47FAA500DEFD5C /* DMNS.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DMNS.gpx; sourceTree = "<group>"; };
+		1B7B66CB1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlaceViewController.h; sourceTree = "<group>"; };
+		1B7B66CC1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlaceViewController.m; sourceTree = "<group>"; };
+		1B7B66CE1A47FB7B00DEFD5C /* RUSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSLocationManager.h; sourceTree = "<group>"; };
+		1B7B66CF1A47FB7B00DEFD5C /* RUSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSLocationManager.m; sourceTree = "<group>"; };
+		1B7B66D11A47FB9D00DEFD5C /* RUSDateStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSDateStarter.h; sourceTree = "<group>"; };
+		1B7B66D21A47FB9D00DEFD5C /* RUSDateStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSDateStarter.m; sourceTree = "<group>"; };
+		1B7B66D41A47FD6400DEFD5C /* RUSFavoritePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlace.h; sourceTree = "<group>"; };
+		1B7B66D51A47FD6400DEFD5C /* RUSFavoritePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlace.m; sourceTree = "<group>"; };
+		1B7B66D71A4803DD00DEFD5C /* RUSCoreDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSCoreDataDAO.h; sourceTree = "<group>"; };
+		1B7B66D81A4803DD00DEFD5C /* RUSCoreDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSCoreDataDAO.m; sourceTree = "<group>"; };
+		1B7B66DA1A480D7000DEFD5C /* RUSFavoritePlaceDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlaceDAO.h; sourceTree = "<group>"; };
+		1B7B66DB1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlaceDAO.m; sourceTree = "<group>"; };
+		1BEB122A1A4906B100F70092 /* RUSFavoritePlaceManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlaceManagedObject.h; sourceTree = "<group>"; };
+		1BEB122B1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlaceManagedObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B7B66921A47F95600DEFD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B7B66AE1A47F95600DEFD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B7B668C1A47F95600DEFD5C = {
+			isa = PBXGroup;
+			children = (
+				1B7B66971A47F95600DEFD5C /* FavoritePlaces */,
+				1B7B66B41A47F95600DEFD5C /* FavoritePlacesTests */,
+				1B7B66961A47F95600DEFD5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B7B66961A47F95600DEFD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66951A47F95600DEFD5C /* FavoritePlaces.app */,
+				1B7B66B11A47F95600DEFD5C /* FavoritePlacesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B7B66971A47F95600DEFD5C /* FavoritePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66CA1A47FAF600DEFD5C /* views */,
+				1B7B66C81A47FACC00DEFD5C /* view controllers */,
+				1BEB122D1A4907F500F70092 /* logics */,
+				1B7B66C91A47FADE00DEFD5C /* models */,
+				1B7B66981A47F95600DEFD5C /* Supporting Files */,
+			);
+			path = FavoritePlaces;
+			sourceTree = "<group>";
+		};
+		1B7B66981A47F95600DEFD5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66C61A47FAA500DEFD5C /* DMNS.gpx */,
+				1B7B66C41A47FA9F00DEFD5C /* Denver Art Museum.gpx */,
+				1B7B66A81A47F95600DEFD5C /* Images.xcassets */,
+				1B7B66991A47F95600DEFD5C /* Info.plist */,
+				1B7B669A1A47F95600DEFD5C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B7B66B41A47F95600DEFD5C /* FavoritePlacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66B71A47F95700DEFD5C /* FavoritePlacesTests.m */,
+				1B7B66B51A47F95700DEFD5C /* Supporting Files */,
+			);
+			path = FavoritePlacesTests;
+			sourceTree = "<group>";
+		};
+		1B7B66B51A47F95700DEFD5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66B61A47F95700DEFD5C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B7B66C81A47FACC00DEFD5C /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B669C1A47F95600DEFD5C /* RUSAppDelegate.h */,
+				1B7B669D1A47F95600DEFD5C /* RUSAppDelegate.m */,
+				1B7B66C11A47F9E200DEFD5C /* RUSMainViewController.h */,
+				1B7B66C21A47F9E200DEFD5C /* RUSMainViewController.m */,
+				1B7B66CB1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.h */,
+				1B7B66CC1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		1B7B66C91A47FADE00DEFD5C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1B1452861A4AB8D8008F3E64 /* FavoritePlaces.sqlite */,
+				1B7B669F1A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld */,
+				1BEB122A1A4906B100F70092 /* RUSFavoritePlaceManagedObject.h */,
+				1BEB122B1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m */,
+				1B7B66D71A4803DD00DEFD5C /* RUSCoreDataDAO.h */,
+				1B7B66D81A4803DD00DEFD5C /* RUSCoreDataDAO.m */,
+				1B7B66D41A47FD6400DEFD5C /* RUSFavoritePlace.h */,
+				1B7B66D51A47FD6400DEFD5C /* RUSFavoritePlace.m */,
+				1B7B66DA1A480D7000DEFD5C /* RUSFavoritePlaceDAO.h */,
+				1B7B66DB1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m */,
+				1B7B66D11A47FB9D00DEFD5C /* RUSDateStarter.h */,
+				1B7B66D21A47FB9D00DEFD5C /* RUSDateStarter.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		1B7B66CA1A47FAF600DEFD5C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66A51A47F95600DEFD5C /* Main.storyboard */,
+				1B7B66AA1A47F95600DEFD5C /* LaunchScreen.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1BEB122D1A4907F500F70092 /* logics */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66CE1A47FB7B00DEFD5C /* RUSLocationManager.h */,
+				1B7B66CF1A47FB7B00DEFD5C /* RUSLocationManager.m */,
+			);
+			name = logics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B7B66941A47F95600DEFD5C /* FavoritePlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B7B66BB1A47F95700DEFD5C /* Build configuration list for PBXNativeTarget "FavoritePlaces" */;
+			buildPhases = (
+				1B7B66911A47F95600DEFD5C /* Sources */,
+				1B7B66921A47F95600DEFD5C /* Frameworks */,
+				1B7B66931A47F95600DEFD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavoritePlaces;
+			productName = FavoritePlaces;
+			productReference = 1B7B66951A47F95600DEFD5C /* FavoritePlaces.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B7B66B01A47F95600DEFD5C /* FavoritePlacesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B7B66BE1A47F95700DEFD5C /* Build configuration list for PBXNativeTarget "FavoritePlacesTests" */;
+			buildPhases = (
+				1B7B66AD1A47F95600DEFD5C /* Sources */,
+				1B7B66AE1A47F95600DEFD5C /* Frameworks */,
+				1B7B66AF1A47F95600DEFD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B7B66B31A47F95600DEFD5C /* PBXTargetDependency */,
+			);
+			name = FavoritePlacesTests;
+			productName = FavoritePlacesTests;
+			productReference = 1B7B66B11A47F95600DEFD5C /* FavoritePlacesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B7B668D1A47F95600DEFD5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RUS;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1B7B66941A47F95600DEFD5C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1B7B66B01A47F95600DEFD5C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1B7B66941A47F95600DEFD5C;
+					};
+				};
+			};
+			buildConfigurationList = 1B7B66901A47F95600DEFD5C /* Build configuration list for PBXProject "FavoritePlaces" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B7B668C1A47F95600DEFD5C;
+			productRefGroup = 1B7B66961A47F95600DEFD5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B7B66941A47F95600DEFD5C /* FavoritePlaces */,
+				1B7B66B01A47F95600DEFD5C /* FavoritePlacesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B7B66931A47F95600DEFD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7B66A71A47F95600DEFD5C /* Main.storyboard in Resources */,
+				1B7B66C51A47FA9F00DEFD5C /* Denver Art Museum.gpx in Resources */,
+				1B7B66C71A47FAA500DEFD5C /* DMNS.gpx in Resources */,
+				1B1452871A4AB8D8008F3E64 /* FavoritePlaces.sqlite in Resources */,
+				1B7B66AC1A47F95600DEFD5C /* LaunchScreen.xib in Resources */,
+				1B7B66A91A47F95600DEFD5C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B7B66AF1A47F95600DEFD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B7B66911A47F95600DEFD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7B66CD1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m in Sources */,
+				1B7B66C31A47F9E200DEFD5C /* RUSMainViewController.m in Sources */,
+				1B7B669E1A47F95600DEFD5C /* RUSAppDelegate.m in Sources */,
+				1B7B66D01A47FB7B00DEFD5C /* RUSLocationManager.m in Sources */,
+				1BEB122C1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m in Sources */,
+				1B7B66D61A47FD6400DEFD5C /* RUSFavoritePlace.m in Sources */,
+				1B7B669B1A47F95600DEFD5C /* main.m in Sources */,
+				1B7B66A11A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld in Sources */,
+				1B7B66D31A47FB9D00DEFD5C /* RUSDateStarter.m in Sources */,
+				1B7B66D91A4803DD00DEFD5C /* RUSCoreDataDAO.m in Sources */,
+				1B7B66DC1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B7B66AD1A47F95600DEFD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7B66B81A47F95700DEFD5C /* FavoritePlacesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B7B66B31A47F95600DEFD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B7B66941A47F95600DEFD5C /* FavoritePlaces */;
+			targetProxy = 1B7B66B21A47F95600DEFD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B7B66A51A47F95600DEFD5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B7B66A61A47F95600DEFD5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B7B66AA1A47F95600DEFD5C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B7B66AB1A47F95600DEFD5C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B7B66B91A47F95700DEFD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1B7B66BA1A47F95700DEFD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B7B66BC1A47F95700DEFD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FavoritePlaces/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B7B66BD1A47F95700DEFD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FavoritePlaces/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B7B66BF1A47F95700DEFD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FavoritePlacesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FavoritePlaces.app/FavoritePlaces";
+			};
+			name = Debug;
+		};
+		1B7B66C01A47F95700DEFD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FavoritePlacesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FavoritePlaces.app/FavoritePlaces";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B7B66901A47F95600DEFD5C /* Build configuration list for PBXProject "FavoritePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7B66B91A47F95700DEFD5C /* Debug */,
+				1B7B66BA1A47F95700DEFD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B7B66BB1A47F95700DEFD5C /* Build configuration list for PBXNativeTarget "FavoritePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7B66BC1A47F95700DEFD5C /* Debug */,
+				1B7B66BD1A47F95700DEFD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B7B66BE1A47F95700DEFD5C /* Build configuration list for PBXNativeTarget "FavoritePlacesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7B66BF1A47F95700DEFD5C /* Debug */,
+				1B7B66C01A47F95700DEFD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B7B669F1A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B7B66A01A47F95600DEFD5C /* FavoritePlaces.xcdatamodel */,
+			);
+			currentVersion = 1B7B66A01A47F95600DEFD5C /* FavoritePlaces.xcdatamodel */;
+			path = FavoritePlaces.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B7B668D1A47F95600DEFD5C /* Project object */;
+}
