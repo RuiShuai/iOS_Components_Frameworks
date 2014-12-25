@@ -27,6 +27,9 @@
 		1B89165E1A4BFAA9009658CD /* RESSharedMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89165D1A4BFAA9009658CD /* RESSharedMoviesViewController.m */; };
 		1B8916611A4BFB00009658CD /* RESFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916601A4BFB00009658CD /* RESFriendsListViewController.m */; };
 		1B8916641A4BFB13009658CD /* RESFriendsEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916631A4BFB13009658CD /* RESFriendsEditViewController.m */; };
+		1B8916671A4BFC26009658CD /* RESYearChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916661A4BFC26009658CD /* RESYearChooserViewController.m */; };
+		1B89166A1A4BFC34009658CD /* RESDateChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916691A4BFC34009658CD /* RESDateChooserViewController.m */; };
+		1B89166D1A4BFC5A009658CD /* RESFriendChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89166C1A4BFC5A009658CD /* RESFriendChooserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,12 @@
 		1B8916601A4BFB00009658CD /* RESFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFriendsListViewController.m; sourceTree = "<group>"; };
 		1B8916621A4BFB13009658CD /* RESFriendsEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFriendsEditViewController.h; sourceTree = "<group>"; };
 		1B8916631A4BFB13009658CD /* RESFriendsEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFriendsEditViewController.m; sourceTree = "<group>"; };
+		1B8916651A4BFC26009658CD /* RESYearChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESYearChooserViewController.h; sourceTree = "<group>"; };
+		1B8916661A4BFC26009658CD /* RESYearChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESYearChooserViewController.m; sourceTree = "<group>"; };
+		1B8916681A4BFC34009658CD /* RESDateChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDateChooserViewController.h; sourceTree = "<group>"; };
+		1B8916691A4BFC34009658CD /* RESDateChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDateChooserViewController.m; sourceTree = "<group>"; };
+		1B89166B1A4BFC5A009658CD /* RESFriendChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFriendChooserViewController.h; sourceTree = "<group>"; };
+		1B89166C1A4BFC5A009658CD /* RESFriendChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFriendChooserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +222,12 @@
 		1B8916531A4BC391009658CD /* movie editing Choosers */ = {
 			isa = PBXGroup;
 			children = (
+				1B8916651A4BFC26009658CD /* RESYearChooserViewController.h */,
+				1B8916661A4BFC26009658CD /* RESYearChooserViewController.m */,
+				1B8916681A4BFC34009658CD /* RESDateChooserViewController.h */,
+				1B8916691A4BFC34009658CD /* RESDateChooserViewController.m */,
+				1B89166B1A4BFC5A009658CD /* RESFriendChooserViewController.h */,
+				1B89166C1A4BFC5A009658CD /* RESFriendChooserViewController.m */,
 			);
 			name = "movie editing Choosers";
 			sourceTree = "<group>";
@@ -375,6 +390,7 @@
 				1B8916391A4BBDD8009658CD /* RESDataStarter.m in Sources */,
 				1B8916161A4BB6B4009658CD /* RESMovieDisplayViewController.m in Sources */,
 				1B8916641A4BFB13009658CD /* RESFriendsEditViewController.m in Sources */,
+				1B89166D1A4BFC5A009658CD /* RESFriendChooserViewController.m in Sources */,
 				1B8916481A4BC09C009658CD /* RESFriendManagedObject.m in Sources */,
 				1B8916131A4BB6B4009658CD /* RESMovieListViewController.m in Sources */,
 				1B89164B1A4BC09C009658CD /* RESMovieManagedObject.m in Sources */,
@@ -382,10 +398,12 @@
 				1B89165E1A4BFAA9009658CD /* RESSharedMoviesViewController.m in Sources */,
 				1B8916611A4BFB00009658CD /* RESFriendsListViewController.m in Sources */,
 				1B89163C1A4BBE0F009658CD /* RESFetchedResultsController.m in Sources */,
+				1B89166A1A4BFC34009658CD /* RESDateChooserViewController.m in Sources */,
 				1B8916101A4BB6B4009658CD /* MyMovies.xcdatamodeld in Sources */,
 				1B8916511A4BC29C009658CD /* RESFriend.m in Sources */,
 				1B89160A1A4BB6B4009658CD /* main.m in Sources */,
 				1B89164E1A4BC1BA009658CD /* RESMovie.m in Sources */,
+				1B8916671A4BFC26009658CD /* RESYearChooserViewController.m in Sources */,
 				1B89163F1A4BBE7C009658CD /* RESCoreDataUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

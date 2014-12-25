@@ -7,8 +7,8 @@
 //
 
 #import "RESAppDelegate.h"
-#import "RESDetailViewController.h"
-#import "RESMasterViewController.h"
+#import "RESMovieDisplayViewController.h"
+#import "RESMovieListViewController.h"
 
 @interface RESAppDelegate ()
 
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    RESMasterViewController *controller = (RESMasterViewController *)navigationController.topViewController;
+    RESMovieListViewController *controller = (RESMovieListViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
