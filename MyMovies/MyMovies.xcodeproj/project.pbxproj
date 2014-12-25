@@ -18,7 +18,7 @@
 		1B89162A1A4BB6B4009658CD /* MyMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916291A4BB6B4009658CD /* MyMoviesTests.m */; };
 		1B8916391A4BBDD8009658CD /* RESDataStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916381A4BBDD8009658CD /* RESDataStarter.m */; };
 		1B89163C1A4BBE0F009658CD /* RESFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89163B1A4BBE0F009658CD /* RESFetchedResultsController.m */; };
-		1B89163F1A4BBE7C009658CD /* RESCoreDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89163E1A4BBE7C009658CD /* RESCoreDataUtil.m */; };
+		1B89163F1A4BBE7C009658CD /* RESCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89163E1A4BBE7C009658CD /* RESCoreDataManager.m */; };
 		1B8916481A4BC09C009658CD /* RESFriendManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916471A4BC09C009658CD /* RESFriendManagedObject.m */; };
 		1B89164B1A4BC09C009658CD /* RESMovieManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89164A1A4BC09C009658CD /* RESMovieManagedObject.m */; };
 		1B89164E1A4BC1BA009658CD /* RESMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89164D1A4BC1BA009658CD /* RESMovie.m */; };
@@ -63,8 +63,8 @@
 		1B8916381A4BBDD8009658CD /* RESDataStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDataStarter.m; sourceTree = "<group>"; };
 		1B89163A1A4BBE0F009658CD /* RESFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFetchedResultsController.h; sourceTree = "<group>"; };
 		1B89163B1A4BBE0F009658CD /* RESFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFetchedResultsController.m; sourceTree = "<group>"; };
-		1B89163D1A4BBE7C009658CD /* RESCoreDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCoreDataUtil.h; sourceTree = "<group>"; };
-		1B89163E1A4BBE7C009658CD /* RESCoreDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCoreDataUtil.m; sourceTree = "<group>"; };
+		1B89163D1A4BBE7C009658CD /* RESCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCoreDataManager.h; sourceTree = "<group>"; };
+		1B89163E1A4BBE7C009658CD /* RESCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCoreDataManager.m; sourceTree = "<group>"; };
 		1B8916461A4BC09C009658CD /* RESFriendManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFriendManagedObject.h; sourceTree = "<group>"; };
 		1B8916471A4BC09C009658CD /* RESFriendManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFriendManagedObject.m; sourceTree = "<group>"; };
 		1B8916491A4BC09C009658CD /* RESMovieManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESMovieManagedObject.h; sourceTree = "<group>"; };
@@ -168,9 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				1B89160E1A4BB6B4009658CD /* MyMovies.xcdatamodeld */,
-				1B8916581A4BC3FC009658CD /* core data utilities */,
-				1B8916571A4BC3E1009658CD /* model entities */,
+				1B8916581A4BC3FC009658CD /* core data manager */,
 				1B8916561A4BC3D2009658CD /* managed object subclasses */,
+				1B8916571A4BC3E1009658CD /* model entities */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -274,15 +274,15 @@
 			name = "model entities";
 			sourceTree = "<group>";
 		};
-		1B8916581A4BC3FC009658CD /* core data utilities */ = {
+		1B8916581A4BC3FC009658CD /* core data manager */ = {
 			isa = PBXGroup;
 			children = (
-				1B89163D1A4BBE7C009658CD /* RESCoreDataUtil.h */,
-				1B89163E1A4BBE7C009658CD /* RESCoreDataUtil.m */,
+				1B89163D1A4BBE7C009658CD /* RESCoreDataManager.h */,
+				1B89163E1A4BBE7C009658CD /* RESCoreDataManager.m */,
 				1B8916371A4BBDD8009658CD /* RESDataStarter.h */,
 				1B8916381A4BBDD8009658CD /* RESDataStarter.m */,
 			);
-			name = "core data utilities";
+			name = "core data manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,7 +404,7 @@
 				1B89160A1A4BB6B4009658CD /* main.m in Sources */,
 				1B89164E1A4BC1BA009658CD /* RESMovie.m in Sources */,
 				1B8916671A4BFC26009658CD /* RESYearChooserViewController.m in Sources */,
-				1B89163F1A4BBE7C009658CD /* RESCoreDataUtil.m in Sources */,
+				1B89163F1A4BBE7C009658CD /* RESCoreDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

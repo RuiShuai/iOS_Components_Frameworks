@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RESCoreDataUtil.h"
+#import "RESCoreDataManager.h"
 
-@implementation RESCoreDataUtil
+@implementation RESCoreDataManager
 
 #pragma mark - Core Data stack
 
