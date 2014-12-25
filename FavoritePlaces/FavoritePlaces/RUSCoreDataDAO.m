@@ -15,17 +15,6 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-static RUSCoreDataDAO *sharedManager = nil;
-
-+ (RUSCoreDataDAO *)sharedManager
-{
-    static dispatch_once_t once;
-    dispatch_once(&once,^{
-        sharedManager = [[self alloc] init];
-
-    });
-    return sharedManager;
-}
 
 #pragma mark - Core Data stack
 

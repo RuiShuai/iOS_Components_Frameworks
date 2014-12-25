@@ -10,25 +10,24 @@
 
 @implementation RUSFavoritePlaceDAO
 
-static RUSFavoritePlaceDAO *sharedManager = nil;
+static RUSFavoritePlaceDAO *_sharedManager = nil;
 
 + (RUSFavoritePlaceDAO *)sharedManager
 {
     static dispatch_once_t once;
     dispatch_once(&once,^{
-        sharedManager = [[RUSFavoritePlaceDAO alloc] init];
-        //sharedManager.managedObjectContext
+        _sharedManager = [[RUSFavoritePlaceDAO alloc] init];
+        [_sharedManager managedObjectContext];
+        
     });
-    return sharedManager;
+    return _sharedManager;
 }
 
 -(id)init
 {
     self = [super init];
     if (self) {
-        //Custom initiliaztion
-        
-        
+        //Custom initiliaztion      
     }
     return self;
 }

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
-@interface RUSFavoritePlace : NSObject
+#import <MapKit/MapKit.h>
+@interface RUSFavoritePlace : NSObject<MKAnnotation,MKOverlay>
 
 @property (nonatomic,strong) NSManagedObjectID *objectID;
 @property (nonatomic, strong) NSNumber * displayProximity;

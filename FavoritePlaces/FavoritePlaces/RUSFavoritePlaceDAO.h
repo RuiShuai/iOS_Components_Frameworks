@@ -14,6 +14,7 @@
 
 + (RUSFavoritePlaceDAO *)sharedManager;
 
+
 - (int)create:(RUSFavoritePlace *)model;
 - (int)remove:(RUSFavoritePlace *)model;
 - (int)modify:(RUSFavoritePlace *)model;
