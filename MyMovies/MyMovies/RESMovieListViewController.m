@@ -6,14 +6,14 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RESMasterViewController.h"
-#import "RESDetailViewController.h"
+#import "RESMovieListViewController.h"
+#import "RESMovieDisplayViewController.h"
 
-@interface RESMasterViewController ()
+@interface RESMovieListViewController ()
 
 @end
 
-@implementation RESMasterViewController
+@implementation RESMovieListViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];

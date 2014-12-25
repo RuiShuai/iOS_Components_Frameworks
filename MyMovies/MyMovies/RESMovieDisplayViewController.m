@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RESDetailViewController.h"
+#import "RESMovieDisplayViewController.h"
 
-@interface RESDetailViewController ()
+@interface RESMovieDisplayViewController ()
 
 @end
 
-@implementation RESDetailViewController
+@implementation RESMovieDisplayViewController
 
 #pragma mark - Managing the detail item
 

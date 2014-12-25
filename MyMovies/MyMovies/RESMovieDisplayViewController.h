@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RESDetailViewController : UIViewController
+@interface RESMovieDisplayViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
