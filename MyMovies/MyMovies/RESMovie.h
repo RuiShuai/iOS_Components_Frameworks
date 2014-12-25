@@ -7,18 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @class RESFriendManagedObject;
 
 @interface RESMovie : NSObject
 
-@property (nonatomic, retain) NSString * movieDescription;
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSString * year;
-@property (nonatomic, retain) NSNumber * timesWatched;
-@property (nonatomic, retain) NSNumber * lent;
-@property (nonatomic, retain) NSDate * lentOn;
-@property (nonatomic, retain) RESFriendManagedObject *lentToFriend;
+@property (nonatomic, strong) NSManagedObjectID * movieID;
+@property (nonatomic, strong) NSString * movieDescription;
+@property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) NSString * year;
+@property (nonatomic, strong) NSNumber * timesWatched;
+@property (nonatomic, strong) NSNumber * lent;
+@property (nonatomic, strong) NSDate * lentOn;
+@property (nonatomic, strong) RESFriendManagedObject *lentToFriend;
 
 
 - (NSString *)cellTitle;

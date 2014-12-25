@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Exceptions.md">
+   </FileRef>
+   <FileRef
       location = "group:MyMovies/MyMovies.xcodeproj">
    </FileRef>
    <FileRef

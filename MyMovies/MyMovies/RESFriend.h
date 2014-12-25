@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @interface RESFriend : NSObject
 
+@property (nonatomic, strong) NSManagedObjectID * friendID;
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) NSString * friendName;
 @property (nonatomic, retain) NSSet *lentMovies;

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RESAppDelegate.h"
+#import "RESCoreDataManager.h"
 
 @interface RESDataStarter : NSObject
+
++ (void)setupStarterData;
 
 @end

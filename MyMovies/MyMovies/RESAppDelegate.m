@@ -7,8 +7,11 @@
 //
 
 #import "RESAppDelegate.h"
-#import "RESMovieDisplayViewController.h"
 #import "RESMovieListViewController.h"
+
+#ifdef FIRSTRUN
+#import "RESDataStarter.h"
+#endif
 
 @interface RESAppDelegate ()
 
@@ -18,10 +21,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+#ifdef FIRSTRUN
+    //Prepopulate the database.
+    [RESDataStarter setupStarterData];
+    NSLog(@"Finished prepopulating database.");
+    exit(EXIT_SUCCESS);
+#endif
+    /*
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     RESMovieListViewController *controller = (RESMovieListViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    */
     return YES;
 }
 

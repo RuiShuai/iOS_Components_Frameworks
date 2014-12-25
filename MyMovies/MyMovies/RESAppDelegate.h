@@ -11,7 +11,7 @@
 
 #define kAppDelegate ((RUSAppDelegate *)[[UIApplication sharedApplication] delegate])
 
-#define FIRSTRUN 1
+//#define FIRSTRUN 1
 
 @interface RESAppDelegate : UIResponder <UIApplicationDelegate>
 

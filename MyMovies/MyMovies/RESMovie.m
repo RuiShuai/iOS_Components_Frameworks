@@ -10,6 +10,7 @@
 
 @implementation RESMovie
 
+@synthesize movieID;
 @synthesize movieDescription;
 @synthesize title;
 @synthesize year;

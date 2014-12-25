@@ -10,8 +10,9 @@
 
 @implementation RESFriend
 
-@dynamic email;
-@dynamic friendName;
-@dynamic lentMovies;
+@synthesize friendID;
+@synthesize email;
+@synthesize friendName;
+@synthesize lentMovies;
 
 @end

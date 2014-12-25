@@ -87,7 +87,7 @@
                             <outlet property="delegate" destination="FRO-kL-AnT" id="DZh-cP-vC4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Zor-ap-XAa">
+                    <navigationItem key="navigationItem" title="Friends" id="Zor-ap-XAa">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Co4-Mt-Qtx">
                             <connections>
                                 <segue destination="M9Q-v6-Ydk" kind="presentation" identifier="addFriend" id="fO8-mh-KLB"/>
@@ -513,7 +513,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="o1t-N4-Xvw" kind="show" id="276-WY-IhP"/>
+                                            <segue destination="o1t-N4-Xvw" kind="show" identifier="yearSelected" id="276-WY-IhP"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="1va-ZN-jNy">
@@ -603,7 +603,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="NBS-bl-eIP" kind="show" id="CQ1-cL-kCl"/>
+                                            <segue destination="NBS-bl-eIP" kind="show" identifier="friendSelected" id="CQ1-cL-kCl"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="k65-w9-8Vy">
@@ -638,7 +638,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="cXl-1d-Yk0" kind="show" id="Ser-IQ-A5I"/>
+                                            <segue destination="cXl-1d-Yk0" kind="show" identifier="dateSelected" id="Ser-IQ-A5I"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -754,7 +754,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XVU-oe-OGU"/>
+        <segue reference="ODx-gm-EBt"/>
         <segue reference="8di-EH-qBf"/>
         <segue reference="6gM-TA-0gr"/>
     </inferredMetricsTieBreakers>

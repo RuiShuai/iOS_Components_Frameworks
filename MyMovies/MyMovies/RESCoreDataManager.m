@@ -16,6 +16,17 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+static RESCoreDataManager *_sharedManager = nil;
++ (RESCoreDataManager *)sharedManager
+{
+    static dispatch_once_t once;
+    dispatch_once(&once,^{
+        _sharedManager = [[RESCoreDataManager alloc] init];
+        [_sharedManager managedObjectContext];
+    });
+    return _sharedManager;
+}
+
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.ruishuai.MyMovies" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
@@ -37,11 +48,27 @@
         return _persistentStoreCoordinator;
     }
     
+    
+    NSError *error = nil;
+
+    NSURL *storeURL = [[self applicationDocumentsDirectory]
+                       URLByAppendingPathComponent:@"MyMovies.sqlite"];
+    NSLog(@"%@",storeURL);
+    
+    //判断沙箱目录中是否存在sqlite文件？
+    BOOL dataFileAlreadyExists = [[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]];
+    
+    if (!dataFileAlreadyExists) {
+        NSString *bundleStore = [[NSBundle mainBundle] pathForResource:@"MyMovies" ofType:@"sqlite"];
+        NSLog(@"%@",bundleStore);
+        //从bundle资源文件夹中复制一份到沙箱目录中
+        [[NSFileManager defaultManager] copyItemAtPath:bundleStore toPath:[storeURL path] error:&error];
+    }
+    
     // Create the coordinator and store
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MyMovies.sqlite"];
-    NSError *error = nil;
+
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         // Report any error we got.

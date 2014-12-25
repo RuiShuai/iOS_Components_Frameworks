@@ -52,7 +52,31 @@ Properties物理属性
 
 2014-12-23,周二,阅读完毕。
 
+2014-12-24,周四,
+Note
+There is a project called mogenerator that will generate two classes per entity: one for the attribute accessors and one for custom logic. That way, you can regenerate classes easily when making model changes without overwriting your custom logic. 
+Mogenerator is available at http://rentzsch.github.com/mogenerator/.
 
+Mogenerator:generates Objective-C code for your Core Data custom classes
+
+Unlike Xcode, mogenerator manages two classes per entity: one for machines, one for humans
+
+The machine class can always be overwritten to match the data model, with humans’ work effortlessly preserved
+
+Download
+Download mogenerator 1.28
+or install via homebrew:
+$ brew install mogenerator
+upgrading using homebrew:
+$ brew update && brew upgrade mogenerator
+
+mogenerator --version
+mogenerator 1.28. By Jonathan 'Wolf' Rentzsch + friends.
+mogenerator --model MyMovies.xcdatamodeld/
+4 machine files and 4 human files generated.
+
+P303,Introducing the Fetched Results Controller
+A fetched results controller (NSFetchedResultsController) is a very effective liaison between Core Data and a UITableView. The fetched results controller provides a way to set up a fetch request so that the results are returned in sections and rows, accessible by index paths. In addi- tion, the fetched results controller can listen to changes in Core Data and update the table accordingly using delegate methods.
 
 
 ******************************

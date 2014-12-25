@@ -87,6 +87,7 @@
 		1B8916691A4BFC34009658CD /* RESDateChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDateChooserViewController.m; sourceTree = "<group>"; };
 		1B89166B1A4BFC5A009658CD /* RESFriendChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFriendChooserViewController.h; sourceTree = "<group>"; };
 		1B89166C1A4BFC5A009658CD /* RESFriendChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFriendChooserViewController.m; sourceTree = "<group>"; };
+		1B89166E1A4C0E55009658CD /* MyMovies.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyMovies.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				1B89160E1A4BB6B4009658CD /* MyMovies.xcdatamodeld */,
+				1B89166E1A4C0E55009658CD /* MyMovies.sqlite */,
 				1B8916581A4BC3FC009658CD /* core data manager */,
 				1B8916561A4BC3D2009658CD /* managed object subclasses */,
 				1B8916571A4BC3E1009658CD /* model entities */,
