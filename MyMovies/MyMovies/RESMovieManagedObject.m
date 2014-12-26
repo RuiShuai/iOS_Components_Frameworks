@@ -20,6 +20,14 @@
 @dynamic lentOn;
 @dynamic lentToFriend;
 
+- (NSString *)cellTitle
+{
+    return [NSString stringWithFormat:@"%@ (%@)",self.title,self.year];
+}
 
+- (NSString *)yearAndTitle
+{
+    return [NSString stringWithFormat:@"(%@) %@",self.year,self.title];
+}
 
 @end

@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol RESDateChooserDelegate <NSObject>
+- (void)chooserSelectedDate:(NSDate *)date;
+@end
+
 @interface RESDateChooserViewController : UITableViewController
+
+@property (strong,nonatomic) NSDate *selectedDate;
+@property (weak,nonatomic) id<RESDateChooserDelegate> delegate;
 
 @end

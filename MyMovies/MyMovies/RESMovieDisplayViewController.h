@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESMovieEditViewController.h"
+#import "RESCoreDataManager.h"
+#import "RESMovieManagedObject.h"
+#import "RESFriendManagedObject.h"
 
-@interface RESMovieDisplayViewController : UITableViewController
+@interface RESMovieDisplayViewController : UITableViewController<RESMovieEditDelegate>
 
-@property (strong, nonatomic) id detailItem;
-
+@property (strong,nonatomic) NSManagedObjectID *movieDetailID;
+@property (strong, nonatomic) IBOutlet UILabel *movieTitleAndYearLabel;
+@property (strong, nonatomic) IBOutlet UITextView *movieDescription;
+@property (strong, nonatomic) IBOutlet UILabel *movieSharedInfoLabel;
 
 @end
 

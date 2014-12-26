@@ -158,19 +158,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" textLabel="2pz-XF-uhl" style="IBUITableViewCellStyleDefault" id="m0d-ak-lc9">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" textLabel="2pz-XF-uhl" detailTextLabel="7yV-kB-SvY" style="IBUITableViewCellStyleSubtitle" id="m0d-ak-lc9">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="d3P-M7-ByW">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2pz-XF-uhl">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2pz-XF-uhl">
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7yV-kB-SvY">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -186,7 +192,7 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Movies" id="tQt-TN-PWz">
+                    <navigationItem key="navigationItem" title="My Movies" id="tQt-TN-PWz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="q15-Od-q2M">
                             <connections>
                                 <segue destination="qBF-uw-vNp" kind="presentation" identifier="addMovie" id="8di-EH-qBf"/>
@@ -278,6 +284,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="movieDescription" destination="j6i-jj-1wS" id="bbe-fY-hhh"/>
+                        <outlet property="movieSharedInfoLabel" destination="QwA-JB-92h" id="Bmo-2w-ZNm"/>
+                        <outlet property="movieTitleAndYearLabel" destination="Pn2-ka-z59" id="UIS-Bt-sc8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AI4-wK-NZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -564,6 +575,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-Wn-51k">
                                                     <rect key="frame" x="481" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="sharedSwitchChanged:" destination="06y-JJ-hUv" eventType="valueChanged" id="g95-Ek-mPC"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -650,9 +664,27 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="qPO-Dm-7yi">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="KWh-5W-P5I"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NdU-cd-0rm"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="KWh-5W-P5I">
+                            <connections>
+                                <action selector="cancelButtonTouched:" destination="06y-JJ-hUv" id="BTm-d5-WkH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NdU-cd-0rm">
+                            <connections>
+                                <action selector="saveButtonTouched:" destination="06y-JJ-hUv" id="Eik-h2-Tjw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="movieDescription" destination="Ph3-CE-5Aq" id="fBT-sh-gd0"/>
+                        <outlet property="movieTitle" destination="R0A-n5-DGJ" id="rmP-Db-8Xo"/>
+                        <outlet property="movieYearLabel" destination="RyB-q2-bXL" id="HUy-N8-T0C"/>
+                        <outlet property="sharedDateCell" destination="k65-w9-8Vy" id="Ifd-0b-RzX"/>
+                        <outlet property="sharedFriendCell" destination="Muu-2I-xsB" id="A0N-y8-fRt"/>
+                        <outlet property="sharedFriendLabel" destination="yLD-az-iyy" id="P9D-1G-7Zl"/>
+                        <outlet property="sharedOnDateLabel" destination="ygJ-DC-jcO" id="Lod-YE-jKt"/>
+                        <outlet property="sharedSwitch" destination="sdP-Wn-51k" id="FDO-Zg-RJ9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOO-tO-FHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

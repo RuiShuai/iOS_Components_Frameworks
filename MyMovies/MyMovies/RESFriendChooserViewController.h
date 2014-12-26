@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class RESFriendManagedObject;
+
+@protocol RESFriendChooserDelegate <NSObject>
+-(void)chooserSelectedFriend:(RESFriendManagedObject *)friendMO;
+@end
 
 @interface RESFriendChooserViewController : UITableViewController
+
+@property (weak,nonatomic) RESFriendManagedObject *selectedFriend;
+@property (weak,nonatomic) id<RESFriendChooserDelegate> delegate;
 
 @end

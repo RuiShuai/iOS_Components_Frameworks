@@ -21,5 +21,7 @@
 @property (nonatomic, retain) NSDate * lentOn;
 @property (nonatomic, retain) RESFriendManagedObject *lentToFriend;
 
+- (NSString *)cellTitle;
+- (NSString *)yearAndTitle;
 
 @end

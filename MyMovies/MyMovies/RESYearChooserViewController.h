@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol RESYearChooserDelegate <NSObject>
+- (void)chooserSelectedYear:(NSString *)year;
+@end
+
+
 @interface RESYearChooserViewController : UITableViewController
+
+@property (strong,nonatomic) NSString *selectedYear;
+@property (weak,nonatomic) id<RESYearChooserDelegate> delegate;
 
 @end

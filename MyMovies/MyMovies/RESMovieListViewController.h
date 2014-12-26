@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "RESCoreDataManager.h"
+#import "RESMovieEditViewController.h"
 
 @interface RESMovieListViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
+//liaision联络者 between tableview and coredata
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
