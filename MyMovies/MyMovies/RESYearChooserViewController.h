@@ -13,9 +13,20 @@
 @end
 
 
-@interface RESYearChooserViewController : UITableViewController
+@interface RESYearChooserViewController : UITableViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 
 @property (strong,nonatomic) NSString *selectedYear;
 @property (weak,nonatomic) id<RESYearChooserDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UILabel *chooserValueLabel;
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+
+@property (strong,nonatomic) NSArray *yearThousands;
+@property (strong,nonatomic) NSArray *yearTens;
+@property (strong,nonatomic) NSArray *yearOnes;
+
+
+- (IBAction)saveButtonTouched:(id)sender;
+
 
 @end

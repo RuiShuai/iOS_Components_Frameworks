@@ -53,7 +53,7 @@ static RESCoreDataManager *_sharedManager = nil;
 
     NSURL *storeURL = [[self applicationDocumentsDirectory]
                        URLByAppendingPathComponent:@"MyMovies.sqlite"];
-    NSLog(@"%@",storeURL);
+    //NSLog(@"%@",storeURL);
     
     //判断沙箱目录中是否存在sqlite文件？
     BOOL dataFileAlreadyExists = [[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]];

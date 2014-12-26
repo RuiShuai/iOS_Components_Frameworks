@@ -14,24 +14,39 @@
 
 @implementation RESDateChooserViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //set selectedDate
+    self.dateFormatter = [[NSDateFormatter alloc]init];
+    [self.dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    [self.datePicker setDate:self.selectedDate];
+    NSString *dateText = [self.dateFormatter stringFromDate:self.selectedDate];
+    [self.chooserValueLabel setText:dateText];
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)datePickerValueChanged:(id)sender
+{
+    NSDate *selDate = [self.datePicker date];
+    NSString *newDate = [self.dateFormatter stringFromDate:selDate];
+    [self.chooserValueLabel setText:newDate];
 }
-*/
+
+- (IBAction)saveButtonTouched:(id)sender
+{
+    //传递selectedDate参数
+    [self.delegate chooserSelectedDate:[self.datePicker date]];
+    //show segue关闭视图
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

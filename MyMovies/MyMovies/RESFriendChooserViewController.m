@@ -17,11 +17,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
+    NSFetchRequest *fetchReq = [[NSFetchRequest alloc] init];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Friend" inManagedObjectContext:moc];
+    
+    [fetchReq setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"friendName" ascending:YES];
+    
+    NSArray *sortDescriptors = @[sortDescriptor];
+    [fetchReq setSortDescriptors:sortDescriptors];
+    
+    NSError *error = nil;
+    self.friendList = [moc executeFetchRequest:fetchReq error:&error];
+    
+    if (error) {
+        NSString *errorDesc = [error localizedDescription];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error fetching friends" message:errorDesc delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [alert show];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,67 +51,53 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 0;
+    return [self.friendList count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+  
     // Configure the cell...
+    static NSString *CellIdentifier = @"FriendChooserCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    RESFriendManagedObject *friendMO = [self.friendList objectAtIndex:indexPath.row];
+    [[cell textLabel] setText:[friendMO valueForKey:@"friendName"]];
+    if (friendMO == self.selectedFriend) {
+        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    }
+    else
+    {
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+    }
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+#pragma mark - Table view delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //获取所有可见单元格,设置accessory为None
+    NSArray *visibleIndexPaths = [tableView indexPathsForVisibleRows];
+    for (NSIndexPath *ip in visibleIndexPaths) {
+        UITableViewCell *clearCell = [tableView cellForRowAtIndexPath:ip];
+        [clearCell setAccessoryType:UITableViewCellAccessoryNone];
+    }
+    //设置当前单元格accessory为checkmark
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    
+    //传递selectedFriend参数
+    [self.delegate chooserSelectedFriend:[self.friendList objectAtIndex:indexPath.row]];
+    //show segue关闭视图
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

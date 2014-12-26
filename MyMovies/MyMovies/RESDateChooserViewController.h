@@ -15,6 +15,14 @@
 @interface RESDateChooserViewController : UITableViewController
 
 @property (strong,nonatomic) NSDate *selectedDate;
+@property (strong,nonatomic) NSDateFormatter *dateFormatter;
 @property (weak,nonatomic) id<RESDateChooserDelegate> delegate;
+
+@property (strong, nonatomic) IBOutlet UILabel *chooserValueLabel;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+- (IBAction)datePickerValueChanged:(id)sender;
+- (IBAction)saveButtonTouched:(id)sender;
+
 
 @end
