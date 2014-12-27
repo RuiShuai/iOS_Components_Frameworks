@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "RESFriendManagedObject.h"
+#import "RESCoreDataManager.h"
+#import "RESFriendsEditViewController.h"
 
-@interface RESFriendsListViewController : UITableViewController
+@interface RESFriendsListViewController : UITableViewController<NSFetchedResultsControllerDelegate>
+
+@property (strong,nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end

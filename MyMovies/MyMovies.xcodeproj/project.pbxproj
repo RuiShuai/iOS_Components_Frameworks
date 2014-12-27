@@ -17,7 +17,6 @@
 		1B89161E1A4BB6B4009658CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B89161C1A4BB6B4009658CD /* LaunchScreen.xib */; };
 		1B89162A1A4BB6B4009658CD /* MyMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916291A4BB6B4009658CD /* MyMoviesTests.m */; };
 		1B8916391A4BBDD8009658CD /* RESDataStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916381A4BBDD8009658CD /* RESDataStarter.m */; };
-		1B89163C1A4BBE0F009658CD /* RESFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89163B1A4BBE0F009658CD /* RESFetchedResultsController.m */; };
 		1B89163F1A4BBE7C009658CD /* RESCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89163E1A4BBE7C009658CD /* RESCoreDataManager.m */; };
 		1B8916481A4BC09C009658CD /* RESFriendManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8916471A4BC09C009658CD /* RESFriendManagedObject.m */; };
 		1B89164B1A4BC09C009658CD /* RESMovieManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B89164A1A4BC09C009658CD /* RESMovieManagedObject.m */; };
@@ -61,8 +60,6 @@
 		1B8916291A4BB6B4009658CD /* MyMoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMoviesTests.m; sourceTree = "<group>"; };
 		1B8916371A4BBDD8009658CD /* RESDataStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDataStarter.h; sourceTree = "<group>"; };
 		1B8916381A4BBDD8009658CD /* RESDataStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDataStarter.m; sourceTree = "<group>"; };
-		1B89163A1A4BBE0F009658CD /* RESFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFetchedResultsController.h; sourceTree = "<group>"; };
-		1B89163B1A4BBE0F009658CD /* RESFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFetchedResultsController.m; sourceTree = "<group>"; };
 		1B89163D1A4BBE7C009658CD /* RESCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCoreDataManager.h; sourceTree = "<group>"; };
 		1B89163E1A4BBE7C009658CD /* RESCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCoreDataManager.m; sourceTree = "<group>"; };
 		1B8916461A4BC09C009658CD /* RESFriendManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFriendManagedObject.h; sourceTree = "<group>"; };
@@ -184,8 +181,6 @@
 				1B8916531A4BC391009658CD /* movie editing Choosers */,
 				1B8916541A4BC39F009658CD /* shared movies view controllers */,
 				1B8916551A4BC3B4009658CD /* friends view controllers */,
-				1B89163A1A4BBE0F009658CD /* RESFetchedResultsController.h */,
-				1B89163B1A4BBE0F009658CD /* RESFetchedResultsController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -399,7 +394,6 @@
 				1B89160D1A4BB6B4009658CD /* RESAppDelegate.m in Sources */,
 				1B89165E1A4BFAA9009658CD /* RESSharedMoviesViewController.m in Sources */,
 				1B8916611A4BFB00009658CD /* RESFriendsListViewController.m in Sources */,
-				1B89163C1A4BBE0F009658CD /* RESFetchedResultsController.m in Sources */,
 				1B89166A1A4BFC34009658CD /* RESDateChooserViewController.m in Sources */,
 				1B8916101A4BB6B4009658CD /* MyMovies.xcdatamodeld in Sources */,
 				1B8916511A4BC29C009658CD /* RESFriend.m in Sources */,
@@ -597,6 +591,7 @@
 				1B89162F1A4BB6B4009658CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B8916301A4BB6B4009658CD /* Build configuration list for PBXNativeTarget "MyMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +600,7 @@
 				1B8916321A4BB6B4009658CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

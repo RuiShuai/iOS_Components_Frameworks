@@ -114,6 +114,19 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YXU-2h-hSt" id="9Dn-dd-B7P">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miM-jg-5x0">
+                                                    <rect key="frame" x="8" y="9" width="584" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="miM-jg-5x0" secondAttribute="centerX" id="95m-A4-CbE"/>
+                                                <constraint firstAttribute="centerY" secondItem="miM-jg-5x0" secondAttribute="centerY" constant="-2" id="I9X-yD-rV5"/>
+                                                <constraint firstItem="miM-jg-5x0" firstAttribute="leading" secondItem="9Dn-dd-B7P" secondAttribute="leadingMargin" id="Kum-Ot-ZtV"/>
+                                                <constraint firstItem="miM-jg-5x0" firstAttribute="trailing" secondItem="9Dn-dd-B7P" secondAttribute="trailingMargin" id="MHJ-UL-P16"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -125,13 +138,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Friend" id="U8D-uR-u2H">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FBK-1m-n9c"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="R6E-GC-nLD"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FBK-1m-n9c">
+                            <connections>
+                                <action selector="cancelButtonTouched:" destination="p2o-Da-PBS" id="e8R-54-ONZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="R6E-GC-nLD">
+                            <connections>
+                                <action selector="saveButtonTouched:" destination="p2o-Da-PBS" id="iYm-cd-Xy0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="friendName" destination="miM-jg-5x0" id="3es-yK-h9u"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7D-db-SNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2968" y="1555"/>
+            <point key="canvasLocation" x="2968" y="1553"/>
         </scene>
         <!--Movies Navigation-->
         <scene sceneID="cUi-kZ-frf">
@@ -809,8 +833,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ODx-gm-EBt"/>
-        <segue reference="8di-EH-qBf"/>
+        <segue reference="jaA-OS-lEz"/>
+        <segue reference="XVU-oe-OGU"/>
         <segue reference="6gM-TA-0gr"/>
     </inferredMetricsTieBreakers>
 </document>
