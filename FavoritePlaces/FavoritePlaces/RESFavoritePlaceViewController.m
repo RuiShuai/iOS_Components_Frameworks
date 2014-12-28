@@ -6,14 +6,14 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSFavoritePlaceViewController.h"
-#import "RUSFavoritePlace.h"
+#import "RESFavoritePlaceViewController.h"
+#import "RESFavoritePlace.h"
 
-@interface RUSFavoritePlaceViewController ()
-@property (nonatomic,strong) RUSFavoritePlaceManagedObject *favoritePlaceMO;
+@interface RESFavoritePlaceViewController ()
+@property (nonatomic,strong) RESFavoritePlaceManagedObject *favoritePlaceMO;
 @end
 
-@implementation RUSFavoritePlaceViewController
+@implementation RESFavoritePlaceViewController
 
 
 #pragma mark - initilization
@@ -33,9 +33,9 @@
     if (self.favoritePlaceID) {
         
         //根据ID获取favoritePlace对象
-        NSManagedObjectContext *moc = [[RUSFavoritePlaceDAO sharedManager] managedObjectContext];
+        NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
         [moc performBlock:^{
-            self.favoritePlaceMO = (RUSFavoritePlaceManagedObject *)[moc objectWithID:self.favoritePlaceID];
+            self.favoritePlaceMO = (RESFavoritePlaceManagedObject *)[moc objectWithID:self.favoritePlaceID];
             
             //UI中显示对象数据
             [self.nameTextField setText:[self.favoritePlaceMO valueForKey:@"placeName"]];
@@ -77,7 +77,42 @@
 - (IBAction)saveButtonTouched:(id)sender
 {
 
-    NSManagedObjectContext *moc = [RUSFavoritePlaceDAO sharedManager].managedObjectContext;
+    NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
+
+    //保存新对象
+    if (!self.favoritePlaceMO) {
+        self.favoritePlaceMO = [NSEntityDescription insertNewObjectForEntityForName:@"FavoritePlace" inManagedObjectContext:moc];
+    }
+    
+    //设置favoritePlaceMO对象属性
+    [self.favoritePlaceMO setValue:[self.nameTextField text] forKeyPath:@"placeName"];
+    [self.favoritePlaceMO setValue:[self.addressTextField text] forKeyPath:@"placeStreetAddress"];
+    [self.favoritePlaceMO setValue:[self.cityTextField text] forKeyPath:@"placeCity"];
+    [self.favoritePlaceMO setValue:[self.stateTextField text] forKeyPath:@"placeState"];
+    [self.favoritePlaceMO setValue:[self.postalTextField text] forKeyPath:@"placePostal"];
+    NSNumber *latNumber = [NSNumber numberWithFloat:[self.latitudeTextField.text floatValue]];
+    [self.favoritePlaceMO setValue:latNumber forKeyPath:@"latitude"];
+    NSNumber *longNumber = [NSNumber numberWithFloat:[self.longitudeTextField.text floatValue]];
+    [self.favoritePlaceMO setValue:longNumber forKeyPath:@"longitude"];
+    NSNumber *displayProximity = [NSNumber numberWithBool:[self.displayProximitySwitch isOn]];
+    [self.favoritePlaceMO setValue:displayProximity forKeyPath:@"displayProximity"];
+    NSNumber *displayRadius = [NSNumber numberWithFloat:[self.displayRadiusSlider value]];
+    [self.favoritePlaceMO setValue:displayRadius forKeyPath:@"displayRadius"];
+
+    //同步到coredata
+    NSError *saveError = nil;
+    [moc save:&saveError];
+    
+    if (saveError) {
+        NSLog(@"Core Data save error %@, %@",saveError,[saveError userInfo]);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Core Data Error" message:saveError.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    } else {
+        //调用委托协议
+        [self.delegate favoritePlaceViewControllerDidFinish:self];
+    }
+
+    /*
     [moc performBlock:^{
         if (!self.favoritePlaceMO) {
             //保存新对象
@@ -112,6 +147,7 @@
         }
         
     }];
+    */
     
 }
 
@@ -158,7 +194,7 @@
     [self.geocodeNowButton setEnabled:NO];
     
     //调用LocationManager的geocoder服务
-    CLGeocoder *geocoder = [[RUSLocationManager sharedLocationManager] geocoder];
+    CLGeocoder *geocoder = [[RESLocationManager sharedLocationManager] geocoder];
     [geocoder geocodeAddressString:geocodeString completionHandler:^(NSArray *placemarks, NSError *error) {
         
         [self.geocodeNowButton setEnabled:YES];

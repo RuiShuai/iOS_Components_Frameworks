@@ -6,17 +6,17 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSFavoritePlaceDAO.h"
+#import "RESFavoritePlaceDAO.h"
 
-@implementation RUSFavoritePlaceDAO
+@implementation RESFavoritePlaceDAO
 
-static RUSFavoritePlaceDAO *_sharedManager = nil;
+static RESFavoritePlaceDAO *_sharedManager = nil;
 
-+ (RUSFavoritePlaceDAO *)sharedManager
++ (RESFavoritePlaceDAO *)sharedManager
 {
     static dispatch_once_t once;
     dispatch_once(&once,^{
-        _sharedManager = [[RUSFavoritePlaceDAO alloc] init];
+        _sharedManager = [[RESFavoritePlaceDAO alloc] init];
         [_sharedManager managedObjectContext];
         
     });
@@ -32,11 +32,11 @@ static RUSFavoritePlaceDAO *_sharedManager = nil;
     return self;
 }
 
-- (int)create:(RUSFavoritePlace *)model
+- (int)create:(RESFavoritePlace *)model
 {
     NSManagedObjectContext *moc = [self managedObjectContext];
 
-    RUSFavoritePlaceManagedObject *placeMO = [NSEntityDescription insertNewObjectForEntityForName:@"FavoritePlace" inManagedObjectContext:moc];
+    RESFavoritePlaceManagedObject *placeMO = [NSEntityDescription insertNewObjectForEntityForName:@"FavoritePlace" inManagedObjectContext:moc];
     [placeMO setValue:model.displayProximity forKey:@"displayProximity"];
     [placeMO setValue:model.displayRadius forKey:@"displayRadius"];
     [placeMO setValue:model.goingNext forKey:@"goingNext"];
@@ -72,7 +72,7 @@ static RUSFavoritePlaceDAO *_sharedManager = nil;
 }
 
 
-- (int)remove:(RUSFavoritePlace *)model
+- (int)remove:(RESFavoritePlace *)model
 {
     NSManagedObjectContext *moc = [self managedObjectContext];
     NSEntityDescription *entityDescription  = [NSEntityDescription entityForName:@"FavoritePlace"  inManagedObjectContext:moc];
@@ -87,7 +87,7 @@ static RUSFavoritePlaceDAO *_sharedManager = nil;
     NSArray *listPlaces = [moc executeFetchRequest:request error:&error];
     
     if ([listPlaces count]>0) {
-        RUSFavoritePlaceManagedObject *placeMO = [listPlaces lastObject];
+        RESFavoritePlaceManagedObject *placeMO = [listPlaces lastObject];
         [moc deleteObject:placeMO];
         
         NSError *savingError = nil;
@@ -104,7 +104,7 @@ static RUSFavoritePlaceDAO *_sharedManager = nil;
 
 
 
-- (int)modify:(RUSFavoritePlace *)model
+- (int)modify:(RESFavoritePlace *)model
 {
     
     
@@ -119,7 +119,7 @@ static RUSFavoritePlaceDAO *_sharedManager = nil;
 }
 
 
-- (RUSFavoritePlace *)findById:(RUSFavoritePlace *)model
+- (RESFavoritePlace *)findById:(RESFavoritePlace *)model
 {
     
     return nil;

@@ -34,3 +34,41 @@ NSUnderlyingError = "Error Domain=NSCocoaErrorDomain Code=134100 \"The operation
 }
 (lldb) 
 
+
+
+2014-12-28 08:36:49.403 FavoritePlaces[1290:21558] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: 'Can only use -performBlock: on an NSManagedObjectContext that was created with a queue.'
+*** First throw call stack:
+(
+0   CoreFoundation                      0x00cd7946 __exceptionPreprocess + 182
+1   libobjc.A.dylib                     0x005bfa97 objc_exception_throw + 44
+2   CoreData                            0x008cb22f -[NSManagedObjectContext performBlock:] + 191
+3   FavoritePlaces                      0x000c14c6 -[RESFavoritePlaceViewController saveButtonTouched:] + 278
+4   libobjc.A.dylib                     0x005d57cd -[NSObject performSelector:withObject:withObject:] + 84
+5   UIKit                               0x0131423d -[UIApplication sendAction:to:from:forEvent:] + 99
+6   UIKit                               0x01684840 -[UIBarButtonItem(UIInternal) _sendAction:withEvent:] + 139
+7   libobjc.A.dylib                     0x005d57cd -[NSObject performSelector:withObject:withObject:] + 84
+8   UIKit                               0x0131423d -[UIApplication sendAction:to:from:forEvent:] + 99
+9   UIKit                               0x013141cf -[UIApplication sendAction:toTarget:fromSender:forEvent:] + 64
+10  UIKit                               0x01447e86 -[UIControl sendAction:to:forEvent:] + 69
+11  UIKit                               0x014482a3 -[UIControl _sendActionsForEvents:withEvent:] + 598
+12  UIKit                               0x0144750d -[UIControl touchesEnded:withEvent:] + 660
+13  UIKit                               0x0136460a -[UIWindow _sendTouchesForEvent:] + 874
+14  UIKit                               0x013650e5 -[UIWindow sendEvent:] + 791
+15  UIKit                               0x0132a549 -[UIApplication sendEvent:] + 242
+16  UIKit                               0x0133a37e _UIApplicationHandleEventFromQueueEvent + 20690
+17  UIKit                               0x0130eb19 _UIApplicationHandleEventQueue + 2206
+18  CoreFoundation                      0x00bfb1df __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 15
+19  CoreFoundation                      0x00bf0ced __CFRunLoopDoSources0 + 253
+20  CoreFoundation                      0x00bf0248 __CFRunLoopRun + 952
+21  CoreFoundation                      0x00befbcb CFRunLoopRunSpecific + 443
+22  CoreFoundation                      0x00bef9fb CFRunLoopRunInMode + 123
+23  GraphicsServices                    0x03d2524f GSEventRunModal + 192
+24  GraphicsServices                    0x03d2508c GSEventRun + 104
+25  UIKit                               0x013128b6 UIApplicationMain + 1526
+26  FavoritePlaces                      0x000cd05d main + 141
+27  libdyld.dylib                       0x032c5ac9 start + 1
+28  ???                                 0x00000001 0x0 + 1
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+(lldb) 
+

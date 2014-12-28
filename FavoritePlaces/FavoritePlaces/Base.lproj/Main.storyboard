@@ -8,7 +8,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RUSMainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RESMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -72,7 +72,7 @@
         <!--Favorite Place View Controller-->
         <scene sceneID="sOq-cD-EQe">
             <objects>
-                <viewController id="DHD-Pw-Px1" customClass="RUSFavoritePlaceViewController" sceneMemberID="viewController">
+                <viewController id="DHD-Pw-Px1" customClass="RESFavoritePlaceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2by-ol-fFn"/>
                         <viewControllerLayoutGuide type="bottom" id="rcW-Dr-WR1"/>

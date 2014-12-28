@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 #import <MapKit/MapKit.h>
 
-@interface RUSFavoritePlaceManagedObject : NSManagedObject<MKAnnotation,MKOverlay>
+@interface RESFavoritePlaceManagedObject : NSManagedObject<MKAnnotation,MKOverlay>
 
 
 @property (nonatomic, retain) NSNumber * displayProximity;

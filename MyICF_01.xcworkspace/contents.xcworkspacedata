@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Readme.MD">
+   </FileRef>
+   <FileRef
       location = "group:Exceptions.md">
    </FileRef>
    <FileRef
@@ -9,9 +12,6 @@
    </FileRef>
    <FileRef
       location = "group:FavoritePlaces/FavoritePlaces.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Readme.MD">
    </FileRef>
    <FileRef
       location = "group:Dynamics/Dynamics.xcodeproj">

@@ -6,14 +6,14 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSDateStarter.h"
+#import "RESDateStarter.h"
 
-@implementation RUSDateStarter
+@implementation RESDateStarter
 
 + (void)setupStarterData
 {
-    RUSFavoritePlaceDAO *dao = [RUSFavoritePlaceDAO sharedManager];
-    NSManagedObjectContext *moc = [dao managedObjectContext];
+    
+    NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
     
     //初始化6条原始数据
     NSManagedObject *newPlace1 = [NSEntityDescription insertNewObjectForEntityForName:@"FavoritePlace" inManagedObjectContext:moc];

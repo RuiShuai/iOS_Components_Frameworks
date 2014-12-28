@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSFavoritePlace.h"
+#import "RESFavoritePlace.h"
 
 
-@implementation RUSFavoritePlace
+@implementation RESFavoritePlace
 
 @synthesize displayProximity;
 @synthesize displayRadius;

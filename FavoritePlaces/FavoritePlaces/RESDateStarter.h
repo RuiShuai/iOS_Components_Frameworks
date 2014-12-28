@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RUSFavoritePlaceDAO.h"
+#import "RESCoreDataManager.h"
 
-@interface RUSDateStarter : NSObject
+@interface RESDateStarter : NSObject
 
 + (void)setupStarterData;
 

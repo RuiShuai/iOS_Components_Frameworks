@@ -6,19 +6,19 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSMainViewController.h"
+#import "RESMainViewController.h"
 
-@interface RUSMainViewController ()
+@interface RESMainViewController ()
 
 - (void)updateMapAnnotations;
 - (void)zoomMapToFitAnnotations;
 - (void)locationUpdated:(NSNotification *)notification;
-- (void)updateFavoritePlace:(RUSFavoritePlaceManagedObject *)placeMO withPlaceMark:(CLPlacemark *)placemark;
-- (void)reverseGeocodeDraggedAnnotation:(RUSFavoritePlaceManagedObject *)placeMO forAnnotationView:(MKAnnotationView *)annotationView;
+- (void)updateFavoritePlace:(RESFavoritePlaceManagedObject *)placeMO withPlaceMark:(CLPlacemark *)placemark;
+- (void)reverseGeocodeDraggedAnnotation:(RESFavoritePlaceManagedObject *)placeMO forAnnotationView:(MKAnnotationView *)annotationView;
 
 @end
 
-@implementation RUSMainViewController
+@implementation RESMainViewController
 
 
 #pragma mark - View life cycle
@@ -31,7 +31,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    RUSLocationManager *appLocationManager = [RUSLocationManager sharedLocationManager];
+    RESLocationManager *appLocationManager = [RESLocationManager sharedLocationManager];
     
     [appLocationManager getLocationWithCompletionBlock:^(CLLocation *location, NSError *error) {
         if (error) {
@@ -58,7 +58,7 @@
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self.mapView removeOverlays:self.mapView.overlays];
     
-    CLLocationManager *locManager = [[RUSLocationManager sharedLocationManager] locationManager];
+    CLLocationManager *locManager = [[RESLocationManager sharedLocationManager] locationManager];
     
     NSSet *monitoredRegions = [locManager monitoredRegions];
     for (CLRegion *region in monitoredRegions) {
@@ -66,17 +66,17 @@
     }
     //获取数据
     NSFetchRequest *placesRequest = [[NSFetchRequest alloc]initWithEntityName:@"FavoritePlace"];
-    NSManagedObjectContext *moc = [[RUSFavoritePlaceDAO sharedManager] managedObjectContext];
+    NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
     NSError *error = nil;
     
     NSArray *placesMO = [moc executeFetchRequest:placesRequest error:&error];
-    NSLog(@"placeMO: %d",[placesMO count]);
+    NSLog(@"placeMO: %li",[placesMO count]);
     if (error) {
         NSLog(@"Core Data fetch error %@, %@",error,[error userInfo]);
     }
     [self.mapView addAnnotations:placesMO];
     
-    for (RUSFavoritePlaceManagedObject *favPlaceMO in placesMO) {
+    for (RESFavoritePlaceManagedObject *favPlaceMO in placesMO) {
         BOOL displayOverlay = [[favPlaceMO valueForKeyPath:@"displayProximity"] boolValue];
         if (displayOverlay) {
             [self.mapView addOverlay:favPlaceMO];
@@ -130,10 +130,10 @@
 }
 
 
-- (void)updateFavoritePlace:(RUSFavoritePlaceManagedObject *)placeMO withPlaceMark:(CLPlacemark *)placemark
+- (void)updateFavoritePlace:(RESFavoritePlaceManagedObject *)placeMO withPlaceMark:(CLPlacemark *)placemark
 {
     //存储新坐标
-    NSManagedObjectContext *moc = [RUSFavoritePlaceDAO sharedManager].managedObjectContext;
+    NSManagedObjectContext *moc = [RESCoreDataManager sharedManager].managedObjectContext;
     [moc performBlock:^{
         NSString *newName = [NSString stringWithFormat:@"Next: %@",placemark.name];
         [placeMO setValue:newName forKey:@"placeName"];
@@ -156,9 +156,9 @@
 }
 
 
-- (void)reverseGeocodeDraggedAnnotation:(RUSFavoritePlaceManagedObject *)placeMO forAnnotationView:(MKAnnotationView *)annotationView
+- (void)reverseGeocodeDraggedAnnotation:(RESFavoritePlaceManagedObject *)placeMO forAnnotationView:(MKAnnotationView *)annotationView
 {
-    CLGeocoder *geoCoder = [[RUSLocationManager sharedLocationManager] geocoder];
+    CLGeocoder *geoCoder = [[RESLocationManager sharedLocationManager] geocoder];
     CLLocationCoordinate2D draggedCoord = [placeMO coordinate];
     CLLocation *draggedLocation = [[CLLocation alloc] initWithLatitude:draggedCoord.latitude longitude:draggedCoord.longitude];
     
@@ -185,7 +185,7 @@
 
 
 #pragma mark - Favorite Place View Controller
-- (void)favoritePlaceViewControllerDidFinish:(RUSFavoritePlaceViewController *)controller
+- (void)favoritePlaceViewControllerDidFinish:(RESFavoritePlaceViewController *)controller
 {
     //关闭悬浮窗体
     if (self.favoritePlacePopoverController) {
@@ -235,7 +235,7 @@
     
     MKAnnotationView *view = nil;
     
-    RUSFavoritePlaceManagedObject *placeMO = (RUSFavoritePlaceManagedObject *)annotation;
+    RESFavoritePlaceManagedObject *placeMO = (RESFavoritePlaceManagedObject *)annotation;
     
     if ([[placeMO valueForKeyPath:@"goingNext"] boolValue])
     {
@@ -289,8 +289,8 @@
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
     MKOverlayRenderer *returnView = nil;
-    if ([overlay isKindOfClass:[RUSFavoritePlaceManagedObject class]]) {
-        RUSFavoritePlaceManagedObject *placeMO = (RUSFavoritePlaceManagedObject *)overlay;
+    if ([overlay isKindOfClass:[RESFavoritePlaceManagedObject class]]) {
+        RESFavoritePlaceManagedObject *placeMO = (RESFavoritePlaceManagedObject *)overlay;
         CLLocationDistance radius = [[placeMO valueForKeyPath:@"displayRadius"] floatValue];
         MKCircle *circle = [MKCircle circleWithCenterCoordinate:[overlay coordinate] radius:radius];
         
@@ -323,7 +323,7 @@
 {
     //停止拖动
     if (newState == MKAnnotationViewDragStateEnding) {
-        RUSFavoritePlaceManagedObject *draggedPlaceMO = (RUSFavoritePlaceManagedObject *)[view annotation];
+        RESFavoritePlaceManagedObject *draggedPlaceMO = (RESFavoritePlaceManagedObject *)[view annotation];
         UIActivityIndicatorViewStyle whiteStyle = UIActivityIndicatorViewStyleWhite;
         
         UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:whiteStyle];
@@ -367,7 +367,7 @@
             [self.mapView setMapType:MKMapTypeHybrid];
             break;
         default:
-            break;
+            return;
     }
     
 }
@@ -395,9 +395,9 @@
     if ([[segue identifier] isEqualToString:@"showFavoritePlaceDetail"]) {
         //发送地标ID
         MKAnnotationView *view = (MKAnnotationView *)sender;
-        RUSFavoritePlaceManagedObject *placeMO = (RUSFavoritePlaceManagedObject *)[view annotation];
+        RESFavoritePlaceManagedObject *placeMO = (RESFavoritePlaceManagedObject *)[view annotation];
         
-        RUSFavoritePlaceViewController *fpvc = (RUSFavoritePlaceViewController *)[segue destinationViewController];
+        RESFavoritePlaceViewController *fpvc = (RESFavoritePlaceViewController *)[segue destinationViewController];
         [fpvc setDelegate:self];
         [fpvc setFavoritePlaceID:[placeMO objectID]];
         

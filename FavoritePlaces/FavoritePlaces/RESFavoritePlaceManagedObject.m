@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSFavoritePlaceManagedObject.h"
+#import "RESFavoritePlaceManagedObject.h"
 
 
-@implementation RUSFavoritePlaceManagedObject
+@implementation RESFavoritePlaceManagedObject
 
 @dynamic displayProximity;
 @dynamic displayRadius;

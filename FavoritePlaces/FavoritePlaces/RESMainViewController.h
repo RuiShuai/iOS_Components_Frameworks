@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "RUSFavoritePlaceViewController.h"//protocol
+#import "RESFavoritePlaceViewController.h"//protocol
+#import "RESFavoritePlaceManagedObject.h"
+#import "RESLocationManager.h"
+#import "RESCoreDataManager.h"
 
-
-@interface RUSMainViewController : UIViewController<UIPopoverControllerDelegate,MKMapViewDelegate,RUSFavoritePlaceViewControllerDelegate>
+@interface RESMainViewController : UIViewController<UIPopoverControllerDelegate,MKMapViewDelegate,RESFavoritePlaceViewControllerDelegate>
 
 
 @property (strong,nonatomic) UIPopoverController *favoritePlacePopoverController;

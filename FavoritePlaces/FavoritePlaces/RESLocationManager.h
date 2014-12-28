@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "RUSFavoritePlaceDAO.h"
+#import "RESCoreDataManager.h"
+#import "RESFavoritePlaceManagedObject.h"
 
 //定义回调block的格式签名
-typedef void (^RUSLocationUpdateCompletionBlock)(CLLocation *location, NSError *error);
+typedef void (^RESLocationUpdateCompletionBlock)(CLLocation *location, NSError *error);
 
-@interface RUSLocationManager : NSObject<CLLocationManagerDelegate>
+@interface RESLocationManager : NSObject<CLLocationManagerDelegate>
 
-+ (RUSLocationManager *)sharedLocationManager;
++ (RESLocationManager *)sharedLocationManager;
 
 @property (strong,nonatomic) CLLocation *location;
 @property (strong,nonatomic) CLLocationManager *locationManager;
@@ -23,6 +24,6 @@ typedef void (^RUSLocationUpdateCompletionBlock)(CLLocation *location, NSError *
 @property (nonatomic,strong) NSError *locationError;
 @property (strong,nonatomic) CLGeocoder *geocoder;
 
-- (void)getLocationWithCompletionBlock:(RUSLocationUpdateCompletionBlock)block;
+- (void)getLocationWithCompletionBlock:(RESLocationUpdateCompletionBlock)block;
 
 @end

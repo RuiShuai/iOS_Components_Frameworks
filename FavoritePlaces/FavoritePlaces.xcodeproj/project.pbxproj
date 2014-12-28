@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		1B1452871A4AB8D8008F3E64 /* FavoritePlaces.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1B1452861A4AB8D8008F3E64 /* FavoritePlaces.sqlite */; };
 		1B7B669B1A47F95600DEFD5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669A1A47F95600DEFD5C /* main.m */; };
-		1B7B669E1A47F95600DEFD5C /* RUSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669D1A47F95600DEFD5C /* RUSAppDelegate.m */; };
+		1B7B669E1A47F95600DEFD5C /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669D1A47F95600DEFD5C /* RESAppDelegate.m */; };
 		1B7B66A11A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B669F1A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld */; };
 		1B7B66A71A47F95600DEFD5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66A51A47F95600DEFD5C /* Main.storyboard */; };
 		1B7B66A91A47F95600DEFD5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66A81A47F95600DEFD5C /* Images.xcassets */; };
 		1B7B66AC1A47F95600DEFD5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66AA1A47F95600DEFD5C /* LaunchScreen.xib */; };
 		1B7B66B81A47F95700DEFD5C /* FavoritePlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66B71A47F95700DEFD5C /* FavoritePlacesTests.m */; };
-		1B7B66C31A47F9E200DEFD5C /* RUSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66C21A47F9E200DEFD5C /* RUSMainViewController.m */; };
+		1B7B66C31A47F9E200DEFD5C /* RESMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66C21A47F9E200DEFD5C /* RESMainViewController.m */; };
 		1B7B66C51A47FA9F00DEFD5C /* Denver Art Museum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66C41A47FA9F00DEFD5C /* Denver Art Museum.gpx */; };
 		1B7B66C71A47FAA500DEFD5C /* DMNS.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B66C61A47FAA500DEFD5C /* DMNS.gpx */; };
-		1B7B66CD1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66CC1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m */; };
-		1B7B66D01A47FB7B00DEFD5C /* RUSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66CF1A47FB7B00DEFD5C /* RUSLocationManager.m */; };
-		1B7B66D31A47FB9D00DEFD5C /* RUSDateStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D21A47FB9D00DEFD5C /* RUSDateStarter.m */; };
-		1B7B66D61A47FD6400DEFD5C /* RUSFavoritePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D51A47FD6400DEFD5C /* RUSFavoritePlace.m */; };
-		1B7B66D91A4803DD00DEFD5C /* RUSCoreDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D81A4803DD00DEFD5C /* RUSCoreDataDAO.m */; };
-		1B7B66DC1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66DB1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m */; };
-		1BEB122C1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB122B1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m */; };
+		1B7B66CD1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66CC1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.m */; };
+		1B7B66D01A47FB7B00DEFD5C /* RESLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66CF1A47FB7B00DEFD5C /* RESLocationManager.m */; };
+		1B7B66D31A47FB9D00DEFD5C /* RESDateStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D21A47FB9D00DEFD5C /* RESDateStarter.m */; };
+		1B7B66D61A47FD6400DEFD5C /* RESFavoritePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D51A47FD6400DEFD5C /* RESFavoritePlace.m */; };
+		1B7B66D91A4803DD00DEFD5C /* RESCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66D81A4803DD00DEFD5C /* RESCoreDataManager.m */; };
+		1B7B66DC1A480D7000DEFD5C /* RESFavoritePlaceDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B66DB1A480D7000DEFD5C /* RESFavoritePlaceDAO.m */; };
+		1BEB122C1A4906B100F70092 /* RESFavoritePlaceManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB122B1A4906B100F70092 /* RESFavoritePlaceManagedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		1B7B66951A47F95600DEFD5C /* FavoritePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoritePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7B66991A47F95600DEFD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7B669A1A47F95600DEFD5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B7B669C1A47F95600DEFD5C /* RUSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUSAppDelegate.h; sourceTree = "<group>"; };
-		1B7B669D1A47F95600DEFD5C /* RUSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUSAppDelegate.m; sourceTree = "<group>"; };
+		1B7B669C1A47F95600DEFD5C /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B7B669D1A47F95600DEFD5C /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
 		1B7B66A01A47F95600DEFD5C /* FavoritePlaces.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritePlaces.xcdatamodel; sourceTree = "<group>"; };
 		1B7B66A61A47F95600DEFD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B7B66A81A47F95600DEFD5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -51,24 +51,24 @@
 		1B7B66B11A47F95600DEFD5C /* FavoritePlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoritePlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7B66B61A47F95700DEFD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7B66B71A47F95700DEFD5C /* FavoritePlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritePlacesTests.m; sourceTree = "<group>"; };
-		1B7B66C11A47F9E200DEFD5C /* RUSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSMainViewController.h; sourceTree = "<group>"; };
-		1B7B66C21A47F9E200DEFD5C /* RUSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSMainViewController.m; sourceTree = "<group>"; };
+		1B7B66C11A47F9E200DEFD5C /* RESMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESMainViewController.h; sourceTree = "<group>"; };
+		1B7B66C21A47F9E200DEFD5C /* RESMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESMainViewController.m; sourceTree = "<group>"; };
 		1B7B66C41A47FA9F00DEFD5C /* Denver Art Museum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Denver Art Museum.gpx"; sourceTree = "<group>"; };
 		1B7B66C61A47FAA500DEFD5C /* DMNS.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DMNS.gpx; sourceTree = "<group>"; };
-		1B7B66CB1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlaceViewController.h; sourceTree = "<group>"; };
-		1B7B66CC1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlaceViewController.m; sourceTree = "<group>"; };
-		1B7B66CE1A47FB7B00DEFD5C /* RUSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSLocationManager.h; sourceTree = "<group>"; };
-		1B7B66CF1A47FB7B00DEFD5C /* RUSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSLocationManager.m; sourceTree = "<group>"; };
-		1B7B66D11A47FB9D00DEFD5C /* RUSDateStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSDateStarter.h; sourceTree = "<group>"; };
-		1B7B66D21A47FB9D00DEFD5C /* RUSDateStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSDateStarter.m; sourceTree = "<group>"; };
-		1B7B66D41A47FD6400DEFD5C /* RUSFavoritePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlace.h; sourceTree = "<group>"; };
-		1B7B66D51A47FD6400DEFD5C /* RUSFavoritePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlace.m; sourceTree = "<group>"; };
-		1B7B66D71A4803DD00DEFD5C /* RUSCoreDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSCoreDataDAO.h; sourceTree = "<group>"; };
-		1B7B66D81A4803DD00DEFD5C /* RUSCoreDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSCoreDataDAO.m; sourceTree = "<group>"; };
-		1B7B66DA1A480D7000DEFD5C /* RUSFavoritePlaceDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlaceDAO.h; sourceTree = "<group>"; };
-		1B7B66DB1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlaceDAO.m; sourceTree = "<group>"; };
-		1BEB122A1A4906B100F70092 /* RUSFavoritePlaceManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUSFavoritePlaceManagedObject.h; sourceTree = "<group>"; };
-		1BEB122B1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUSFavoritePlaceManagedObject.m; sourceTree = "<group>"; };
+		1B7B66CB1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFavoritePlaceViewController.h; sourceTree = "<group>"; };
+		1B7B66CC1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFavoritePlaceViewController.m; sourceTree = "<group>"; };
+		1B7B66CE1A47FB7B00DEFD5C /* RESLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESLocationManager.h; sourceTree = "<group>"; };
+		1B7B66CF1A47FB7B00DEFD5C /* RESLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESLocationManager.m; sourceTree = "<group>"; };
+		1B7B66D11A47FB9D00DEFD5C /* RESDateStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDateStarter.h; sourceTree = "<group>"; };
+		1B7B66D21A47FB9D00DEFD5C /* RESDateStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDateStarter.m; sourceTree = "<group>"; };
+		1B7B66D41A47FD6400DEFD5C /* RESFavoritePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFavoritePlace.h; sourceTree = "<group>"; };
+		1B7B66D51A47FD6400DEFD5C /* RESFavoritePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFavoritePlace.m; sourceTree = "<group>"; };
+		1B7B66D71A4803DD00DEFD5C /* RESCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCoreDataManager.h; sourceTree = "<group>"; };
+		1B7B66D81A4803DD00DEFD5C /* RESCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCoreDataManager.m; sourceTree = "<group>"; };
+		1B7B66DA1A480D7000DEFD5C /* RESFavoritePlaceDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFavoritePlaceDAO.h; sourceTree = "<group>"; };
+		1B7B66DB1A480D7000DEFD5C /* RESFavoritePlaceDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFavoritePlaceDAO.m; sourceTree = "<group>"; };
+		1BEB122A1A4906B100F70092 /* RESFavoritePlaceManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFavoritePlaceManagedObject.h; sourceTree = "<group>"; };
+		1BEB122B1A4906B100F70092 /* RESFavoritePlaceManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFavoritePlaceManagedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B6402BD1A4F7F1A00B48962 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66D41A47FD6400DEFD5C /* RESFavoritePlace.h */,
+				1B7B66D51A47FD6400DEFD5C /* RESFavoritePlace.m */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		1B6402BE1A4F7F2300B48962 /* managed Object subclass */ = {
+			isa = PBXGroup;
+			children = (
+				1BEB122A1A4906B100F70092 /* RESFavoritePlaceManagedObject.h */,
+				1BEB122B1A4906B100F70092 /* RESFavoritePlaceManagedObject.m */,
+			);
+			name = "managed Object subclass";
+			sourceTree = "<group>";
+		};
+		1B6402BF1A4F7F4900B48962 /* core data manager */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B66D71A4803DD00DEFD5C /* RESCoreDataManager.h */,
+				1B7B66D81A4803DD00DEFD5C /* RESCoreDataManager.m */,
+				1B7B66DA1A480D7000DEFD5C /* RESFavoritePlaceDAO.h */,
+				1B7B66DB1A480D7000DEFD5C /* RESFavoritePlaceDAO.m */,
+				1B7B66D11A47FB9D00DEFD5C /* RESDateStarter.h */,
+				1B7B66D21A47FB9D00DEFD5C /* RESDateStarter.m */,
+			);
+			name = "core data manager";
+			sourceTree = "<group>";
+		};
 		1B7B668C1A47F95600DEFD5C = {
 			isa = PBXGroup;
 			children = (
@@ -151,12 +182,12 @@
 		1B7B66C81A47FACC00DEFD5C /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B7B669C1A47F95600DEFD5C /* RUSAppDelegate.h */,
-				1B7B669D1A47F95600DEFD5C /* RUSAppDelegate.m */,
-				1B7B66C11A47F9E200DEFD5C /* RUSMainViewController.h */,
-				1B7B66C21A47F9E200DEFD5C /* RUSMainViewController.m */,
-				1B7B66CB1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.h */,
-				1B7B66CC1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m */,
+				1B7B669C1A47F95600DEFD5C /* RESAppDelegate.h */,
+				1B7B669D1A47F95600DEFD5C /* RESAppDelegate.m */,
+				1B7B66C11A47F9E200DEFD5C /* RESMainViewController.h */,
+				1B7B66C21A47F9E200DEFD5C /* RESMainViewController.m */,
+				1B7B66CB1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.h */,
+				1B7B66CC1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -166,16 +197,9 @@
 			children = (
 				1B1452861A4AB8D8008F3E64 /* FavoritePlaces.sqlite */,
 				1B7B669F1A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld */,
-				1BEB122A1A4906B100F70092 /* RUSFavoritePlaceManagedObject.h */,
-				1BEB122B1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m */,
-				1B7B66D71A4803DD00DEFD5C /* RUSCoreDataDAO.h */,
-				1B7B66D81A4803DD00DEFD5C /* RUSCoreDataDAO.m */,
-				1B7B66D41A47FD6400DEFD5C /* RUSFavoritePlace.h */,
-				1B7B66D51A47FD6400DEFD5C /* RUSFavoritePlace.m */,
-				1B7B66DA1A480D7000DEFD5C /* RUSFavoritePlaceDAO.h */,
-				1B7B66DB1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m */,
-				1B7B66D11A47FB9D00DEFD5C /* RUSDateStarter.h */,
-				1B7B66D21A47FB9D00DEFD5C /* RUSDateStarter.m */,
+				1B6402BF1A4F7F4900B48962 /* core data manager */,
+				1B6402BE1A4F7F2300B48962 /* managed Object subclass */,
+				1B6402BD1A4F7F1A00B48962 /* entity */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -192,8 +216,8 @@
 		1BEB122D1A4907F500F70092 /* logics */ = {
 			isa = PBXGroup;
 			children = (
-				1B7B66CE1A47FB7B00DEFD5C /* RUSLocationManager.h */,
-				1B7B66CF1A47FB7B00DEFD5C /* RUSLocationManager.m */,
+				1B7B66CE1A47FB7B00DEFD5C /* RESLocationManager.h */,
+				1B7B66CF1A47FB7B00DEFD5C /* RESLocationManager.m */,
 			);
 			name = logics;
 			sourceTree = "<group>";
@@ -242,7 +266,7 @@
 		1B7B668D1A47F95600DEFD5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = RUS;
+				CLASSPREFIX = RES;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
 				TargetAttributes = {
@@ -302,17 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7B66CD1A47FB4C00DEFD5C /* RUSFavoritePlaceViewController.m in Sources */,
-				1B7B66C31A47F9E200DEFD5C /* RUSMainViewController.m in Sources */,
-				1B7B669E1A47F95600DEFD5C /* RUSAppDelegate.m in Sources */,
-				1B7B66D01A47FB7B00DEFD5C /* RUSLocationManager.m in Sources */,
-				1BEB122C1A4906B100F70092 /* RUSFavoritePlaceManagedObject.m in Sources */,
-				1B7B66D61A47FD6400DEFD5C /* RUSFavoritePlace.m in Sources */,
+				1B7B66CD1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.m in Sources */,
+				1B7B66C31A47F9E200DEFD5C /* RESMainViewController.m in Sources */,
+				1B7B669E1A47F95600DEFD5C /* RESAppDelegate.m in Sources */,
+				1B7B66D01A47FB7B00DEFD5C /* RESLocationManager.m in Sources */,
+				1BEB122C1A4906B100F70092 /* RESFavoritePlaceManagedObject.m in Sources */,
+				1B7B66D61A47FD6400DEFD5C /* RESFavoritePlace.m in Sources */,
 				1B7B669B1A47F95600DEFD5C /* main.m in Sources */,
 				1B7B66A11A47F95600DEFD5C /* FavoritePlaces.xcdatamodeld in Sources */,
-				1B7B66D31A47FB9D00DEFD5C /* RUSDateStarter.m in Sources */,
-				1B7B66D91A4803DD00DEFD5C /* RUSCoreDataDAO.m in Sources */,
-				1B7B66DC1A480D7000DEFD5C /* RUSFavoritePlaceDAO.m in Sources */,
+				1B7B66D31A47FB9D00DEFD5C /* RESDateStarter.m in Sources */,
+				1B7B66D91A4803DD00DEFD5C /* RESCoreDataManager.m in Sources */,
+				1B7B66DC1A480D7000DEFD5C /* RESFavoritePlaceDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

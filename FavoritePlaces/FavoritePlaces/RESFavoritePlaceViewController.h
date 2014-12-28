@@ -9,25 +9,25 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreData/CoreData.h>
-#import "RUSLocationManager.h"
-#import "RUSFavoritePlaceDAO.h"
+#import "RESLocationManager.h"
+#import "RESCoreDataManager.h"
 
 //委托协议
-@class RUSFavoritePlaceViewController;
+@class RESFavoritePlaceViewController;
 
-@protocol RUSFavoritePlaceViewControllerDelegate
+@protocol RESFavoritePlaceViewControllerDelegate
 
-- (void)favoritePlaceViewControllerDidFinish:(RUSFavoritePlaceViewController *)controller;
+- (void)favoritePlaceViewControllerDidFinish:(RESFavoritePlaceViewController *)controller;
 - (MKMapItem *)currentLocationMapItem;
 - (void)displayDirectionsForRoute:(MKRoute *)route;
 
 @end
 
 //FavoritePlace视图控制器
-@interface RUSFavoritePlaceViewController : UIViewController
+@interface RESFavoritePlaceViewController : UIViewController
 
 //delegate委托对象
-@property (weak,nonatomic) id<RUSFavoritePlaceViewControllerDelegate> delegate;
+@property (weak,nonatomic) id<RESFavoritePlaceViewControllerDelegate> delegate;
 @property (nonatomic,strong) NSManagedObjectID *favoritePlaceID;
 
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;

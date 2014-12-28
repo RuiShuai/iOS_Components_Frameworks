@@ -6,21 +6,21 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSLocationManager.h"
+#import "RESLocationManager.h"
 
-@interface RUSLocationManager()
+@interface RESLocationManager()
 @property (strong,nonatomic) NSMutableArray *completionBlocks;
 @end
 
-@implementation RUSLocationManager
+@implementation RESLocationManager
 
-static RUSLocationManager *_sharedLocationManager;
+static RESLocationManager *_sharedLocationManager;
 
-+ (RUSLocationManager *)sharedLocationManager
++ (RESLocationManager *)sharedLocationManager
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken,^{
-        _sharedLocationManager = [[RUSLocationManager alloc] init];
+        _sharedLocationManager = [[RESLocationManager alloc] init];
     });
     return _sharedLocationManager;
 }
@@ -41,14 +41,14 @@ static RUSLocationManager *_sharedLocationManager;
 }
 
 #pragma mark - customize completionBlock
-- (void)getLocationWithCompletionBlock:(RUSLocationUpdateCompletionBlock)block
+- (void)getLocationWithCompletionBlock:(RESLocationUpdateCompletionBlock)block
 {
     if (block) {
         [self.completionBlocks addObject:[block copy]];
     }
     
     if (self.hasLocation) {
-        for (RUSLocationUpdateCompletionBlock completionBlock in self.completionBlocks) {
+        for (RESLocationUpdateCompletionBlock completionBlock in self.completionBlocks) {
             completionBlock(self.location,nil);
         }
         //执行完毕
@@ -61,7 +61,7 @@ static RUSLocationManager *_sharedLocationManager;
     }
     
     if (self.locationError) {
-        for (RUSLocationUpdateCompletionBlock completionBlock in self.completionBlocks) {
+        for (RESLocationUpdateCompletionBlock completionBlock in self.completionBlocks) {
             completionBlock(nil,self.locationError);
         }
         [self.completionBlocks removeAllObjects];
@@ -146,11 +146,13 @@ static RUSLocationManager *_sharedLocationManager;
     NSString *placeIdentifier = [region identifier];
     NSURL *placeIDURL = [NSURL URLWithString:placeIdentifier];
     
-    RUSFavoritePlaceDAO *placeDao = [RUSFavoritePlaceDAO sharedManager];
-    NSManagedObjectID *placeObjectID = [placeDao.persistentStoreCoordinator managedObjectIDForURIRepresentation:placeIDURL];
+    NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
+    NSPersistentStoreCoordinator *psc = [[RESCoreDataManager sharedManager] persistentStoreCoordinator];
     
-    [placeDao.managedObjectContext performBlock:^{
-        RUSFavoritePlaceManagedObject *placeMO = (RUSFavoritePlaceManagedObject *)[placeDao.managedObjectContext objectWithID:placeObjectID];
+    NSManagedObjectID *placeObjectID = [psc managedObjectIDForURIRepresentation:placeIDURL];
+    
+    [moc performBlock:^{
+        RESFavoritePlaceManagedObject *placeMO = (RESFavoritePlaceManagedObject *)[moc objectWithID:placeObjectID];
         
         NSNumber *distance = [placeMO valueForKey:@"displayRadius"];
         NSString *placeName = [placeMO valueForKey:@"placeName"];
@@ -171,11 +173,14 @@ static RUSLocationManager *_sharedLocationManager;
     NSString *placeIdentifier = [region identifier];
     NSURL *placeIDURL = [NSURL URLWithString:placeIdentifier];
     
-    RUSFavoritePlaceDAO *placeDao = [RUSFavoritePlaceDAO sharedManager];
-    NSManagedObjectID *placeObjectID = [placeDao.persistentStoreCoordinator managedObjectIDForURIRepresentation:placeIDURL];
     
-    [placeDao.managedObjectContext performBlock:^{
-        RUSFavoritePlaceManagedObject *placeMO = (RUSFavoritePlaceManagedObject *)[placeDao.managedObjectContext objectWithID:placeObjectID];
+    NSManagedObjectContext *moc = [[RESCoreDataManager sharedManager] managedObjectContext];
+    NSPersistentStoreCoordinator *psc = [[RESCoreDataManager sharedManager] persistentStoreCoordinator];
+    
+    NSManagedObjectID *placeObjectID = [psc managedObjectIDForURIRepresentation:placeIDURL];
+    
+    [moc performBlock:^{
+        RESFavoritePlaceManagedObject *placeMO = (RESFavoritePlaceManagedObject *)[moc objectWithID:placeObjectID];
         NSNumber *distance = [placeMO valueForKey:@"displayRadius"];
         NSString *placeName = [placeMO valueForKey:@"placeName"];
         

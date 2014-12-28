@@ -6,19 +6,19 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSAppDelegate.h"
-#import "RUSLocationManager.h"
+#import "RESAppDelegate.h"
+#import "RESLocationManager.h"
 //#define FIRSTRUN 1
 
 #ifdef FIRSTRUN
-#import "RUSDateStarter.h"
+#import "RESDateStarter.h"
 #endif
 
-@interface RUSAppDelegate ()
+@interface RESAppDelegate ()
 
 @end
 
-@implementation RUSAppDelegate
+@implementation RESAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -33,7 +33,7 @@
 #endif
     
     if ([CLLocationManager locationServicesEnabled]) {
-        RUSLocationManager *appLocationManager = [RUSLocationManager sharedLocationManager];
+        RESLocationManager *appLocationManager = [RESLocationManager sharedLocationManager];
         //启动Location服务
         [appLocationManager.locationManager startUpdatingLocation];
     } else {
@@ -44,7 +44,7 @@
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    RUSLocationManager *appLocationManager = [RUSLocationManager sharedLocationManager];
+    RESLocationManager *appLocationManager = [RESLocationManager sharedLocationManager];
     //停止Location服务
     [appLocationManager.locationManager stopUpdatingLocation];
     

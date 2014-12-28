@@ -6,15 +6,33 @@
 //  Copyright (c) 2014年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RUSCoreDataDAO.h"
+#import "RESCoreDataManager.h"
 
-@implementation RUSCoreDataDAO
+@implementation RESCoreDataManager
 
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+static RESCoreDataManager *_sharedManager = nil;
+
++(RESCoreDataManager *)sharedManager
+{
+    if (_sharedManager != nil) {
+        return _sharedManager;
+    }
+    
+    static dispatch_once_t once;
+    dispatch_once(&once,^{
+        _sharedManager = [[RESCoreDataManager alloc] init];
+        [_sharedManager managedObjectContext];
+        [_sharedManager persistentStoreCoordinator];
+        [_sharedManager managedObjectModel];
+        
+    });
+    return _sharedManager;
+}
 
 #pragma mark - Core Data stack
 
