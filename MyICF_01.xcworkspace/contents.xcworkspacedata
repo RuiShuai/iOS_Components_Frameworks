@@ -2,13 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ImagePlayground/ImagePlayground.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MediaPlayer/MediaPlayer.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Readme.MD">
-   </FileRef>
-   <FileRef
-      location = "group:Exceptions.md">
    </FileRef>
    <FileRef
       location = "group:MyMovies/MyMovies.xcodeproj">
@@ -18,5 +15,11 @@
    </FileRef>
    <FileRef
       location = "group:Dynamics/Dynamics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Readme.MD">
+   </FileRef>
+   <FileRef
+      location = "group:Exceptions.md">
    </FileRef>
 </Workspace>
