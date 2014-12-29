@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6924481A50EC5100A57E61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6924471A50EC5100A57E61 /* main.m */; };
+		1B69244B1A50EC5100A57E61 /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B69244A1A50EC5100A57E61 /* RESAppDelegate.m */; };
+		1B69244E1A50EC5100A57E61 /* RESMediaPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B69244D1A50EC5100A57E61 /* RESMediaPlayerViewController.m */; };
+		1B6924511A50EC5100A57E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B69244F1A50EC5100A57E61 /* Main.storyboard */; };
+		1B6924531A50EC5100A57E61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6924521A50EC5100A57E61 /* Images.xcassets */; };
+		1B6924561A50EC5100A57E61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B6924541A50EC5100A57E61 /* LaunchScreen.xib */; };
+		1B6924621A50EC5100A57E61 /* MediaPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6924611A50EC5100A57E61 /* MediaPlayerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B69245C1A50EC5100A57E61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B69243A1A50EC5100A57E61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B6924411A50EC5100A57E61;
+			remoteInfo = MediaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B6924421A50EC5100A57E61 /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6924461A50EC5100A57E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6924471A50EC5100A57E61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B6924491A50EC5100A57E61 /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B69244A1A50EC5100A57E61 /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
+		1B69244C1A50EC5100A57E61 /* RESMediaPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESMediaPlayerViewController.h; sourceTree = "<group>"; };
+		1B69244D1A50EC5100A57E61 /* RESMediaPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESMediaPlayerViewController.m; sourceTree = "<group>"; };
+		1B6924501A50EC5100A57E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B6924521A50EC5100A57E61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B6924551A50EC5100A57E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B69245B1A50EC5100A57E61 /* MediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6924601A50EC5100A57E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6924611A50EC5100A57E61 /* MediaPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B69243F1A50EC5100A57E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6924581A50EC5100A57E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B6924391A50EC5100A57E61 = {
+			isa = PBXGroup;
+			children = (
+				1B6924441A50EC5100A57E61 /* MediaPlayer */,
+				1B69245E1A50EC5100A57E61 /* MediaPlayerTests */,
+				1B6924431A50EC5100A57E61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B6924431A50EC5100A57E61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B6924421A50EC5100A57E61 /* MediaPlayer.app */,
+				1B69245B1A50EC5100A57E61 /* MediaPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B6924441A50EC5100A57E61 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1B69246B1A50ED0400A57E61 /* views */,
+				1B69246C1A50ED1000A57E61 /* app controllers */,
+				1B69246D1A50ED1800A57E61 /* view controllers */,
+				1B6924451A50EC5100A57E61 /* Supporting Files */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		1B6924451A50EC5100A57E61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B6924521A50EC5100A57E61 /* Images.xcassets */,
+				1B6924461A50EC5100A57E61 /* Info.plist */,
+				1B6924471A50EC5100A57E61 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B69245E1A50EC5100A57E61 /* MediaPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B6924611A50EC5100A57E61 /* MediaPlayerTests.m */,
+				1B69245F1A50EC5100A57E61 /* Supporting Files */,
+			);
+			path = MediaPlayerTests;
+			sourceTree = "<group>";
+		};
+		1B69245F1A50EC5100A57E61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B6924601A50EC5100A57E61 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B69246B1A50ED0400A57E61 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1B69244F1A50EC5100A57E61 /* Main.storyboard */,
+				1B6924541A50EC5100A57E61 /* LaunchScreen.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1B69246C1A50ED1000A57E61 /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B6924491A50EC5100A57E61 /* RESAppDelegate.h */,
+				1B69244A1A50EC5100A57E61 /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
+		1B69246D1A50ED1800A57E61 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B69244C1A50EC5100A57E61 /* RESMediaPlayerViewController.h */,
+				1B69244D1A50EC5100A57E61 /* RESMediaPlayerViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B6924411A50EC5100A57E61 /* MediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6924651A50EC5100A57E61 /* Build configuration list for PBXNativeTarget "MediaPlayer" */;
+			buildPhases = (
+				1B69243E1A50EC5100A57E61 /* Sources */,
+				1B69243F1A50EC5100A57E61 /* Frameworks */,
+				1B6924401A50EC5100A57E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaPlayer;
+			productName = MediaPlayer;
+			productReference = 1B6924421A50EC5100A57E61 /* MediaPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B69245A1A50EC5100A57E61 /* MediaPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6924681A50EC5100A57E61 /* Build configuration list for PBXNativeTarget "MediaPlayerTests" */;
+			buildPhases = (
+				1B6924571A50EC5100A57E61 /* Sources */,
+				1B6924581A50EC5100A57E61 /* Frameworks */,
+				1B6924591A50EC5100A57E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B69245D1A50EC5100A57E61 /* PBXTargetDependency */,
+			);
+			name = MediaPlayerTests;
+			productName = MediaPlayerTests;
+			productReference = 1B69245B1A50EC5100A57E61 /* MediaPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B69243A1A50EC5100A57E61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RES;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1B6924411A50EC5100A57E61 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1B69245A1A50EC5100A57E61 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1B6924411A50EC5100A57E61;
+					};
+				};
+			};
+			buildConfigurationList = 1B69243D1A50EC5100A57E61 /* Build configuration list for PBXProject "MediaPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B6924391A50EC5100A57E61;
+			productRefGroup = 1B6924431A50EC5100A57E61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B6924411A50EC5100A57E61 /* MediaPlayer */,
+				1B69245A1A50EC5100A57E61 /* MediaPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B6924401A50EC5100A57E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6924511A50EC5100A57E61 /* Main.storyboard in Resources */,
+				1B6924561A50EC5100A57E61 /* LaunchScreen.xib in Resources */,
+				1B6924531A50EC5100A57E61 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6924591A50EC5100A57E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B69243E1A50EC5100A57E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B69244E1A50EC5100A57E61 /* RESMediaPlayerViewController.m in Sources */,
+				1B69244B1A50EC5100A57E61 /* RESAppDelegate.m in Sources */,
+				1B6924481A50EC5100A57E61 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6924571A50EC5100A57E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6924621A50EC5100A57E61 /* MediaPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B69245D1A50EC5100A57E61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B6924411A50EC5100A57E61 /* MediaPlayer */;
+			targetProxy = 1B69245C1A50EC5100A57E61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B69244F1A50EC5100A57E61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B6924501A50EC5100A57E61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B6924541A50EC5100A57E61 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B6924551A50EC5100A57E61 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B6924631A50EC5100A57E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B6924641A50EC5100A57E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B6924661A50EC5100A57E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B6924671A50EC5100A57E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MediaPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B6924691A50EC5100A57E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MediaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaPlayer.app/MediaPlayer";
+			};
+			name = Debug;
+		};
+		1B69246A1A50EC5100A57E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MediaPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaPlayer.app/MediaPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B69243D1A50EC5100A57E61 /* Build configuration list for PBXProject "MediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6924631A50EC5100A57E61 /* Debug */,
+				1B6924641A50EC5100A57E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6924651A50EC5100A57E61 /* Build configuration list for PBXNativeTarget "MediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6924661A50EC5100A57E61 /* Debug */,
+				1B6924671A50EC5100A57E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B6924681A50EC5100A57E61 /* Build configuration list for PBXNativeTarget "MediaPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6924691A50EC5100A57E61 /* Debug */,
+				1B69246A1A50EC5100A57E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B69243A1A50EC5100A57E61 /* Project object */;
+}
