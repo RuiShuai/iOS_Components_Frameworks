@@ -23,9 +23,14 @@
     
     //初始化播放器
     player = [MPMusicPlayerController systemMusicPlayer];//applicationMusicPlayer];
+
+    //设置播放模式
+    player.repeatMode = MPMusicRepeatModeAll;
+    player.shuffleMode = MPMusicShuffleModeSongs;
+    
     //设置音量
+    // MPVolumeView *volume =
     [volumeSlider setValue:[player volume]];
-    //MPVolumeView
     
     //设置play按钮
     if ([player playbackState] == MPMusicPlaybackStatePlaying) {
@@ -60,9 +65,7 @@
     
     float percentagePlayed = currentSongPlaybackTime/currentSongDuration;
     [playbackProgressIndicator setProgress:percentagePlayed];
-    //设置播放模式
-    player.repeatMode = MPMusicRepeatModeAll;
-    player.shuffleMode = MPMusicShuffleModeSongs;
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -78,7 +81,7 @@
     [notificationCenter addObserver:self selector:@selector(nowPlayingItemChanged:) name:MPMusicPlayerControllerNowPlayingItemDidChangeNotification object:player];
     [notificationCenter addObserver:self selector:@selector(playbackStateChanged:) name:MPMusicPlayerControllerPlaybackStateDidChangeNotification object:player];
     [notificationCenter addObserver:self selector:@selector(volumeChanged:) name:MPMusicPlayerControllerVolumeDidChangeNotification object:player];
-    
+    //开启监听
     [player beginGeneratingPlaybackNotifications];
     
 }
@@ -92,7 +95,7 @@
     [notificationCenter removeObserver:self name:MPMusicPlayerControllerNowPlayingItemDidChangeNotification object:player];
     [notificationCenter removeObserver:self name:MPMusicPlayerControllerPlaybackStateDidChangeNotification object:player];
     [notificationCenter removeObserver:self name:MPMusicPlayerControllerVolumeDidChangeNotification object:player];
-    
+    //关闭监听
     [player endGeneratingPlaybackNotifications];
     
     [super viewWillDisappear:animated];
@@ -218,10 +221,11 @@
     }
 }
 
-#pragma mark - play song selection
+#pragma mark - play song by selection
 
 - (IBAction)playRandomSongTouched:(id)sender
 {
+    //随机曲目
     MPMediaItem *itemToPlay = nil;
     MPMediaQuery *allSongQuery = [[MPMediaQuery alloc]init];
     NSArray *allTracks = [allSongQuery items];
@@ -246,6 +250,7 @@
 
 - (IBAction)playDylanTouched:(id)sender
 {
+    //指定曲目
     MPMediaPropertyPredicate *artistNamePredicate = [MPMediaPropertyPredicate predicateWithValue:@"程池&高颖" forProperty:MPMediaItemPropertyArtist];
     MPMediaQuery *artistQuery = [[MPMediaQuery alloc] init];
     [artistQuery addFilterPredicate:artistNamePredicate];
@@ -266,7 +271,6 @@
 
 
 #pragma mark - Media Picker delegate
-
 
 - (IBAction)mediaPickerButtonTouched:(id)sender
 {
