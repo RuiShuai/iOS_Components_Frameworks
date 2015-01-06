@@ -14,6 +14,16 @@
 		1B73500E1A514D490055A770 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B73500D1A514D490055A770 /* Images.xcassets */; };
 		1B7350111A514D490055A770 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B73500F1A514D490055A770 /* LaunchScreen.xib */; };
 		1B73501D1A514D490055A770 /* ImagePlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B73501C1A514D490055A770 /* ImagePlaygroundTests.m */; };
+		1BDD26721A537746005EF5AB /* RESFilterCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26711A537746005EF5AB /* RESFilterCategoryViewController.m */; };
+		1BDD26751A53775D005EF5AB /* RESFilterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26741A53775D005EF5AB /* RESFilterListViewController.m */; };
+		1BDD26781A537781005EF5AB /* RESFilterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26771A537780005EF5AB /* RESFilterDetailViewController.m */; };
+		1BDD267B1A537C35005EF5AB /* RESInputImageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD267A1A537C35005EF5AB /* RESInputImageTableCell.m */; };
+		1BDD267E1A537C4C005EF5AB /* RESInputColorTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD267D1A537C4C005EF5AB /* RESInputColorTableCell.m */; };
+		1BDD26811A537C67005EF5AB /* RESInputNumberTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26801A537C67005EF5AB /* RESInputNumberTableCell.m */; };
+		1BDD26841A537C7B005EF5AB /* RESInputVectorTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26831A537C7B005EF5AB /* RESInputVectorTableCell.m */; };
+		1BDD26871A537C95005EF5AB /* RESInputTransfromTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26861A537C95005EF5AB /* RESInputTransfromTableCell.m */; };
+		1BDD268A1A537CA8005EF5AB /* RESInputInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD26891A537CA8005EF5AB /* RESInputInfoCell.m */; };
+		1BDD268D1A537D4B005EF5AB /* UIImage+Scaling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD268C1A537D4B005EF5AB /* UIImage+Scaling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,26 @@
 		1B7350161A514D490055A770 /* ImagePlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B73501B1A514D490055A770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B73501C1A514D490055A770 /* ImagePlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePlaygroundTests.m; sourceTree = "<group>"; };
+		1BDD26701A537746005EF5AB /* RESFilterCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFilterCategoryViewController.h; sourceTree = "<group>"; };
+		1BDD26711A537746005EF5AB /* RESFilterCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFilterCategoryViewController.m; sourceTree = "<group>"; };
+		1BDD26731A53775D005EF5AB /* RESFilterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFilterListViewController.h; sourceTree = "<group>"; };
+		1BDD26741A53775D005EF5AB /* RESFilterListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFilterListViewController.m; sourceTree = "<group>"; };
+		1BDD26761A537780005EF5AB /* RESFilterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESFilterDetailViewController.h; sourceTree = "<group>"; };
+		1BDD26771A537780005EF5AB /* RESFilterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESFilterDetailViewController.m; sourceTree = "<group>"; };
+		1BDD26791A537C35005EF5AB /* RESInputImageTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESInputImageTableCell.h; sourceTree = "<group>"; };
+		1BDD267A1A537C35005EF5AB /* RESInputImageTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESInputImageTableCell.m; sourceTree = "<group>"; };
+		1BDD267C1A537C4C005EF5AB /* RESInputColorTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESInputColorTableCell.h; sourceTree = "<group>"; };
+		1BDD267D1A537C4C005EF5AB /* RESInputColorTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESInputColorTableCell.m; sourceTree = "<group>"; };
+		1BDD267F1A537C67005EF5AB /* RESInputNumberTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESInputNumberTableCell.h; sourceTree = "<group>"; };
+		1BDD26801A537C67005EF5AB /* RESInputNumberTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESInputNumberTableCell.m; sourceTree = "<group>"; };
+		1BDD26821A537C7B005EF5AB /* RESInputVectorTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESInputVectorTableCell.h; sourceTree = "<group>"; };
+		1BDD26831A537C7B005EF5AB /* RESInputVectorTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESInputVectorTableCell.m; sourceTree = "<group>"; };
+		1BDD26851A537C95005EF5AB /* RESInputTransfromTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESInputTransfromTableCell.h; sourceTree = "<group>"; };
+		1BDD26861A537C95005EF5AB /* RESInputTransfromTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESInputTransfromTableCell.m; sourceTree = "<group>"; };
+		1BDD26881A537CA8005EF5AB /* RESInputInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESInputInfoCell.h; sourceTree = "<group>"; };
+		1BDD26891A537CA8005EF5AB /* RESInputInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESInputInfoCell.m; sourceTree = "<group>"; };
+		1BDD268B1A537D4B005EF5AB /* UIImage+Scaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scaling.h"; sourceTree = "<group>"; };
+		1BDD268C1A537D4B005EF5AB /* UIImage+Scaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scaling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +111,7 @@
 		1B734FFF1A514D490055A770 /* ImagePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				1BBB3BA91A5A375600E6B314 /* Third */,
 				1B7350261A514D820055A770 /* views */,
 				1B7350271A514D910055A770 /* app controllers */,
 				1B7350281A514DA40055A770 /* view controllers */,
@@ -140,7 +171,8 @@
 				1B7350071A514D490055A770 /* RESStarterViewController.h */,
 				1B7350081A514D490055A770 /* RESStarterViewController.m */,
 				1B7350291A514E160055A770 /* filter view controllers */,
-				1B73502A1A514E2D0055A770 /* filter table cells */,
+				1BDD268B1A537D4B005EF5AB /* UIImage+Scaling.h */,
+				1BDD268C1A537D4B005EF5AB /* UIImage+Scaling.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -148,6 +180,13 @@
 		1B7350291A514E160055A770 /* filter view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1BDD26701A537746005EF5AB /* RESFilterCategoryViewController.h */,
+				1BDD26711A537746005EF5AB /* RESFilterCategoryViewController.m */,
+				1BDD26731A53775D005EF5AB /* RESFilterListViewController.h */,
+				1BDD26741A53775D005EF5AB /* RESFilterListViewController.m */,
+				1BDD26761A537780005EF5AB /* RESFilterDetailViewController.h */,
+				1BDD26771A537780005EF5AB /* RESFilterDetailViewController.m */,
+				1B73502A1A514E2D0055A770 /* filter table cells */,
 			);
 			name = "filter view controllers";
 			sourceTree = "<group>";
@@ -155,8 +194,27 @@
 		1B73502A1A514E2D0055A770 /* filter table cells */ = {
 			isa = PBXGroup;
 			children = (
+				1BDD26881A537CA8005EF5AB /* RESInputInfoCell.h */,
+				1BDD26891A537CA8005EF5AB /* RESInputInfoCell.m */,
+				1BDD26791A537C35005EF5AB /* RESInputImageTableCell.h */,
+				1BDD267A1A537C35005EF5AB /* RESInputImageTableCell.m */,
+				1BDD267C1A537C4C005EF5AB /* RESInputColorTableCell.h */,
+				1BDD267D1A537C4C005EF5AB /* RESInputColorTableCell.m */,
+				1BDD267F1A537C67005EF5AB /* RESInputNumberTableCell.h */,
+				1BDD26801A537C67005EF5AB /* RESInputNumberTableCell.m */,
+				1BDD26821A537C7B005EF5AB /* RESInputVectorTableCell.h */,
+				1BDD26831A537C7B005EF5AB /* RESInputVectorTableCell.m */,
+				1BDD26851A537C95005EF5AB /* RESInputTransfromTableCell.h */,
+				1BDD26861A537C95005EF5AB /* RESInputTransfromTableCell.m */,
 			);
 			name = "filter table cells";
+			sourceTree = "<group>";
+		};
+		1BBB3BA91A5A375600E6B314 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Third;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B7350091A514D490055A770 /* RESStarterViewController.m in Sources */,
+				1BDD26841A537C7B005EF5AB /* RESInputVectorTableCell.m in Sources */,
+				1BDD26751A53775D005EF5AB /* RESFilterListViewController.m in Sources */,
 				1B7350061A514D490055A770 /* RESAppDelegate.m in Sources */,
+				1BDD268A1A537CA8005EF5AB /* RESInputInfoCell.m in Sources */,
 				1B7350031A514D490055A770 /* main.m in Sources */,
+				1BDD267E1A537C4C005EF5AB /* RESInputColorTableCell.m in Sources */,
+				1BDD268D1A537D4B005EF5AB /* UIImage+Scaling.m in Sources */,
+				1BDD26871A537C95005EF5AB /* RESInputTransfromTableCell.m in Sources */,
+				1BDD26781A537781005EF5AB /* RESFilterDetailViewController.m in Sources */,
+				1BDD26721A537746005EF5AB /* RESFilterCategoryViewController.m in Sources */,
+				1BDD267B1A537C35005EF5AB /* RESInputImageTableCell.m in Sources */,
+				1BDD26811A537C67005EF5AB /* RESInputNumberTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +455,7 @@
 				INFOPLIST_FILE = ImagePlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -397,6 +466,7 @@
 				INFOPLIST_FILE = ImagePlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -453,6 +523,7 @@
 				1B7350221A514D490055A770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B7350231A514D490055A770 /* Build configuration list for PBXNativeTarget "ImagePlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +532,7 @@
 				1B7350251A514D490055A770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
