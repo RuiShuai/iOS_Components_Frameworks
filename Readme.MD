@@ -48,7 +48,7 @@ Properties物理属性
 
 ******************************
 12 - Core Data Primer
-13 - Core Data Up and Running
+13 - Core Data Up and Running [MyMovies]
 
 2014-12-23,周二,阅读完毕。
 
@@ -80,6 +80,45 @@ A fetched results controller (NSFetchedResultsController) is a very effective li
 
 
 ******************************
+06 - Music Libraries [MediaPlayer]
+【2014-12-29，周一】，第6章，【MediaPlayer】
+player = [MPMusicPlayerController systemMusicPlayer];//applicationMusicPlayer];
+
+
+
+
+******************************
+19 - Working With Images and Filters[imagePlayground]
+2015-01-06,周二,完成imagePlayground的ipad程序
+filterDelegate传递,继承cell单元格
+
+
+
+
+******************************
+23 - Accessing Photo Libraries[AssetLibraryNavigator]
+2015-01-06,周二,下午完成类photo读取程序
+AssetLibrary,AssetGroup,AssetDetail
+
+核心函数：
+1)
+ALAssetsLibrary *al = [[ALAssetsLibrary alloc] init];
+[al enumerateGroupsWithTypes:ALAssetsGroupAll
+usingBlock:enumerateAssetGroupsBlock
+failureBlock:assetGroupEnumErrorBlock];
+
+2)
+[self.assetLibrary groupForURL:self.assetGroupURL
+resultBlock:retrieveGroupBlock
+failureBlock:handleAssetGroupErrorBlock];
+
+3)
+[self enumerateGroupAssetsForGroup:group];
+[group enumerateAssetsUsingBlock:addAsset];
+
+
+
+******************************
 03 - Leaderboards
 
 
@@ -96,10 +135,6 @@ A fetched results controller (NSFetchedResultsController) is a very effective li
 05 - Address Book
 
 
-
-
-******************************
-06 - Music Libraries [Player]
 
 
 
@@ -161,12 +196,6 @@ A fetched results controller (NSFetchedResultsController) is a very effective li
 
 
 ******************************
-19 - Working With Images and Filters
-
-
-
-
-******************************
 20 - Collection Views
 
 
@@ -182,9 +211,6 @@ A fetched results controller (NSFetchedResultsController) is a very effective li
 22 - Gesture Recognizers
 
 
-
-******************************
-23 - Accessing Photo Libraries
 
 
 

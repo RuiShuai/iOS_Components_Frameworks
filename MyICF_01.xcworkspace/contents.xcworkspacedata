@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AssetLibraryNavigator/AssetLibraryNavigator.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ImagePlayground/ImagePlayground.xcodeproj">
    </FileRef>
    <FileRef
