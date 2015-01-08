@@ -119,6 +119,14 @@ failureBlock:handleAssetGroupErrorBlock];
 
 
 ******************************
+20 - Collection Views[PhotoGallery]
+
+2014-01-06,周二,16:27
+
+
+
+
+******************************
 03 - Leaderboards
 
 
@@ -194,9 +202,6 @@ failureBlock:handleAssetGroupErrorBlock];
 
 
 
-
-******************************
-20 - Collection Views
 
 
 

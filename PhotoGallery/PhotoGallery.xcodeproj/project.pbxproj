@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6D76621A5CC6D1003405A5 /* RESBasicFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D76611A5CC6D1003405A5 /* RESBasicFlowViewController.m */; };
+		1B6D76651A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D76641A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.m */; };
+		1B6D76681A5CC752003405A5 /* RESCustomLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D76671A5CC752003405A5 /* RESCustomLayoutViewController.m */; };
+		1B6D766B1A5CCD4C003405A5 /* RESSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D766A1A5CCD4C003405A5 /* RESSectionHeader.m */; };
+		1B6D766E1A5CCD61003405A5 /* RESSectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D766D1A5CCD61003405A5 /* RESSectionFooter.m */; };
+		1B6D76711A5CCD7C003405A5 /* RESThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D76701A5CCD7C003405A5 /* RESThumbnailCell.m */; };
+		1B6D76751A5CF25F003405A5 /* RESPhotoAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D76741A5CF25F003405A5 /* RESPhotoAssetsManager.m */; };
+		1B7EFF061A5BD3A7000FBA4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EFF051A5BD3A7000FBA4E /* main.m */; };
+		1B7EFF091A5BD3A7000FBA4E /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EFF081A5BD3A7000FBA4E /* RESAppDelegate.m */; };
+		1B7EFF0F1A5BD3A7000FBA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EFF0D1A5BD3A7000FBA4E /* Main.storyboard */; };
+		1B7EFF111A5BD3A7000FBA4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EFF101A5BD3A7000FBA4E /* Images.xcassets */; };
+		1B7EFF141A5BD3A7000FBA4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EFF121A5BD3A7000FBA4E /* LaunchScreen.xib */; };
+		1B7EFF201A5BD3A7000FBA4E /* PhotoGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EFF1F1A5BD3A7000FBA4E /* PhotoGalleryTests.m */; };
+		1B7EFF2E1A5BD47C000FBA4E /* RESMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EFF2D1A5BD47C000FBA4E /* RESMasterViewController.m */; };
+		1B9A1E1F1A5E2E6B001873A8 /* RESRowDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E1E1A5E2E6B001873A8 /* RESRowDecorationView.m */; };
+		1B9A1E221A5E2E96001873A8 /* RESCustomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E211A5E2E96001873A8 /* RESCustomFlowLayout.m */; };
+		1B9A1E291A5E3026001873A8 /* RESSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1E281A5E3026001873A8 /* RESSectionHeader.xib */; };
+		1B9A1E2C1A5E674B001873A8 /* RESCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E2B1A5E674B001873A8 /* RESCustomLayout.m */; };
+		1B9A1E301A5E67A1001873A8 /* RESCustomSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E2E1A5E67A1001873A8 /* RESCustomSectionHeader.m */; };
+		1B9A1E311A5E67A1001873A8 /* RESCustomSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1E2F1A5E67A1001873A8 /* RESCustomSectionHeader.xib */; };
+		1B9A1E341A5E67E2001873A8 /* RESAnimatingFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E331A5E67E2001873A8 /* RESAnimatingFlowLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B7EFF1A1A5BD3A7000FBA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B7EFEF81A5BD3A7000FBA4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B7EFEFF1A5BD3A7000FBA4E;
+			remoteInfo = PhotoGallery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B4C2A461A5D1B02004405E0 /* RESFetchAssetsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESFetchAssetsDelegate.h; sourceTree = "<group>"; };
+		1B6D76601A5CC6D1003405A5 /* RESBasicFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESBasicFlowViewController.h; sourceTree = "<group>"; };
+		1B6D76611A5CC6D1003405A5 /* RESBasicFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESBasicFlowViewController.m; sourceTree = "<group>"; };
+		1B6D76631A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomFlowLayoutViewController.h; sourceTree = "<group>"; };
+		1B6D76641A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomFlowLayoutViewController.m; sourceTree = "<group>"; };
+		1B6D76661A5CC752003405A5 /* RESCustomLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomLayoutViewController.h; sourceTree = "<group>"; };
+		1B6D76671A5CC752003405A5 /* RESCustomLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomLayoutViewController.m; sourceTree = "<group>"; };
+		1B6D76691A5CCD4C003405A5 /* RESSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESSectionHeader.h; sourceTree = "<group>"; };
+		1B6D766A1A5CCD4C003405A5 /* RESSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESSectionHeader.m; sourceTree = "<group>"; };
+		1B6D766C1A5CCD61003405A5 /* RESSectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESSectionFooter.h; sourceTree = "<group>"; };
+		1B6D766D1A5CCD61003405A5 /* RESSectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESSectionFooter.m; sourceTree = "<group>"; };
+		1B6D766F1A5CCD7C003405A5 /* RESThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESThumbnailCell.h; sourceTree = "<group>"; };
+		1B6D76701A5CCD7C003405A5 /* RESThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESThumbnailCell.m; sourceTree = "<group>"; };
+		1B6D76731A5CF25F003405A5 /* RESPhotoAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESPhotoAssetsManager.h; sourceTree = "<group>"; };
+		1B6D76741A5CF25F003405A5 /* RESPhotoAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESPhotoAssetsManager.m; sourceTree = "<group>"; };
+		1B7EFF001A5BD3A7000FBA4E /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7EFF041A5BD3A7000FBA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7EFF051A5BD3A7000FBA4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B7EFF071A5BD3A7000FBA4E /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B7EFF081A5BD3A7000FBA4E /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
+		1B7EFF0E1A5BD3A7000FBA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B7EFF101A5BD3A7000FBA4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B7EFF131A5BD3A7000FBA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B7EFF191A5BD3A7000FBA4E /* PhotoGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7EFF1E1A5BD3A7000FBA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7EFF1F1A5BD3A7000FBA4E /* PhotoGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoGalleryTests.m; sourceTree = "<group>"; };
+		1B7EFF2C1A5BD47C000FBA4E /* RESMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESMasterViewController.h; sourceTree = "<group>"; };
+		1B7EFF2D1A5BD47C000FBA4E /* RESMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESMasterViewController.m; sourceTree = "<group>"; };
+		1B9A1E1D1A5E2E6B001873A8 /* RESRowDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESRowDecorationView.h; sourceTree = "<group>"; };
+		1B9A1E1E1A5E2E6B001873A8 /* RESRowDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESRowDecorationView.m; sourceTree = "<group>"; };
+		1B9A1E201A5E2E96001873A8 /* RESCustomFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomFlowLayout.h; sourceTree = "<group>"; };
+		1B9A1E211A5E2E96001873A8 /* RESCustomFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomFlowLayout.m; sourceTree = "<group>"; };
+		1B9A1E281A5E3026001873A8 /* RESSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RESSectionHeader.xib; sourceTree = "<group>"; };
+		1B9A1E2A1A5E674B001873A8 /* RESCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomLayout.h; sourceTree = "<group>"; };
+		1B9A1E2B1A5E674B001873A8 /* RESCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomLayout.m; sourceTree = "<group>"; };
+		1B9A1E2D1A5E67A1001873A8 /* RESCustomSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomSectionHeader.h; sourceTree = "<group>"; };
+		1B9A1E2E1A5E67A1001873A8 /* RESCustomSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomSectionHeader.m; sourceTree = "<group>"; };
+		1B9A1E2F1A5E67A1001873A8 /* RESCustomSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RESCustomSectionHeader.xib; sourceTree = "<group>"; };
+		1B9A1E321A5E67E2001873A8 /* RESAnimatingFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESAnimatingFlowLayout.h; sourceTree = "<group>"; };
+		1B9A1E331A5E67E2001873A8 /* RESAnimatingFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESAnimatingFlowLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B7EFEFD1A5BD3A7000FBA4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B7EFF161A5BD3A7000FBA4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B6D76721A5CF21D003405A5 /* photo assets manager */ = {
+			isa = PBXGroup;
+			children = (
+				1B4C2A461A5D1B02004405E0 /* RESFetchAssetsDelegate.h */,
+				1B6D76731A5CF25F003405A5 /* RESPhotoAssetsManager.h */,
+				1B6D76741A5CF25F003405A5 /* RESPhotoAssetsManager.m */,
+			);
+			name = "photo assets manager";
+			sourceTree = "<group>";
+		};
+		1B7EFEF71A5BD3A7000FBA4E = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF021A5BD3A7000FBA4E /* PhotoGallery */,
+				1B7EFF1C1A5BD3A7000FBA4E /* PhotoGalleryTests */,
+				1B7EFF011A5BD3A7000FBA4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B7EFF011A5BD3A7000FBA4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF001A5BD3A7000FBA4E /* PhotoGallery.app */,
+				1B7EFF191A5BD3A7000FBA4E /* PhotoGalleryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B7EFF021A5BD3A7000FBA4E /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF291A5BD3F7000FBA4E /* views */,
+				1B7EFF2A1A5BD3FE000FBA4E /* app controllers */,
+				1B7EFF2B1A5BD406000FBA4E /* view controllers */,
+				1B6D76721A5CF21D003405A5 /* photo assets manager */,
+				1B7EFF031A5BD3A7000FBA4E /* Supporting Files */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		1B7EFF031A5BD3A7000FBA4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF101A5BD3A7000FBA4E /* Images.xcassets */,
+				1B7EFF041A5BD3A7000FBA4E /* Info.plist */,
+				1B7EFF051A5BD3A7000FBA4E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B7EFF1C1A5BD3A7000FBA4E /* PhotoGalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF1F1A5BD3A7000FBA4E /* PhotoGalleryTests.m */,
+				1B7EFF1D1A5BD3A7000FBA4E /* Supporting Files */,
+			);
+			path = PhotoGalleryTests;
+			sourceTree = "<group>";
+		};
+		1B7EFF1D1A5BD3A7000FBA4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF1E1A5BD3A7000FBA4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B7EFF291A5BD3F7000FBA4E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF0D1A5BD3A7000FBA4E /* Main.storyboard */,
+				1B7EFF121A5BD3A7000FBA4E /* LaunchScreen.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1B7EFF2A1A5BD3FE000FBA4E /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF071A5BD3A7000FBA4E /* RESAppDelegate.h */,
+				1B7EFF081A5BD3A7000FBA4E /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
+		1B7EFF2B1A5BD406000FBA4E /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B7EFF2C1A5BD47C000FBA4E /* RESMasterViewController.h */,
+				1B7EFF2D1A5BD47C000FBA4E /* RESMasterViewController.m */,
+				1B7EFF2F1A5BD481000FBA4E /* Basic Flow Layout VC */,
+				1B7EFF331A5BD593000FBA4E /* Custom Flow Layout VC */,
+				1B7EFF341A5BD5A2000FBA4E /* Custom Layout */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		1B7EFF2F1A5BD481000FBA4E /* Basic Flow Layout VC */ = {
+			isa = PBXGroup;
+			children = (
+				1B6D76601A5CC6D1003405A5 /* RESBasicFlowViewController.h */,
+				1B6D76611A5CC6D1003405A5 /* RESBasicFlowViewController.m */,
+				1B6D766F1A5CCD7C003405A5 /* RESThumbnailCell.h */,
+				1B6D76701A5CCD7C003405A5 /* RESThumbnailCell.m */,
+				1B6D76691A5CCD4C003405A5 /* RESSectionHeader.h */,
+				1B6D766A1A5CCD4C003405A5 /* RESSectionHeader.m */,
+				1B6D766C1A5CCD61003405A5 /* RESSectionFooter.h */,
+				1B6D766D1A5CCD61003405A5 /* RESSectionFooter.m */,
+			);
+			name = "Basic Flow Layout VC";
+			sourceTree = "<group>";
+		};
+		1B7EFF331A5BD593000FBA4E /* Custom Flow Layout VC */ = {
+			isa = PBXGroup;
+			children = (
+				1B6D76631A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.h */,
+				1B6D76641A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.m */,
+				1B9A1E201A5E2E96001873A8 /* RESCustomFlowLayout.h */,
+				1B9A1E211A5E2E96001873A8 /* RESCustomFlowLayout.m */,
+				1B9A1E1D1A5E2E6B001873A8 /* RESRowDecorationView.h */,
+				1B9A1E1E1A5E2E6B001873A8 /* RESRowDecorationView.m */,
+				1B9A1E281A5E3026001873A8 /* RESSectionHeader.xib */,
+			);
+			name = "Custom Flow Layout VC";
+			sourceTree = "<group>";
+		};
+		1B7EFF341A5BD5A2000FBA4E /* Custom Layout */ = {
+			isa = PBXGroup;
+			children = (
+				1B6D76661A5CC752003405A5 /* RESCustomLayoutViewController.h */,
+				1B6D76671A5CC752003405A5 /* RESCustomLayoutViewController.m */,
+				1B9A1E2D1A5E67A1001873A8 /* RESCustomSectionHeader.h */,
+				1B9A1E2E1A5E67A1001873A8 /* RESCustomSectionHeader.m */,
+				1B9A1E2F1A5E67A1001873A8 /* RESCustomSectionHeader.xib */,
+				1B9A1E2A1A5E674B001873A8 /* RESCustomLayout.h */,
+				1B9A1E2B1A5E674B001873A8 /* RESCustomLayout.m */,
+				1B9A1E321A5E67E2001873A8 /* RESAnimatingFlowLayout.h */,
+				1B9A1E331A5E67E2001873A8 /* RESAnimatingFlowLayout.m */,
+			);
+			name = "Custom Layout";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B7EFEFF1A5BD3A7000FBA4E /* PhotoGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B7EFF231A5BD3A7000FBA4E /* Build configuration list for PBXNativeTarget "PhotoGallery" */;
+			buildPhases = (
+				1B7EFEFC1A5BD3A7000FBA4E /* Sources */,
+				1B7EFEFD1A5BD3A7000FBA4E /* Frameworks */,
+				1B7EFEFE1A5BD3A7000FBA4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoGallery;
+			productName = PhotoGallery;
+			productReference = 1B7EFF001A5BD3A7000FBA4E /* PhotoGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B7EFF181A5BD3A7000FBA4E /* PhotoGalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B7EFF261A5BD3A7000FBA4E /* Build configuration list for PBXNativeTarget "PhotoGalleryTests" */;
+			buildPhases = (
+				1B7EFF151A5BD3A7000FBA4E /* Sources */,
+				1B7EFF161A5BD3A7000FBA4E /* Frameworks */,
+				1B7EFF171A5BD3A7000FBA4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B7EFF1B1A5BD3A7000FBA4E /* PBXTargetDependency */,
+			);
+			name = PhotoGalleryTests;
+			productName = PhotoGalleryTests;
+			productReference = 1B7EFF191A5BD3A7000FBA4E /* PhotoGalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B7EFEF81A5BD3A7000FBA4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RES;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1B7EFEFF1A5BD3A7000FBA4E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1B7EFF181A5BD3A7000FBA4E = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1B7EFEFF1A5BD3A7000FBA4E;
+					};
+				};
+			};
+			buildConfigurationList = 1B7EFEFB1A5BD3A7000FBA4E /* Build configuration list for PBXProject "PhotoGallery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B7EFEF71A5BD3A7000FBA4E;
+			productRefGroup = 1B7EFF011A5BD3A7000FBA4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B7EFEFF1A5BD3A7000FBA4E /* PhotoGallery */,
+				1B7EFF181A5BD3A7000FBA4E /* PhotoGalleryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B7EFEFE1A5BD3A7000FBA4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7EFF0F1A5BD3A7000FBA4E /* Main.storyboard in Resources */,
+				1B9A1E291A5E3026001873A8 /* RESSectionHeader.xib in Resources */,
+				1B7EFF141A5BD3A7000FBA4E /* LaunchScreen.xib in Resources */,
+				1B9A1E311A5E67A1001873A8 /* RESCustomSectionHeader.xib in Resources */,
+				1B7EFF111A5BD3A7000FBA4E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B7EFF171A5BD3A7000FBA4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B7EFEFC1A5BD3A7000FBA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6D76681A5CC752003405A5 /* RESCustomLayoutViewController.m in Sources */,
+				1B7EFF091A5BD3A7000FBA4E /* RESAppDelegate.m in Sources */,
+				1B6D76621A5CC6D1003405A5 /* RESBasicFlowViewController.m in Sources */,
+				1B6D76751A5CF25F003405A5 /* RESPhotoAssetsManager.m in Sources */,
+				1B6D76651A5CC6FE003405A5 /* RESCustomFlowLayoutViewController.m in Sources */,
+				1B7EFF2E1A5BD47C000FBA4E /* RESMasterViewController.m in Sources */,
+				1B9A1E341A5E67E2001873A8 /* RESAnimatingFlowLayout.m in Sources */,
+				1B6D766E1A5CCD61003405A5 /* RESSectionFooter.m in Sources */,
+				1B9A1E1F1A5E2E6B001873A8 /* RESRowDecorationView.m in Sources */,
+				1B6D766B1A5CCD4C003405A5 /* RESSectionHeader.m in Sources */,
+				1B6D76711A5CCD7C003405A5 /* RESThumbnailCell.m in Sources */,
+				1B9A1E2C1A5E674B001873A8 /* RESCustomLayout.m in Sources */,
+				1B7EFF061A5BD3A7000FBA4E /* main.m in Sources */,
+				1B9A1E301A5E67A1001873A8 /* RESCustomSectionHeader.m in Sources */,
+				1B9A1E221A5E2E96001873A8 /* RESCustomFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B7EFF151A5BD3A7000FBA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7EFF201A5BD3A7000FBA4E /* PhotoGalleryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B7EFF1B1A5BD3A7000FBA4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B7EFEFF1A5BD3A7000FBA4E /* PhotoGallery */;
+			targetProxy = 1B7EFF1A1A5BD3A7000FBA4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B7EFF0D1A5BD3A7000FBA4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B7EFF0E1A5BD3A7000FBA4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B7EFF121A5BD3A7000FBA4E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B7EFF131A5BD3A7000FBA4E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B7EFF211A5BD3A7000FBA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B7EFF221A5BD3A7000FBA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B7EFF241A5BD3A7000FBA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B7EFF251A5BD3A7000FBA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B7EFF271A5BD3A7000FBA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoGalleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoGallery.app/PhotoGallery";
+			};
+			name = Debug;
+		};
+		1B7EFF281A5BD3A7000FBA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoGalleryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoGallery.app/PhotoGallery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B7EFEFB1A5BD3A7000FBA4E /* Build configuration list for PBXProject "PhotoGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7EFF211A5BD3A7000FBA4E /* Debug */,
+				1B7EFF221A5BD3A7000FBA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B7EFF231A5BD3A7000FBA4E /* Build configuration list for PBXNativeTarget "PhotoGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7EFF241A5BD3A7000FBA4E /* Debug */,
+				1B7EFF251A5BD3A7000FBA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B7EFF261A5BD3A7000FBA4E /* Build configuration list for PBXNativeTarget "PhotoGalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7EFF271A5BD3A7000FBA4E /* Debug */,
+				1B7EFF281A5BD3A7000FBA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B7EFEF81A5BD3A7000FBA4E /* Project object */;
+}
