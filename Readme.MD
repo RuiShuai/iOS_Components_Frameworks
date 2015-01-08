@@ -121,7 +121,24 @@ failureBlock:handleAssetGroupErrorBlock];
 ******************************
 20 - Collection Views[PhotoGallery]
 
-2014-01-06,周二,16:27
+2014-01-06,周二,16:27,折腾ALAssetLibrary,AssetGroup,Assets;
+2014-01-07,周三,正式photoGallery练习。
+2014-01-08,周四,16:52,完成添加书籍托盘效果,波浪式装饰效果.
+
+
+
+******************************
+17 - GCD for Performance[LongRunningTask]
+2014-01-08,周四,上午阅读
+2014-01-09,周五,开始正式练习
+
+
+
+
+
+******************************
+16 - Working With Background Tasks
+
 
 
 
@@ -186,13 +203,6 @@ failureBlock:handleAssetGroupErrorBlock];
 
 
 
-******************************
-16 - Working With Background Tasks
-
-
-
-******************************
-17 - GCD for Performance
 
 
 
