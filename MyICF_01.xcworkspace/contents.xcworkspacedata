@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LongRunningTasks/LongRunningTasks.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PhotoGallery/PhotoGallery.xcodeproj">
    </FileRef>
    <FileRef

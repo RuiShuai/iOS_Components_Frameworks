@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B9A1E441A5E817F001873A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E431A5E817F001873A8 /* main.m */; };
+		1B9A1E471A5E817F001873A8 /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E461A5E817F001873A8 /* RESAppDelegate.m */; };
+		1B9A1E4D1A5E817F001873A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1E4B1A5E817F001873A8 /* Main.storyboard */; };
+		1B9A1E4F1A5E817F001873A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1E4E1A5E817F001873A8 /* Images.xcassets */; };
+		1B9A1E521A5E817F001873A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1E501A5E817F001873A8 /* LaunchScreen.xib */; };
+		1B9A1E5E1A5E817F001873A8 /* LongRunningTasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E5D1A5E817F001873A8 /* LongRunningTasksTests.m */; };
+		1B9A1E6C1A5E827C001873A8 /* RESStarterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E6B1A5E827C001873A8 /* RESStarterViewController.m */; };
+		1B9A1E701A5E82CF001873A8 /* RESMainThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E6F1A5E82CF001873A8 /* RESMainThreadViewController.m */; };
+		1B9A1E731A5E82E9001873A8 /* RESPerformBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E721A5E82E9001873A8 /* RESPerformBackgroundViewController.m */; };
+		1B9A1E761A5E8307001873A8 /* RESOperationQueueConcurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E751A5E8307001873A8 /* RESOperationQueueConcurrentViewController.m */; };
+		1B9A1E791A5E8320001873A8 /* RESOperationQueueSerialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E781A5E8320001873A8 /* RESOperationQueueSerialViewController.m */; };
+		1B9A1E7C1A5E833B001873A8 /* RESOperationQueueCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E7B1A5E833B001873A8 /* RESOperationQueueCustomViewController.m */; };
+		1B9A1E811A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E801A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.m */; };
+		1B9A1E841A5E83CF001873A8 /* RESDispatchQueueSerialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E831A5E83CF001873A8 /* RESDispatchQueueSerialViewController.m */; };
+		1B9A1E871A5E83F3001873A8 /* RESCustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E861A5E83F3001873A8 /* RESCustomOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B9A1E581A5E817F001873A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B9A1E361A5E817F001873A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B9A1E3D1A5E817F001873A8;
+			remoteInfo = LongRunningTasks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B9A1E3E1A5E817F001873A8 /* LongRunningTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongRunningTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9A1E421A5E817F001873A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9A1E431A5E817F001873A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B9A1E451A5E817F001873A8 /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B9A1E461A5E817F001873A8 /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
+		1B9A1E4C1A5E817F001873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B9A1E4E1A5E817F001873A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B9A1E511A5E817F001873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B9A1E571A5E817F001873A8 /* LongRunningTasksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongRunningTasksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9A1E5C1A5E817F001873A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9A1E5D1A5E817F001873A8 /* LongRunningTasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongRunningTasksTests.m; sourceTree = "<group>"; };
+		1B9A1E6A1A5E827C001873A8 /* RESStarterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESStarterViewController.h; sourceTree = "<group>"; };
+		1B9A1E6B1A5E827C001873A8 /* RESStarterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESStarterViewController.m; sourceTree = "<group>"; };
+		1B9A1E6E1A5E82CF001873A8 /* RESMainThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESMainThreadViewController.h; sourceTree = "<group>"; };
+		1B9A1E6F1A5E82CF001873A8 /* RESMainThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESMainThreadViewController.m; sourceTree = "<group>"; };
+		1B9A1E711A5E82E9001873A8 /* RESPerformBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESPerformBackgroundViewController.h; sourceTree = "<group>"; };
+		1B9A1E721A5E82E9001873A8 /* RESPerformBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESPerformBackgroundViewController.m; sourceTree = "<group>"; };
+		1B9A1E741A5E8307001873A8 /* RESOperationQueueConcurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOperationQueueConcurrentViewController.h; sourceTree = "<group>"; };
+		1B9A1E751A5E8307001873A8 /* RESOperationQueueConcurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOperationQueueConcurrentViewController.m; sourceTree = "<group>"; };
+		1B9A1E771A5E8320001873A8 /* RESOperationQueueSerialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOperationQueueSerialViewController.h; sourceTree = "<group>"; };
+		1B9A1E781A5E8320001873A8 /* RESOperationQueueSerialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOperationQueueSerialViewController.m; sourceTree = "<group>"; };
+		1B9A1E7A1A5E833B001873A8 /* RESOperationQueueCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOperationQueueCustomViewController.h; sourceTree = "<group>"; };
+		1B9A1E7B1A5E833B001873A8 /* RESOperationQueueCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOperationQueueCustomViewController.m; sourceTree = "<group>"; };
+		1B9A1E7F1A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDispatchQueueConcurrentViewController.h; sourceTree = "<group>"; };
+		1B9A1E801A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDispatchQueueConcurrentViewController.m; sourceTree = "<group>"; };
+		1B9A1E821A5E83CF001873A8 /* RESDispatchQueueSerialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDispatchQueueSerialViewController.h; sourceTree = "<group>"; };
+		1B9A1E831A5E83CF001873A8 /* RESDispatchQueueSerialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDispatchQueueSerialViewController.m; sourceTree = "<group>"; };
+		1B9A1E851A5E83F3001873A8 /* RESCustomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomOperation.h; sourceTree = "<group>"; };
+		1B9A1E861A5E83F3001873A8 /* RESCustomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B9A1E3B1A5E817F001873A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9A1E541A5E817F001873A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B9A1E351A5E817F001873A8 = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E401A5E817F001873A8 /* LongRunningTasks */,
+				1B9A1E5A1A5E817F001873A8 /* LongRunningTasksTests */,
+				1B9A1E3F1A5E817F001873A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B9A1E3F1A5E817F001873A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E3E1A5E817F001873A8 /* LongRunningTasks.app */,
+				1B9A1E571A5E817F001873A8 /* LongRunningTasksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B9A1E401A5E817F001873A8 /* LongRunningTasks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E671A5E818D001873A8 /* views */,
+				1B9A1E681A5E819F001873A8 /* app controllers */,
+				1B9A1E691A5E81BF001873A8 /* view controllers */,
+				1B9A1E411A5E817F001873A8 /* Supporting Files */,
+			);
+			path = LongRunningTasks;
+			sourceTree = "<group>";
+		};
+		1B9A1E411A5E817F001873A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E4E1A5E817F001873A8 /* Images.xcassets */,
+				1B9A1E421A5E817F001873A8 /* Info.plist */,
+				1B9A1E431A5E817F001873A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B9A1E5A1A5E817F001873A8 /* LongRunningTasksTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E5D1A5E817F001873A8 /* LongRunningTasksTests.m */,
+				1B9A1E5B1A5E817F001873A8 /* Supporting Files */,
+			);
+			path = LongRunningTasksTests;
+			sourceTree = "<group>";
+		};
+		1B9A1E5B1A5E817F001873A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E5C1A5E817F001873A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B9A1E671A5E818D001873A8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E4B1A5E817F001873A8 /* Main.storyboard */,
+				1B9A1E501A5E817F001873A8 /* LaunchScreen.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1B9A1E681A5E819F001873A8 /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E451A5E817F001873A8 /* RESAppDelegate.h */,
+				1B9A1E461A5E817F001873A8 /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
+		1B9A1E691A5E81BF001873A8 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E6A1A5E827C001873A8 /* RESStarterViewController.h */,
+				1B9A1E6B1A5E827C001873A8 /* RESStarterViewController.m */,
+				1B9A1E6D1A5E8293001873A8 /* main thread */,
+				1B9A1E7D1A5E834A001873A8 /* operation queue */,
+				1B9A1E7E1A5E8373001873A8 /* dispatch queue */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		1B9A1E6D1A5E8293001873A8 /* main thread */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E6E1A5E82CF001873A8 /* RESMainThreadViewController.h */,
+				1B9A1E6F1A5E82CF001873A8 /* RESMainThreadViewController.m */,
+				1B9A1E711A5E82E9001873A8 /* RESPerformBackgroundViewController.h */,
+				1B9A1E721A5E82E9001873A8 /* RESPerformBackgroundViewController.m */,
+			);
+			name = "main thread";
+			sourceTree = "<group>";
+		};
+		1B9A1E7D1A5E834A001873A8 /* operation queue */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E741A5E8307001873A8 /* RESOperationQueueConcurrentViewController.h */,
+				1B9A1E751A5E8307001873A8 /* RESOperationQueueConcurrentViewController.m */,
+				1B9A1E771A5E8320001873A8 /* RESOperationQueueSerialViewController.h */,
+				1B9A1E781A5E8320001873A8 /* RESOperationQueueSerialViewController.m */,
+				1B9A1E7A1A5E833B001873A8 /* RESOperationQueueCustomViewController.h */,
+				1B9A1E7B1A5E833B001873A8 /* RESOperationQueueCustomViewController.m */,
+				1B9A1E851A5E83F3001873A8 /* RESCustomOperation.h */,
+				1B9A1E861A5E83F3001873A8 /* RESCustomOperation.m */,
+			);
+			name = "operation queue";
+			sourceTree = "<group>";
+		};
+		1B9A1E7E1A5E8373001873A8 /* dispatch queue */ = {
+			isa = PBXGroup;
+			children = (
+				1B9A1E7F1A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.h */,
+				1B9A1E801A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.m */,
+				1B9A1E821A5E83CF001873A8 /* RESDispatchQueueSerialViewController.h */,
+				1B9A1E831A5E83CF001873A8 /* RESDispatchQueueSerialViewController.m */,
+			);
+			name = "dispatch queue";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B9A1E3D1A5E817F001873A8 /* LongRunningTasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9A1E611A5E817F001873A8 /* Build configuration list for PBXNativeTarget "LongRunningTasks" */;
+			buildPhases = (
+				1B9A1E3A1A5E817F001873A8 /* Sources */,
+				1B9A1E3B1A5E817F001873A8 /* Frameworks */,
+				1B9A1E3C1A5E817F001873A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongRunningTasks;
+			productName = LongRunningTasks;
+			productReference = 1B9A1E3E1A5E817F001873A8 /* LongRunningTasks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B9A1E561A5E817F001873A8 /* LongRunningTasksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B9A1E641A5E817F001873A8 /* Build configuration list for PBXNativeTarget "LongRunningTasksTests" */;
+			buildPhases = (
+				1B9A1E531A5E817F001873A8 /* Sources */,
+				1B9A1E541A5E817F001873A8 /* Frameworks */,
+				1B9A1E551A5E817F001873A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B9A1E591A5E817F001873A8 /* PBXTargetDependency */,
+			);
+			name = LongRunningTasksTests;
+			productName = LongRunningTasksTests;
+			productReference = 1B9A1E571A5E817F001873A8 /* LongRunningTasksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B9A1E361A5E817F001873A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RES;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1B9A1E3D1A5E817F001873A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1B9A1E561A5E817F001873A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1B9A1E3D1A5E817F001873A8;
+					};
+				};
+			};
+			buildConfigurationList = 1B9A1E391A5E817F001873A8 /* Build configuration list for PBXProject "LongRunningTasks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B9A1E351A5E817F001873A8;
+			productRefGroup = 1B9A1E3F1A5E817F001873A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B9A1E3D1A5E817F001873A8 /* LongRunningTasks */,
+				1B9A1E561A5E817F001873A8 /* LongRunningTasksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B9A1E3C1A5E817F001873A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9A1E4D1A5E817F001873A8 /* Main.storyboard in Resources */,
+				1B9A1E521A5E817F001873A8 /* LaunchScreen.xib in Resources */,
+				1B9A1E4F1A5E817F001873A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9A1E551A5E817F001873A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B9A1E3A1A5E817F001873A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9A1E791A5E8320001873A8 /* RESOperationQueueSerialViewController.m in Sources */,
+				1B9A1E471A5E817F001873A8 /* RESAppDelegate.m in Sources */,
+				1B9A1E731A5E82E9001873A8 /* RESPerformBackgroundViewController.m in Sources */,
+				1B9A1E841A5E83CF001873A8 /* RESDispatchQueueSerialViewController.m in Sources */,
+				1B9A1E441A5E817F001873A8 /* main.m in Sources */,
+				1B9A1E811A5E83B0001873A8 /* RESDispatchQueueConcurrentViewController.m in Sources */,
+				1B9A1E7C1A5E833B001873A8 /* RESOperationQueueCustomViewController.m in Sources */,
+				1B9A1E701A5E82CF001873A8 /* RESMainThreadViewController.m in Sources */,
+				1B9A1E761A5E8307001873A8 /* RESOperationQueueConcurrentViewController.m in Sources */,
+				1B9A1E871A5E83F3001873A8 /* RESCustomOperation.m in Sources */,
+				1B9A1E6C1A5E827C001873A8 /* RESStarterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9A1E531A5E817F001873A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9A1E5E1A5E817F001873A8 /* LongRunningTasksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B9A1E591A5E817F001873A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B9A1E3D1A5E817F001873A8 /* LongRunningTasks */;
+			targetProxy = 1B9A1E581A5E817F001873A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B9A1E4B1A5E817F001873A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9A1E4C1A5E817F001873A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B9A1E501A5E817F001873A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9A1E511A5E817F001873A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B9A1E5F1A5E817F001873A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B9A1E601A5E817F001873A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B9A1E621A5E817F001873A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LongRunningTasks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B9A1E631A5E817F001873A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LongRunningTasks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B9A1E651A5E817F001873A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LongRunningTasksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongRunningTasks.app/LongRunningTasks";
+			};
+			name = Debug;
+		};
+		1B9A1E661A5E817F001873A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LongRunningTasksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongRunningTasks.app/LongRunningTasks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B9A1E391A5E817F001873A8 /* Build configuration list for PBXProject "LongRunningTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9A1E5F1A5E817F001873A8 /* Debug */,
+				1B9A1E601A5E817F001873A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B9A1E611A5E817F001873A8 /* Build configuration list for PBXNativeTarget "LongRunningTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9A1E621A5E817F001873A8 /* Debug */,
+				1B9A1E631A5E817F001873A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B9A1E641A5E817F001873A8 /* Build configuration list for PBXNativeTarget "LongRunningTasksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9A1E651A5E817F001873A8 /* Debug */,
+				1B9A1E661A5E817F001873A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B9A1E361A5E817F001873A8 /* Project object */;
+}
