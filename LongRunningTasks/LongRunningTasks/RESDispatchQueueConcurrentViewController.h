@@ -10,4 +10,6 @@
 
 @interface RESDispatchQueueConcurrentViewController : UITableViewController
 
+@property (nonatomic,strong) NSMutableArray *displayItems;
+
 @end

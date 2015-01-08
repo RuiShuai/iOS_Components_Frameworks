@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RESDispatchQueueSerialViewController : UITableViewController
-
+@property (nonatomic,strong) NSMutableArray *displayItems;
 @end

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Approaches for LongRunningTasks-->
+        <!--Approaches-->
         <scene sceneID="uG2-bd-B4u">
             <objects>
                 <tableViewController id="xoI-6U-m6O" sceneMemberID="viewController">
@@ -150,7 +150,7 @@
                             <outlet property="delegate" destination="xoI-6U-m6O" id="J1y-LM-N3e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Approaches for LongRunningTasks" id="DWp-wN-f4u"/>
+                    <navigationItem key="navigationItem" title="Approaches" id="DWp-wN-f4u"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYV-fn-h1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,9 +273,36 @@
                             <outlet property="delegate" destination="16a-kj-wB8" id="kl2-hS-7v3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="OpQ-Concurrent" id="1XD-CT-8zR"/>
+                    <navigationItem key="navigationItem" title="OpQ-Concurrent" id="1XD-CT-8zR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="5KL-YA-Xe7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="statusView" destination="HJa-yv-ldH" id="YcB-UR-j6A"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1h-Rt-vKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="HJa-yv-ldH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O8-dg-VZ5" userLabel="Cancel">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTouched:" destination="16a-kj-wB8" eventType="touchUpInside" id="uxq-fd-ej8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6O8-dg-VZ5" firstAttribute="leading" secondItem="HJa-yv-ldH" secondAttribute="leading" id="2zJ-m7-Ah9"/>
+                        <constraint firstItem="6O8-dg-VZ5" firstAttribute="top" secondItem="HJa-yv-ldH" secondAttribute="top" id="Boi-sx-Ke4"/>
+                        <constraint firstAttribute="centerY" secondItem="6O8-dg-VZ5" secondAttribute="centerY" id="DFq-0P-SC4"/>
+                        <constraint firstAttribute="centerX" secondItem="6O8-dg-VZ5" secondAttribute="centerX" id="G3i-Eu-k1a"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="3048" y="-171"/>
         </scene>
@@ -344,8 +371,33 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="OpQ-Custom" id="WGL-Gd-AKL"/>
+                    <connections>
+                        <outlet property="statusView" destination="xeP-kj-XLy" id="M6R-cb-Yjr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7t-5R-Rvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="xeP-kj-XLy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTe-06-qPe">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTouched:" destination="yVS-Tn-4fb" eventType="touchUpInside" id="7gA-Ck-ap8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xTe-06-qPe" firstAttribute="top" secondItem="xeP-kj-XLy" secondAttribute="top" id="NpC-h2-oM0"/>
+                        <constraint firstItem="xTe-06-qPe" firstAttribute="leading" secondItem="xeP-kj-XLy" secondAttribute="leading" id="PqV-EP-HBU"/>
+                        <constraint firstAttribute="centerY" secondItem="xTe-06-qPe" secondAttribute="centerY" id="h2M-OK-WMh"/>
+                        <constraint firstAttribute="centerX" secondItem="xTe-06-qPe" secondAttribute="centerX" id="qOk-1g-XfN"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="3048" y="581"/>
         </scene>

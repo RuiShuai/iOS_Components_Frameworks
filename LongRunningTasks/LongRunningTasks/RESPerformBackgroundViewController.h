@@ -10,4 +10,6 @@
 
 @interface RESPerformBackgroundViewController : UITableViewController
 
+@property (nonatomic,strong) NSMutableArray *displayItems;
+
 @end

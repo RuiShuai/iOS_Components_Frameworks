@@ -10,91 +10,115 @@
 
 @interface RESOperationQueueCustomViewController ()
 
+-(void)updateTableData:(id)moreData;
+
 @end
 
 @implementation RESOperationQueueCustomViewController
 
+
+#pragma mark - view life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.displayItems = [[NSMutableArray alloc]initWithCapacity:5];
+    [self.displayItems addObject:@[
+                                   @"Item Initial-1",
+                                   @"Item Initial-2",
+                                   @"Item Initial-3",
+                                   @"Item Initial-4",
+                                   @"Item Initial-5"
+                                   ]];
+    self.processingQueue = [[NSOperationQueue alloc]init];
+    [self.tableView setTableHeaderView:self.statusView];
 }
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    //模拟堆栈
+    NSMutableArray *operationsToAdd = [[NSMutableArray alloc]init];
+
+    RESCustomOperation *prevOperation = nil;
+    
+    for (int i=1; i<=5; i++) {
+        NSNumber *iteration = [NSNumber numberWithInt:i];
+        
+        //定义操作
+        RESCustomOperation *operation = [[RESCustomOperation alloc]initWithIteration:iteration andDelegate:self];
+        
+        NSLog(@"...not cancelled, execute logic here");
+        if (prevOperation) {
+            [operation addDependency:prevOperation];
+        }
+        [operationsToAdd addObject:operation];
+    }
+    
+    //顺次添加操作至进程队列
+    for (RESCustomOperation *operation in operationsToAdd) {
+        [self.processingQueue addOperation:operation];
+    }
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
+#pragma mark - RESCustomOperationDelegate
+
+-(void)updateTableWithData:(NSArray *)moreData
+{
+    //调用主线程更新UI
+    [self performSelectorOnMainThread:@selector(updateTableData:) withObject:moreData waitUntilDone:YES];
+}
+
+-(void)updateTableData:(id)moreData
+{
+    NSArray *newArray = (NSArray *)moreData;
+    [self.displayItems addObject:newArray];
+    [self.tableView reloadData];
+}
+
+#pragma mark - user action
+- (IBAction)cancelButtonTouched:(id)sender
+{
+    [self.processingQueue cancelAllOperations];
+}
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    // Return the number of sections.
-    return 0;
+    
+    return [self.displayItems count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    // Return the number of rows in the section.
-    return 0;
+    return [[self.displayItems objectAtIndex:section] count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *CellIdentifier =@"RESOperationQueueCustomCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    NSMutableArray *itemsForRow = [self.displayItems objectAtIndex:indexPath.section];
+    NSString *labelForRow = [itemsForRow objectAtIndex:indexPath.row];
+    [cell.textLabel setText:labelForRow];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - Table view delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%d section, %d row is selected",indexPath.section,indexPath.row);
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

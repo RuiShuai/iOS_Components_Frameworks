@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESCustomOperation.h"
+@interface RESOperationQueueCustomViewController : UITableViewController<RESCustomOperationDelegate>
 
-@interface RESOperationQueueCustomViewController : UITableViewController
+@property (nonatomic,strong) NSMutableArray *displayItems;
+@property (nonatomic,strong) NSOperationQueue *processingQueue;
+@property (strong, nonatomic) IBOutlet UIView *statusView;
+
+- (IBAction)cancelButtonTouched:(id)sender;
 
 @end

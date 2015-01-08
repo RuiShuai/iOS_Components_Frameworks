@@ -10,4 +10,6 @@
 
 @interface RESMainThreadViewController : UITableViewController
 
+@property (nonatomic,strong) NSMutableArray *displayItems;
+
 @end

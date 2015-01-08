@@ -10,4 +10,7 @@
 
 @interface RESOperationQueueSerialViewController : UITableViewController
 
+@property (nonatomic,strong) NSMutableArray *displayItems;
+@property (nonatomic, strong) NSOperationQueue *processingQueue;
+
 @end
