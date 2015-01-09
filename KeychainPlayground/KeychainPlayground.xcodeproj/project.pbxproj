@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BA19E1F1A5FA80C00FC669D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E1E1A5FA80C00FC669D /* main.m */; };
+		1BA19E221A5FA80C00FC669D /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E211A5FA80C00FC669D /* RESAppDelegate.m */; };
+		1BA19E251A5FA80C00FC669D /* RESKeychainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E241A5FA80C00FC669D /* RESKeychainViewController.m */; };
+		1BA19E281A5FA80C00FC669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E261A5FA80C00FC669D /* Main.storyboard */; };
+		1BA19E2A1A5FA80C00FC669D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E291A5FA80C00FC669D /* Images.xcassets */; };
+		1BA19E2D1A5FA80C00FC669D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E2B1A5FA80C00FC669D /* LaunchScreen.xib */; };
+		1BA19E391A5FA80C00FC669D /* KeychainPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E381A5FA80C00FC669D /* KeychainPlaygroundTests.m */; };
+		1BA19E461A5FA96100FC669D /* Keychain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E451A5FA96100FC669D /* Keychain.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA19E331A5FA80C00FC669D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA19E111A5FA80C00FC669D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA19E181A5FA80C00FC669D;
+			remoteInfo = KeychainPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BA19E191A5FA80C00FC669D /* KeychainPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA19E1D1A5FA80C00FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA19E1E1A5FA80C00FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BA19E201A5FA80C00FC669D /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1BA19E211A5FA80C00FC669D /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
+		1BA19E231A5FA80C00FC669D /* RESKeychainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESKeychainViewController.h; sourceTree = "<group>"; };
+		1BA19E241A5FA80C00FC669D /* RESKeychainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESKeychainViewController.m; sourceTree = "<group>"; };
+		1BA19E271A5FA80C00FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BA19E291A5FA80C00FC669D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1BA19E2C1A5FA80C00FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1BA19E321A5FA80C00FC669D /* KeychainPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA19E371A5FA80C00FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA19E381A5FA80C00FC669D /* KeychainPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainPlaygroundTests.m; sourceTree = "<group>"; };
+		1BA19E451A5FA96100FC669D /* Keychain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keychain.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BA19E161A5FA80C00FC669D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA19E2F1A5FA80C00FC669D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA19E101A5FA80C00FC669D = {
+			isa = PBXGroup;
+			children = (
+				1BA19E1B1A5FA80C00FC669D /* KeychainPlayground */,
+				1BA19E351A5FA80C00FC669D /* KeychainPlaygroundTests */,
+				1BA19E1A1A5FA80C00FC669D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BA19E1A1A5FA80C00FC669D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E191A5FA80C00FC669D /* KeychainPlayground.app */,
+				1BA19E321A5FA80C00FC669D /* KeychainPlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BA19E1B1A5FA80C00FC669D /* KeychainPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E441A5FA86700FC669D /* views */,
+				1BA19E431A5FA85E00FC669D /* app controllers */,
+				1BA19E421A5FA85700FC669D /* view controllers */,
+				1BA19E1C1A5FA80C00FC669D /* Supporting Files */,
+			);
+			path = KeychainPlayground;
+			sourceTree = "<group>";
+		};
+		1BA19E1C1A5FA80C00FC669D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E291A5FA80C00FC669D /* Images.xcassets */,
+				1BA19E1D1A5FA80C00FC669D /* Info.plist */,
+				1BA19E1E1A5FA80C00FC669D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BA19E351A5FA80C00FC669D /* KeychainPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E381A5FA80C00FC669D /* KeychainPlaygroundTests.m */,
+				1BA19E361A5FA80C00FC669D /* Supporting Files */,
+			);
+			path = KeychainPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		1BA19E361A5FA80C00FC669D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E371A5FA80C00FC669D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BA19E421A5FA85700FC669D /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E231A5FA80C00FC669D /* RESKeychainViewController.h */,
+				1BA19E241A5FA80C00FC669D /* RESKeychainViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		1BA19E431A5FA85E00FC669D /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E201A5FA80C00FC669D /* RESAppDelegate.h */,
+				1BA19E211A5FA80C00FC669D /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
+		1BA19E441A5FA86700FC669D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19E261A5FA80C00FC669D /* Main.storyboard */,
+				1BA19E2B1A5FA80C00FC669D /* LaunchScreen.xib */,
+				1BA19E451A5FA96100FC669D /* Keychain.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BA19E181A5FA80C00FC669D /* KeychainPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA19E3C1A5FA80C00FC669D /* Build configuration list for PBXNativeTarget "KeychainPlayground" */;
+			buildPhases = (
+				1BA19E151A5FA80C00FC669D /* Sources */,
+				1BA19E161A5FA80C00FC669D /* Frameworks */,
+				1BA19E171A5FA80C00FC669D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainPlayground;
+			productName = KeychainPlayground;
+			productReference = 1BA19E191A5FA80C00FC669D /* KeychainPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BA19E311A5FA80C00FC669D /* KeychainPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA19E3F1A5FA80C00FC669D /* Build configuration list for PBXNativeTarget "KeychainPlaygroundTests" */;
+			buildPhases = (
+				1BA19E2E1A5FA80C00FC669D /* Sources */,
+				1BA19E2F1A5FA80C00FC669D /* Frameworks */,
+				1BA19E301A5FA80C00FC669D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA19E341A5FA80C00FC669D /* PBXTargetDependency */,
+			);
+			name = KeychainPlaygroundTests;
+			productName = KeychainPlaygroundTests;
+			productReference = 1BA19E321A5FA80C00FC669D /* KeychainPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BA19E111A5FA80C00FC669D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RES;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1BA19E181A5FA80C00FC669D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1BA19E311A5FA80C00FC669D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1BA19E181A5FA80C00FC669D;
+					};
+				};
+			};
+			buildConfigurationList = 1BA19E141A5FA80C00FC669D /* Build configuration list for PBXProject "KeychainPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BA19E101A5FA80C00FC669D;
+			productRefGroup = 1BA19E1A1A5FA80C00FC669D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BA19E181A5FA80C00FC669D /* KeychainPlayground */,
+				1BA19E311A5FA80C00FC669D /* KeychainPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BA19E171A5FA80C00FC669D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA19E281A5FA80C00FC669D /* Main.storyboard in Resources */,
+				1BA19E461A5FA96100FC669D /* Keychain.xib in Resources */,
+				1BA19E2D1A5FA80C00FC669D /* LaunchScreen.xib in Resources */,
+				1BA19E2A1A5FA80C00FC669D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA19E301A5FA80C00FC669D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA19E151A5FA80C00FC669D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA19E251A5FA80C00FC669D /* RESKeychainViewController.m in Sources */,
+				1BA19E221A5FA80C00FC669D /* RESAppDelegate.m in Sources */,
+				1BA19E1F1A5FA80C00FC669D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA19E2E1A5FA80C00FC669D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA19E391A5FA80C00FC669D /* KeychainPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA19E341A5FA80C00FC669D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA19E181A5FA80C00FC669D /* KeychainPlayground */;
+			targetProxy = 1BA19E331A5FA80C00FC669D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BA19E261A5FA80C00FC669D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA19E271A5FA80C00FC669D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BA19E2B1A5FA80C00FC669D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA19E2C1A5FA80C00FC669D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BA19E3A1A5FA80C00FC669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BA19E3B1A5FA80C00FC669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BA19E3D1A5FA80C00FC669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KeychainPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BA19E3E1A5FA80C00FC669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KeychainPlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1BA19E401A5FA80C00FC669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeychainPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainPlayground.app/KeychainPlayground";
+			};
+			name = Debug;
+		};
+		1BA19E411A5FA80C00FC669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeychainPlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainPlayground.app/KeychainPlayground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA19E141A5FA80C00FC669D /* Build configuration list for PBXProject "KeychainPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA19E3A1A5FA80C00FC669D /* Debug */,
+				1BA19E3B1A5FA80C00FC669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA19E3C1A5FA80C00FC669D /* Build configuration list for PBXNativeTarget "KeychainPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA19E3D1A5FA80C00FC669D /* Debug */,
+				1BA19E3E1A5FA80C00FC669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BA19E3F1A5FA80C00FC669D /* Build configuration list for PBXNativeTarget "KeychainPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA19E401A5FA80C00FC669D /* Debug */,
+				1BA19E411A5FA80C00FC669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BA19E111A5FA80C00FC669D /* Project object */;
+}

@@ -6,22 +6,23 @@
 03 - Leaderboards
 04 - Achievements
 05 - Address Book
-06 - Music Libraries [Player]
+06 - Music Libraries [MediaPlayer]
 07 - Getting JSON from the Server [MessageBoard]
 08 - Getting Started with iCloud
 09 - Notifications
 10 - Bluetooth Messages
-12 - Core Data Primer
+12 - Core Data Primer[/]
 13 - Core Data Up and Running [MyMovies]
+14 - Language Features[/]
 15 - SocialNetworking
-16 - Working With Background Tasks
-17 - GCD for Performance
+16 - Working With Background Tasks[BackgroundTasks]
+17 - GCD for Performance[LongRunningTasks]
 18 - Keychain
-19 - Working With Images and Filters
-20 - Collection Views
+19 - Working With Images and Filters[ImagePlaygound]
+20 - Collection Views[PhotoGallery]
 21 - TextKit
-22 - Gesture Recognizers
-23 - Accessing Photo Libraries
+22 - Gesture Recognizers[GesturePlayground]
+23 - Accessing Photo Libraries[AssetLibraryNavigator]
 24 - Passbook and PassKit
 
 
@@ -49,6 +50,7 @@ Properties物理属性
 ******************************
 12 - Core Data Primer
 13 - Core Data Up and Running [MyMovies]
+14 - Language Features
 
 2014-12-23,周二,阅读完毕。
 
@@ -128,17 +130,38 @@ failureBlock:handleAssetGroupErrorBlock];
 
 
 ******************************
-17 - GCD for Performance[LongRunningTask]
+17 - GCD for Performance[LongRunningTasks]
+16 - Working With Background Tasks[BackgroundTasks]
 2014-01-08,周四,上午阅读
 2014-01-09,周五,开始正式练习
+
+
+
+******************************
+22 - Gesture Recognizers[GesturePlaygound]
+
+2014-01-09,周五,中午完成练习
+
+
+
+
+******************************
+18 - Keychain[KeychainPlayground]
+
+2014-01-09,周五,开启
 
 
 
 
 
 ******************************
-16 - Working With Background Tasks
+21 - TextKit
 
+
+
+
+******************************
+24 - Passbook and PassKit
 
 
 
@@ -194,43 +217,7 @@ failureBlock:handleAssetGroupErrorBlock];
 
 
 ******************************
-14 - Language Features
-
-
-
-******************************
 15 - SocialNetworking
-
-
-
-
-
-
-******************************
-18 - Keychain
-
-
-
-
-
-
-
-
-******************************
-21 - TextKit
-
-
-
-
-******************************
-22 - Gesture Recognizers
-
-
-
-
-
-******************************
-24 - Passbook and PassKit
 
 
 
