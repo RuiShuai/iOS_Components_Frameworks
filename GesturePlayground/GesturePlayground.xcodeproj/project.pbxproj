@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		1B9A1ECC1A5EBCFD001873A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1ECB1A5EBCFD001873A8 /* main.m */; };
 		1B9A1ECF1A5EBCFD001873A8 /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1ECE1A5EBCFD001873A8 /* RESAppDelegate.m */; };
-		1B9A1ED21A5EBCFD001873A8 /* RESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1ED11A5EBCFD001873A8 /* RESViewController.m */; };
+		1B9A1ED21A5EBCFD001873A8 /* RESGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1ED11A5EBCFD001873A8 /* RESGestureViewController.m */; };
 		1B9A1ED51A5EBCFD001873A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1ED31A5EBCFD001873A8 /* Main.storyboard */; };
 		1B9A1ED71A5EBCFD001873A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1ED61A5EBCFD001873A8 /* Images.xcassets */; };
 		1B9A1EDA1A5EBCFD001873A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1ED81A5EBCFD001873A8 /* LaunchScreen.xib */; };
 		1B9A1EE61A5EBCFD001873A8 /* GesturePlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1EE51A5EBCFD001873A8 /* GesturePlaygroundTests.m */; };
+		1BA19E0F1A5F863500FC669D /* Gesture.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E0E1A5F863500FC669D /* Gesture.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,15 @@
 		1B9A1ECB1A5EBCFD001873A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B9A1ECD1A5EBCFD001873A8 /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
 		1B9A1ECE1A5EBCFD001873A8 /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
-		1B9A1ED01A5EBCFD001873A8 /* RESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESViewController.h; sourceTree = "<group>"; };
-		1B9A1ED11A5EBCFD001873A8 /* RESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESViewController.m; sourceTree = "<group>"; };
+		1B9A1ED01A5EBCFD001873A8 /* RESGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESGestureViewController.h; sourceTree = "<group>"; };
+		1B9A1ED11A5EBCFD001873A8 /* RESGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESGestureViewController.m; sourceTree = "<group>"; };
 		1B9A1ED41A5EBCFD001873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B9A1ED61A5EBCFD001873A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1B9A1ED91A5EBCFD001873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1B9A1EDF1A5EBCFD001873A8 /* GesturePlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturePlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9A1EE41A5EBCFD001873A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9A1EE51A5EBCFD001873A8 /* GesturePlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturePlaygroundTests.m; sourceTree = "<group>"; };
+		1BA19E0E1A5F863500FC669D /* Gesture.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Gesture.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +121,8 @@
 		1B9A1EEF1A5EBD04001873A8 /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B9A1ED01A5EBCFD001873A8 /* RESViewController.h */,
-				1B9A1ED11A5EBCFD001873A8 /* RESViewController.m */,
+				1B9A1ED01A5EBCFD001873A8 /* RESGestureViewController.h */,
+				1B9A1ED11A5EBCFD001873A8 /* RESGestureViewController.m */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 			children = (
 				1B9A1ED31A5EBCFD001873A8 /* Main.storyboard */,
 				1B9A1ED81A5EBCFD001873A8 /* LaunchScreen.xib */,
+				1BA19E0E1A5F863500FC669D /* Gesture.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				1B9A1ED51A5EBCFD001873A8 /* Main.storyboard in Resources */,
 				1B9A1EDA1A5EBCFD001873A8 /* LaunchScreen.xib in Resources */,
 				1B9A1ED71A5EBCFD001873A8 /* Images.xcassets in Resources */,
+				1BA19E0F1A5F863500FC669D /* Gesture.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9A1ED21A5EBCFD001873A8 /* RESViewController.m in Sources */,
+				1B9A1ED21A5EBCFD001873A8 /* RESGestureViewController.m in Sources */,
 				1B9A1ECF1A5EBCFD001873A8 /* RESAppDelegate.m in Sources */,
 				1B9A1ECC1A5EBCFD001873A8 /* main.m in Sources */,
 			);
@@ -437,6 +441,7 @@
 				1B9A1EEB1A5EBCFD001873A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B9A1EEC1A5EBCFD001873A8 /* Build configuration list for PBXNativeTarget "GesturePlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +450,7 @@
 				1B9A1EEE1A5EBCFD001873A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

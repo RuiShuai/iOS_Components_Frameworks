@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class RESGestureViewController;
+
 @interface RESAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong ,nonatomic) RESGestureViewController *viewController;
 
 @end
 
