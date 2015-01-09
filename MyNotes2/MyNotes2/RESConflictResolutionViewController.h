@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RESConflictResolutionViewController.h
 //  MyNotes2
 //
 //  Created by taotao on 15/1/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RESViewController : UIViewController
-
+@interface RESConflictResolutionViewController : UIViewController
 
 @end
-

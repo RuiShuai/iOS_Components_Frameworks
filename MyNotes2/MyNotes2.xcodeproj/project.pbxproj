@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		1BA19F2A1A5FE44B00FC669D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F291A5FE44B00FC669D /* main.m */; };
 		1BA19F2D1A5FE44B00FC669D /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F2C1A5FE44B00FC669D /* RESAppDelegate.m */; };
-		1BA19F301A5FE44B00FC669D /* RESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F2F1A5FE44B00FC669D /* RESViewController.m */; };
 		1BA19F331A5FE44B00FC669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19F311A5FE44B00FC669D /* Main.storyboard */; };
 		1BA19F351A5FE44B00FC669D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19F341A5FE44B00FC669D /* Images.xcassets */; };
 		1BA19F381A5FE44B00FC669D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19F361A5FE44B00FC669D /* LaunchScreen.xib */; };
 		1BA19F441A5FE44B00FC669D /* MyNotes2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F431A5FE44B00FC669D /* MyNotes2Tests.m */; };
+		1BA19F521A5FE6FD00FC669D /* RESNotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F511A5FE6FD00FC669D /* RESNotesListViewController.m */; };
+		1BA19F551A5FE74500FC669D /* RESNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F541A5FE74500FC669D /* RESNotesDetailViewController.m */; };
+		1BA19F591A5FF56300FC669D /* RESConflictResolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F581A5FF56300FC669D /* RESConflictResolutionViewController.m */; };
+		1BA19F5C1A5FF57800FC669D /* RESConflictVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F5B1A5FF57800FC669D /* RESConflictVersionViewController.m */; };
+		1BA19F5F1A5FF78000FC669D /* RESMyNoteDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F5E1A5FF78000FC669D /* RESMyNoteDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,22 @@
 		1BA19F291A5FE44B00FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BA19F2B1A5FE44B00FC669D /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
 		1BA19F2C1A5FE44B00FC669D /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
-		1BA19F2E1A5FE44B00FC669D /* RESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESViewController.h; sourceTree = "<group>"; };
-		1BA19F2F1A5FE44B00FC669D /* RESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESViewController.m; sourceTree = "<group>"; };
 		1BA19F321A5FE44B00FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA19F341A5FE44B00FC669D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1BA19F371A5FE44B00FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1BA19F3D1A5FE44B00FC669D /* MyNotes2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNotes2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA19F421A5FE44B00FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19F431A5FE44B00FC669D /* MyNotes2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNotes2Tests.m; sourceTree = "<group>"; };
+		1BA19F501A5FE6FD00FC669D /* RESNotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESNotesListViewController.h; sourceTree = "<group>"; };
+		1BA19F511A5FE6FD00FC669D /* RESNotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESNotesListViewController.m; sourceTree = "<group>"; };
+		1BA19F531A5FE74500FC669D /* RESNotesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESNotesDetailViewController.h; sourceTree = "<group>"; };
+		1BA19F541A5FE74500FC669D /* RESNotesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESNotesDetailViewController.m; sourceTree = "<group>"; };
+		1BA19F571A5FF56300FC669D /* RESConflictResolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESConflictResolutionViewController.h; sourceTree = "<group>"; };
+		1BA19F581A5FF56300FC669D /* RESConflictResolutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESConflictResolutionViewController.m; sourceTree = "<group>"; };
+		1BA19F5A1A5FF57800FC669D /* RESConflictVersionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESConflictVersionViewController.h; sourceTree = "<group>"; };
+		1BA19F5B1A5FF57800FC669D /* RESConflictVersionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESConflictVersionViewController.m; sourceTree = "<group>"; };
+		1BA19F5D1A5FF78000FC669D /* RESMyNoteDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESMyNoteDocument.h; sourceTree = "<group>"; };
+		1BA19F5E1A5FF78000FC669D /* RESMyNoteDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESMyNoteDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +131,13 @@
 		1BA19F4D1A5FE45200FC669D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BA19F2E1A5FE44B00FC669D /* RESViewController.h */,
-				1BA19F2F1A5FE44B00FC669D /* RESViewController.m */,
+				1BA19F501A5FE6FD00FC669D /* RESNotesListViewController.h */,
+				1BA19F511A5FE6FD00FC669D /* RESNotesListViewController.m */,
+				1BA19F531A5FE74500FC669D /* RESNotesDetailViewController.h */,
+				1BA19F541A5FE74500FC669D /* RESNotesDetailViewController.m */,
+				1BA19F5D1A5FF78000FC669D /* RESMyNoteDocument.h */,
+				1BA19F5E1A5FF78000FC669D /* RESMyNoteDocument.m */,
+				1BA19F561A5FF50B00FC669D /* conflict version */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -141,6 +158,17 @@
 				1BA19F361A5FE44B00FC669D /* LaunchScreen.xib */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		1BA19F561A5FF50B00FC669D /* conflict version */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19F571A5FF56300FC669D /* RESConflictResolutionViewController.h */,
+				1BA19F581A5FF56300FC669D /* RESConflictResolutionViewController.m */,
+				1BA19F5A1A5FF57800FC669D /* RESConflictVersionViewController.h */,
+				1BA19F5B1A5FF57800FC669D /* RESConflictVersionViewController.m */,
+			);
+			name = "conflict version";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA19F301A5FE44B00FC669D /* RESViewController.m in Sources */,
 				1BA19F2D1A5FE44B00FC669D /* RESAppDelegate.m in Sources */,
+				1BA19F521A5FE6FD00FC669D /* RESNotesListViewController.m in Sources */,
+				1BA19F5F1A5FF78000FC669D /* RESMyNoteDocument.m in Sources */,
+				1BA19F5C1A5FF57800FC669D /* RESConflictVersionViewController.m in Sources */,
+				1BA19F551A5FE74500FC669D /* RESNotesDetailViewController.m in Sources */,
 				1BA19F2A1A5FE44B00FC669D /* main.m in Sources */,
+				1BA19F591A5FF56300FC669D /* RESConflictResolutionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
