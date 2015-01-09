@@ -17,13 +17,13 @@
 15 - SocialNetworking
 16 - Working With Background Tasks[BackgroundTasks]
 17 - GCD for Performance[LongRunningTasks]
-18 - Keychain
+18 - Keychain[KeychainPlayground]
 19 - Working With Images and Filters[ImagePlaygound]
 20 - Collection Views[PhotoGallery]
-21 - TextKit
+21 - TextKit[TextKit]
 22 - Gesture Recognizers[GesturePlayground]
 23 - Accessing Photo Libraries[AssetLibraryNavigator]
-24 - Passbook and PassKit
+24 - Passbook and PassKit[PassKit]
 
 
 ******************************
@@ -83,22 +83,23 @@ A fetched results controller (NSFetchedResultsController) is a very effective li
 
 ******************************
 06 - Music Libraries [MediaPlayer]
+
 【2014-12-29，周一】，第6章，【MediaPlayer】
 player = [MPMusicPlayerController systemMusicPlayer];//applicationMusicPlayer];
 
 
 
-
 ******************************
 19 - Working With Images and Filters[imagePlayground]
+
 2015-01-06,周二,完成imagePlayground的ipad程序
 filterDelegate传递,继承cell单元格
 
 
 
-
 ******************************
 23 - Accessing Photo Libraries[AssetLibraryNavigator]
+
 2015-01-06,周二,下午完成类photo读取程序
 AssetLibrary,AssetGroup,AssetDetail
 
@@ -132,6 +133,7 @@ failureBlock:handleAssetGroupErrorBlock];
 ******************************
 17 - GCD for Performance[LongRunningTasks]
 16 - Working With Background Tasks[BackgroundTasks]
+
 2014-01-08,周四,上午阅读
 2014-01-09,周五,开始正式练习
 
@@ -148,20 +150,31 @@ failureBlock:handleAssetGroupErrorBlock];
 ******************************
 18 - Keychain[KeychainPlayground]
 
-2014-01-09,周五,开启
+2014-01-09,周五,项目准备
+
+
+
+
+******************************
+24 - Passbook and PassKit[PassKit]
+
 
 
 
 
 
 ******************************
-21 - TextKit
+21 - TextKit[TextKit]
+
+
 
 
 
 
 ******************************
-24 - Passbook and PassKit
+05 - Address Book[AddressBook]
+
+
 
 
 
@@ -175,14 +188,6 @@ failureBlock:handleAssetGroupErrorBlock];
 
 ******************************
 04 - Achievements
-
-
-
-
-******************************
-05 - Address Book
-
-
 
 
 
