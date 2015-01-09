@@ -28,6 +28,7 @@
                                    @"Item Initial-4",
                                    @"Item Initial-5"
                                    ]];
+    //定义进程队列
     self.processingQueue = [[NSOperationQueue alloc]init];
     [self.tableView setTableHeaderView:self.statusView];
 }

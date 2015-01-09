@@ -33,13 +33,15 @@
 {
     [super viewDidAppear:animated];
     
-    SEL taskSelector = @selector(performLongRunningTaskForIteration:);
+    //定义队列
+    dispatch_queue_t workQueue = dispatch_queue_create("com.RuiShuai.serialQueue", NULL);
     
     for (int i=1; i<=5; i++) {
         NSNumber *iteration = [NSNumber numberWithInt:i];
-        //后台进程执行
-        [self performSelectorInBackground:taskSelector
-                               withObject:iteration];
+        
+        dispatch_async(workQueue, ^{
+            [self performLongRunningTaskForIteration:iteration];
+        });
     }
     
 }
@@ -51,11 +53,13 @@
     for (int i=1; i<=10; i++) {
         [newArray addObject:[NSString stringWithFormat:@"Item %@-%d",iterationNumber,i]];
         [NSThread sleepForTimeInterval:0.1];
-        NSLog(@"Background Added %@-%d",iterationNumber,i);
+        NSLog(@"DpQ Serial Added %@-%d",iterationNumber,i);
     }
     
-    //转至主进程
-    [self performSelectorOnMainThread:@selector(updateTableData:) withObject:newArray waitUntilDone:NO];
+    //调用主线程更新UI
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self updateTableData:newArray];
+    });
     
 }
 

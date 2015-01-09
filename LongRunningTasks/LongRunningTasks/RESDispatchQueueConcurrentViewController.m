@@ -35,13 +35,16 @@
 {
     [super viewDidAppear:animated];
     
-    SEL taskSelector = @selector(performLongRunningTaskForIteration:);
-    
+    //定义分发队列
+    dispatch_queue_t workQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+   
     for (int i=1; i<=5; i++) {
         NSNumber *iteration = [NSNumber numberWithInt:i];
-        //后台进程执行
-        [self performSelectorInBackground:taskSelector
-                               withObject:iteration];
+        //异步进程执行
+        dispatch_async(workQueue, ^{
+            [self performLongRunningTaskForIteration:iteration];
+        });
+        
     }
     
 }
@@ -49,15 +52,34 @@
 -(void)performLongRunningTaskForIteration:(id)iteration
 {
     NSNumber *iterationNumber = (NSNumber *)iteration;
-    NSMutableArray *newArray = [[NSMutableArray alloc]initWithCapacity:10];
+    
+    __block NSMutableArray *newArray = [[NSMutableArray alloc]initWithCapacity:10];
+
+    //定义分发队列
+    dispatch_queue_t detailQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
+    
+    //应用分发线程
+    size_t loop = (size_t)[iterationNumber intValue];
+    dispatch_apply(loop, detailQueue, ^(size_t i) {
+        [newArray addObject:[NSString stringWithFormat:@"Item %@-%zu",iterationNumber,i+1]];
+        [NSThread sleepForTimeInterval:0.1];
+        NSLog(@"DpQ Concurrent Added %@-%zu",iterationNumber,i+1);
+    });
+    
+    //调用主线程更新UI
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self updateTableData:newArray];
+    });
+    
+    /*
     for (int i=1; i<=10; i++) {
         [newArray addObject:[NSString stringWithFormat:@"Item %@-%d",iterationNumber,i]];
         [NSThread sleepForTimeInterval:0.1];
         NSLog(@"Background Added %@-%d",iterationNumber,i);
     }
-    
-    //转至主进程
+    //调用主线程更新UI
     [self performSelectorOnMainThread:@selector(updateTableData:) withObject:newArray waitUntilDone:NO];
+    */
     
 }
 
