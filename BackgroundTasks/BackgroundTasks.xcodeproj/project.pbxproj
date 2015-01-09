@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		1B9A1E971A5EBB0B001873A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E961A5EBB0B001873A8 /* main.m */; };
 		1B9A1E9A1A5EBB0B001873A8 /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E991A5EBB0B001873A8 /* RESAppDelegate.m */; };
-		1B9A1E9D1A5EBB0B001873A8 /* RESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E9C1A5EBB0B001873A8 /* RESViewController.m */; };
+		1B9A1E9D1A5EBB0B001873A8 /* RESBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1E9C1A5EBB0B001873A8 /* RESBackgroundViewController.m */; };
 		1B9A1EA01A5EBB0B001873A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1E9E1A5EBB0B001873A8 /* Main.storyboard */; };
 		1B9A1EA21A5EBB0B001873A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1EA11A5EBB0B001873A8 /* Images.xcassets */; };
 		1B9A1EA51A5EBB0B001873A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A1EA31A5EBB0B001873A8 /* LaunchScreen.xib */; };
 		1B9A1EB11A5EBB0B001873A8 /* BackgroundTasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A1EB01A5EBB0B001873A8 /* BackgroundTasksTests.m */; };
+		1BA19E0B1A5F73E900FC669D /* book_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E0A1A5F73E900FC669D /* book_cover.png */; };
+		1BA19E0D1A5F73F000FC669D /* 16_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E0C1A5F73F000FC669D /* 16_audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,16 @@
 		1B9A1E961A5EBB0B001873A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B9A1E981A5EBB0B001873A8 /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
 		1B9A1E991A5EBB0B001873A8 /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
-		1B9A1E9B1A5EBB0B001873A8 /* RESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESViewController.h; sourceTree = "<group>"; };
-		1B9A1E9C1A5EBB0B001873A8 /* RESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESViewController.m; sourceTree = "<group>"; };
+		1B9A1E9B1A5EBB0B001873A8 /* RESBackgroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESBackgroundViewController.h; sourceTree = "<group>"; };
+		1B9A1E9C1A5EBB0B001873A8 /* RESBackgroundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESBackgroundViewController.m; sourceTree = "<group>"; };
 		1B9A1E9F1A5EBB0B001873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B9A1EA11A5EBB0B001873A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1B9A1EA41A5EBB0B001873A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1B9A1EAA1A5EBB0B001873A8 /* BackgroundTasksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundTasksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9A1EAF1A5EBB0B001873A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9A1EB01A5EBB0B001873A8 /* BackgroundTasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundTasksTests.m; sourceTree = "<group>"; };
+		1BA19E0A1A5F73E900FC669D /* book_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_cover.png; sourceTree = "<group>"; };
+		1BA19E0C1A5F73F000FC669D /* 16_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16_audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 		1B9A1E941A5EBB0B001873A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1BA19E0C1A5F73F000FC669D /* 16_audio.mp3 */,
+				1BA19E0A1A5F73E900FC669D /* book_cover.png */,
 				1B9A1EA11A5EBB0B001873A8 /* Images.xcassets */,
 				1B9A1E951A5EBB0B001873A8 /* Info.plist */,
 				1B9A1E961A5EBB0B001873A8 /* main.m */,
@@ -119,8 +125,8 @@
 		1B9A1EBA1A5EBB64001873A8 /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B9A1E9B1A5EBB0B001873A8 /* RESViewController.h */,
-				1B9A1E9C1A5EBB0B001873A8 /* RESViewController.m */,
+				1B9A1E9B1A5EBB0B001873A8 /* RESBackgroundViewController.h */,
+				1B9A1E9C1A5EBB0B001873A8 /* RESBackgroundViewController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9A1EA01A5EBB0B001873A8 /* Main.storyboard in Resources */,
+				1BA19E0D1A5F73F000FC669D /* 16_audio.mp3 in Resources */,
 				1B9A1EA51A5EBB0B001873A8 /* LaunchScreen.xib in Resources */,
+				1BA19E0B1A5F73E900FC669D /* book_cover.png in Resources */,
 				1B9A1EA21A5EBB0B001873A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9A1E9D1A5EBB0B001873A8 /* RESViewController.m in Sources */,
+				1B9A1E9D1A5EBB0B001873A8 /* RESBackgroundViewController.m in Sources */,
 				1B9A1E9A1A5EBB0B001873A8 /* RESAppDelegate.m in Sources */,
 				1B9A1E971A5EBB0B001873A8 /* main.m in Sources */,
 			);
@@ -437,6 +445,7 @@
 				1B9A1EB61A5EBB0B001873A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B9A1EB71A5EBB0B001873A8 /* Build configuration list for PBXNativeTarget "BackgroundTasksTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +454,7 @@
 				1B9A1EB91A5EBB0B001873A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
