@@ -15,6 +15,8 @@
 		1BA19E2D1A5FA80C00FC669D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E2B1A5FA80C00FC669D /* LaunchScreen.xib */; };
 		1BA19E391A5FA80C00FC669D /* KeychainPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E381A5FA80C00FC669D /* KeychainPlaygroundTests.m */; };
 		1BA19E461A5FA96100FC669D /* Keychain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E451A5FA96100FC669D /* Keychain.xib */; };
+		1BA19F661A60264300FC669D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F651A60264300FC669D /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1BA19F691A6029CB00FC669D /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19F681A6029CB00FC669D /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		1BA19E371A5FA80C00FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19E381A5FA80C00FC669D /* KeychainPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainPlaygroundTests.m; sourceTree = "<group>"; };
 		1BA19E451A5FA96100FC669D /* Keychain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keychain.xib; sourceTree = "<group>"; };
+		1BA19F641A60264300FC669D /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		1BA19F651A60264300FC669D /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		1BA19F671A6029CB00FC669D /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		1BA19F681A6029CB00FC669D /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 				1BA19E441A5FA86700FC669D /* views */,
 				1BA19E431A5FA85E00FC669D /* app controllers */,
 				1BA19E421A5FA85700FC669D /* view controllers */,
+				1BA19F631A60162800FC669D /* keychain item wrapper */,
 				1BA19E1C1A5FA80C00FC669D /* Supporting Files */,
 			);
 			path = KeychainPlayground;
@@ -144,6 +151,17 @@
 				1BA19E451A5FA96100FC669D /* Keychain.xib */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		1BA19F631A60162800FC669D /* keychain item wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				1BA19F671A6029CB00FC669D /* SFHFKeychainUtils.h */,
+				1BA19F681A6029CB00FC669D /* SFHFKeychainUtils.m */,
+				1BA19F641A60264300FC669D /* KeychainItemWrapper.h */,
+				1BA19F651A60264300FC669D /* KeychainItemWrapper.m */,
+			);
+			name = "keychain item wrapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA19F661A60264300FC669D /* KeychainItemWrapper.m in Sources */,
 				1BA19E251A5FA80C00FC669D /* RESKeychainViewController.m in Sources */,
 				1BA19E221A5FA80C00FC669D /* RESAppDelegate.m in Sources */,
+				1BA19F691A6029CB00FC669D /* SFHFKeychainUtils.m in Sources */,
 				1BA19E1F1A5FA80C00FC669D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = KeychainPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = KeychainPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +463,7 @@
 				1BA19E3E1A5FA80C00FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA19E3F1A5FA80C00FC669D /* Build configuration list for PBXNativeTarget "KeychainPlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +472,7 @@
 				1BA19E411A5FA80C00FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

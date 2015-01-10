@@ -4,7 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RESKeychainViewController"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RESKeychainViewController">
+            <connections>
+                <outlet property="CV2CodeTextField" destination="VqS-1j-Q1G" id="8YB-Ve-n6I"/>
+                <outlet property="expDateTextField" destination="e3K-7x-7dK" id="dBe-xo-0tU"/>
+                <outlet property="nameTextField" destination="bsQ-OQ-ckU" id="eH5-DR-uoN"/>
+                <outlet property="numberTextField" destination="sXM-ry-zFm" id="4EV-05-rEB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xSI-rj-6hS"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -45,6 +53,9 @@
                     <state key="normal" title="Save">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="saveButtonTouched:" destination="-1" eventType="touchUpInside" id="cSw-4C-vSC"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
