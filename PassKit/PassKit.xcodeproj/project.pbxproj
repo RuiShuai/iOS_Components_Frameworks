@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B715FF21A60F8E100EBCD3A /* RESPassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B715FF11A60F8E100EBCD3A /* RESPassListViewController.m */; };
+		1B715FF51A60F92400EBCD3A /* RESBoardingPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B715FF41A60F92400EBCD3A /* RESBoardingPassViewController.m */; };
+		1B715FF81A60F93E00EBCD3A /* RESCouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B715FF71A60F93E00EBCD3A /* RESCouponViewController.m */; };
+		1B715FFB1A60F95300EBCD3A /* RESEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B715FFA1A60F95300EBCD3A /* RESEventViewController.m */; };
+		1B715FFE1A60F96600EBCD3A /* RESGenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B715FFD1A60F96600EBCD3A /* RESGenericViewController.m */; };
+		1B7160011A60F97800EBCD3A /* RESStoreCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7160001A60F97800EBCD3A /* RESStoreCardViewController.m */; };
+		1B7160041A60FC6D00EBCD3A /* RESPassTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7160031A60FC6D00EBCD3A /* RESPassTemplateViewController.m */; };
 		1BA19E561A5FACE400FC669D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E551A5FACE400FC669D /* main.m */; };
-		1BA19E591A5FACE400FC669D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E581A5FACE400FC669D /* AppDelegate.m */; };
-		1BA19E5C1A5FACE400FC669D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E5B1A5FACE400FC669D /* ViewController.m */; };
+		1BA19E591A5FACE400FC669D /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E581A5FACE400FC669D /* RESAppDelegate.m */; };
 		1BA19E5F1A5FACE400FC669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E5D1A5FACE400FC669D /* Main.storyboard */; };
 		1BA19E611A5FACE400FC669D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E601A5FACE400FC669D /* Images.xcassets */; };
 		1BA19E641A5FACE400FC669D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E621A5FACE400FC669D /* LaunchScreen.xib */; };
@@ -27,13 +33,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B715FF01A60F8E100EBCD3A /* RESPassListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESPassListViewController.h; sourceTree = "<group>"; };
+		1B715FF11A60F8E100EBCD3A /* RESPassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESPassListViewController.m; sourceTree = "<group>"; };
+		1B715FF31A60F92400EBCD3A /* RESBoardingPassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESBoardingPassViewController.h; sourceTree = "<group>"; };
+		1B715FF41A60F92400EBCD3A /* RESBoardingPassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESBoardingPassViewController.m; sourceTree = "<group>"; };
+		1B715FF61A60F93E00EBCD3A /* RESCouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCouponViewController.h; sourceTree = "<group>"; };
+		1B715FF71A60F93E00EBCD3A /* RESCouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCouponViewController.m; sourceTree = "<group>"; };
+		1B715FF91A60F95300EBCD3A /* RESEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESEventViewController.h; sourceTree = "<group>"; };
+		1B715FFA1A60F95300EBCD3A /* RESEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESEventViewController.m; sourceTree = "<group>"; };
+		1B715FFC1A60F96600EBCD3A /* RESGenericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGenericViewController.h; sourceTree = "<group>"; };
+		1B715FFD1A60F96600EBCD3A /* RESGenericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGenericViewController.m; sourceTree = "<group>"; };
+		1B715FFF1A60F97800EBCD3A /* RESStoreCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESStoreCardViewController.h; sourceTree = "<group>"; };
+		1B7160001A60F97800EBCD3A /* RESStoreCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESStoreCardViewController.m; sourceTree = "<group>"; };
+		1B7160021A60FC6D00EBCD3A /* RESPassTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESPassTemplateViewController.h; sourceTree = "<group>"; };
+		1B7160031A60FC6D00EBCD3A /* RESPassTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESPassTemplateViewController.m; sourceTree = "<group>"; };
 		1BA19E501A5FACE400FC669D /* PassKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA19E541A5FACE400FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19E551A5FACE400FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1BA19E571A5FACE400FC669D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1BA19E581A5FACE400FC669D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1BA19E5A1A5FACE400FC669D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BA19E5B1A5FACE400FC669D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BA19E571A5FACE400FC669D /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1BA19E581A5FACE400FC669D /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
 		1BA19E5E1A5FACE400FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA19E601A5FACE400FC669D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1BA19E631A5FACE400FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +78,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B7160051A60FC7B00EBCD3A /* pass details */ = {
+			isa = PBXGroup;
+			children = (
+				1B7160021A60FC6D00EBCD3A /* RESPassTemplateViewController.h */,
+				1B7160031A60FC6D00EBCD3A /* RESPassTemplateViewController.m */,
+				1B715FF31A60F92400EBCD3A /* RESBoardingPassViewController.h */,
+				1B715FF41A60F92400EBCD3A /* RESBoardingPassViewController.m */,
+				1B715FF61A60F93E00EBCD3A /* RESCouponViewController.h */,
+				1B715FF71A60F93E00EBCD3A /* RESCouponViewController.m */,
+				1B715FF91A60F95300EBCD3A /* RESEventViewController.h */,
+				1B715FFA1A60F95300EBCD3A /* RESEventViewController.m */,
+				1B715FFC1A60F96600EBCD3A /* RESGenericViewController.h */,
+				1B715FFD1A60F96600EBCD3A /* RESGenericViewController.m */,
+				1B715FFF1A60F97800EBCD3A /* RESStoreCardViewController.h */,
+				1B7160001A60F97800EBCD3A /* RESStoreCardViewController.m */,
+			);
+			name = "pass details";
+			sourceTree = "<group>";
+		};
 		1BA19E471A5FACE400FC669D = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +156,9 @@
 		1BA19E791A5FACF600FC669D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BA19E5A1A5FACE400FC669D /* ViewController.h */,
-				1BA19E5B1A5FACE400FC669D /* ViewController.m */,
+				1B715FF01A60F8E100EBCD3A /* RESPassListViewController.h */,
+				1B715FF11A60F8E100EBCD3A /* RESPassListViewController.m */,
+				1B7160051A60FC7B00EBCD3A /* pass details */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -128,8 +166,8 @@
 		1BA19E7A1A5FAD0000FC669D /* app controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BA19E571A5FACE400FC669D /* AppDelegate.h */,
-				1BA19E581A5FACE400FC669D /* AppDelegate.m */,
+				1BA19E571A5FACE400FC669D /* RESAppDelegate.h */,
+				1BA19E581A5FACE400FC669D /* RESAppDelegate.m */,
 			);
 			name = "app controllers";
 			sourceTree = "<group>";
@@ -244,9 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA19E5C1A5FACE400FC669D /* ViewController.m in Sources */,
-				1BA19E591A5FACE400FC669D /* AppDelegate.m in Sources */,
+				1B715FFB1A60F95300EBCD3A /* RESEventViewController.m in Sources */,
+				1B715FF51A60F92400EBCD3A /* RESBoardingPassViewController.m in Sources */,
+				1B715FF21A60F8E100EBCD3A /* RESPassListViewController.m in Sources */,
+				1BA19E591A5FACE400FC669D /* RESAppDelegate.m in Sources */,
+				1B715FF81A60F93E00EBCD3A /* RESCouponViewController.m in Sources */,
 				1BA19E561A5FACE400FC669D /* main.m in Sources */,
+				1B7160041A60FC6D00EBCD3A /* RESPassTemplateViewController.m in Sources */,
+				1B715FFE1A60F96600EBCD3A /* RESGenericViewController.m in Sources */,
+				1B7160011A60F97800EBCD3A /* RESStoreCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +481,7 @@
 				1BA19E751A5FACE400FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA19E761A5FACE400FC669D /* Build configuration list for PBXNativeTarget "PassKitTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +490,7 @@
 				1BA19E781A5FACE400FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
