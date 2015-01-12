@@ -125,9 +125,81 @@
                     <view key="view" contentMode="scaleToFill" id="Kk4-L8-V9P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 passes in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxC-kf-6qd">
+                                <rect key="frame" x="176" y="118" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generic is not in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmg-UL-QII">
+                                <rect key="frame" x="195" y="147" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnT-zw-cSs">
+                                <rect key="frame" x="210" y="227" width="181" height="30"/>
+                                <state key="normal" title="Add  Generic to Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPassTouched:" destination="5ao-q0-odi" eventType="touchUpInside" id="CC4-yL-tIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RC9-jO-tpZ">
+                                <rect key="frame" x="208" y="265" width="185" height="30"/>
+                                <state key="normal" title="Simulate Updating Generic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePassTouched:" destination="5ao-q0-odi" eventType="touchUpInside" id="6bg-ir-cWf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hG-Yp-tnj">
+                                <rect key="frame" x="208" y="303" width="185" height="30"/>
+                                <state key="normal" title="Show Generic in Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPassTouched:" destination="5ao-q0-odi" eventType="touchUpInside" id="ILr-8M-3xg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj4-mM-cst">
+                                <rect key="frame" x="243" y="341" width="114" height="30"/>
+                                <state key="normal" title="Remove Generic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePassTouched:" destination="5ao-q0-odi" eventType="touchUpInside" id="z7j-5z-FNd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="NnT-zw-cSs" secondAttribute="centerX" constant="-0.5" id="3SO-A6-pKJ"/>
+                            <constraint firstItem="Aj4-mM-cst" firstAttribute="top" secondItem="3hG-Yp-tnj" secondAttribute="bottom" constant="8" id="81r-aY-54F"/>
+                            <constraint firstAttribute="centerX" secondItem="3hG-Yp-tnj" secondAttribute="centerX" constant="-0.5" id="CyF-Pk-Jcq"/>
+                            <constraint firstItem="sxC-kf-6qd" firstAttribute="top" secondItem="jhS-fa-J1k" secondAttribute="bottom" constant="54" id="FHF-4z-4U7"/>
+                            <constraint firstItem="RC9-jO-tpZ" firstAttribute="top" secondItem="NnT-zw-cSs" secondAttribute="bottom" constant="8" id="Idw-eX-5Ui"/>
+                            <constraint firstItem="NnT-zw-cSs" firstAttribute="top" secondItem="mmg-UL-QII" secondAttribute="bottom" constant="59" id="m6I-Ov-y5G"/>
+                            <constraint firstItem="mmg-UL-QII" firstAttribute="top" secondItem="sxC-kf-6qd" secondAttribute="bottom" constant="8" id="q42-Y0-HyK"/>
+                            <constraint firstAttribute="centerX" secondItem="RC9-jO-tpZ" secondAttribute="centerX" constant="-0.5" id="tGi-8P-ayg"/>
+                            <constraint firstAttribute="centerX" secondItem="mmg-UL-QII" secondAttribute="centerX" constant="-0.5" id="uas-uP-J3b"/>
+                            <constraint firstAttribute="centerX" secondItem="Aj4-mM-cst" secondAttribute="centerX" id="vHN-Dt-OY6"/>
+                            <constraint firstItem="3hG-Yp-tnj" firstAttribute="top" secondItem="RC9-jO-tpZ" secondAttribute="bottom" constant="8" id="whK-u3-Ysg"/>
+                            <constraint firstAttribute="centerX" secondItem="sxC-kf-6qd" secondAttribute="centerX" constant="-0.5" id="zJE-g7-2Xa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Generic" id="sGx-Hh-Zc8"/>
+                    <connections>
+                        <outlet property="addButton" destination="NnT-zw-cSs" id="h1r-Pe-q1O"/>
+                        <outlet property="deleteButton" destination="Aj4-mM-cst" id="bxi-67-KfO"/>
+                        <outlet property="numPassesLabel" destination="sxC-kf-6qd" id="O6r-IA-f6B"/>
+                        <outlet property="passInBookLabel" destination="mmg-UL-QII" id="Y5A-vG-wX8"/>
+                        <outlet property="showButton" destination="3hG-Yp-tnj" id="HkG-BK-Aim"/>
+                        <outlet property="updateButton" destination="RC9-jO-tpZ" id="0X7-MN-L0O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wl3-RT-iQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,9 +216,81 @@
                     <view key="view" contentMode="scaleToFill" id="a51-Ov-FQ7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 passes in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-rO-pYT">
+                                <rect key="frame" x="176" y="106" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event is not in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxV-hU-YhI">
+                                <rect key="frame" x="203" y="135" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWf-z8-I6o">
+                                <rect key="frame" x="220" y="215" width="161" height="30"/>
+                                <state key="normal" title="Add Event to Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPassTouched:" destination="LC1-9Q-r5h" eventType="touchUpInside" id="Ovl-Jr-W3C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw1-gq-Kyi">
+                                <rect key="frame" x="215" y="253" width="170" height="30"/>
+                                <state key="normal" title="Simulate Updating Event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePassTouched:" destination="LC1-9Q-r5h" eventType="touchUpInside" id="ZmE-Fu-Rv0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aU-VR-bEl">
+                                <rect key="frame" x="215" y="291" width="170" height="30"/>
+                                <state key="normal" title="Show Event in Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPassTouched:" destination="LC1-9Q-r5h" eventType="touchUpInside" id="wkN-XD-Ktx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-Ac-mY2">
+                                <rect key="frame" x="250" y="329" width="100" height="30"/>
+                                <state key="normal" title="Remove Event">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePassTouched:" destination="LC1-9Q-r5h" eventType="touchUpInside" id="dji-W0-omE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hD3-Ac-mY2" secondAttribute="centerX" id="3iT-0I-j8Z"/>
+                            <constraint firstItem="Yw1-gq-Kyi" firstAttribute="top" secondItem="rWf-z8-I6o" secondAttribute="bottom" constant="8" id="6It-AP-Q0n"/>
+                            <constraint firstItem="rWf-z8-I6o" firstAttribute="top" secondItem="JxV-hU-YhI" secondAttribute="bottom" constant="59" id="9mU-64-Bm6"/>
+                            <constraint firstAttribute="centerX" secondItem="JxV-hU-YhI" secondAttribute="centerX" id="FBk-U1-6yJ"/>
+                            <constraint firstItem="JxV-hU-YhI" firstAttribute="top" secondItem="8xf-rO-pYT" secondAttribute="bottom" constant="8" id="KEE-cU-2qH"/>
+                            <constraint firstItem="8xf-rO-pYT" firstAttribute="top" secondItem="8Uf-Ay-FNf" secondAttribute="bottom" constant="42" id="gLU-5V-J0n"/>
+                            <constraint firstAttribute="centerX" secondItem="rWf-z8-I6o" secondAttribute="centerX" constant="-0.5" id="hhF-Gs-xQu"/>
+                            <constraint firstItem="1aU-VR-bEl" firstAttribute="top" secondItem="Yw1-gq-Kyi" secondAttribute="bottom" constant="8" id="j5j-t7-sR2"/>
+                            <constraint firstAttribute="centerX" secondItem="8xf-rO-pYT" secondAttribute="centerX" constant="-0.5" id="jMo-wd-rR9"/>
+                            <constraint firstAttribute="centerX" secondItem="1aU-VR-bEl" secondAttribute="centerX" id="qfH-Tq-b7a"/>
+                            <constraint firstAttribute="centerX" secondItem="Yw1-gq-Kyi" secondAttribute="centerX" id="xyW-pg-oke"/>
+                            <constraint firstItem="hD3-Ac-mY2" firstAttribute="top" secondItem="1aU-VR-bEl" secondAttribute="bottom" constant="8" id="zqG-BW-Tal"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Event" id="tri-bB-KcH"/>
+                    <connections>
+                        <outlet property="addButton" destination="rWf-z8-I6o" id="nSB-sM-EvR"/>
+                        <outlet property="deleteButton" destination="hD3-Ac-mY2" id="6ap-Jq-5tS"/>
+                        <outlet property="numPassesLabel" destination="8xf-rO-pYT" id="pZy-gE-89e"/>
+                        <outlet property="passInBookLabel" destination="JxV-hU-YhI" id="tRK-9S-KU8"/>
+                        <outlet property="showButton" destination="1aU-VR-bEl" id="sdj-Mn-dFl"/>
+                        <outlet property="updateButton" destination="Yw1-gq-Kyi" id="5tR-hY-fbA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pz8-d0-Hla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,9 +307,81 @@
                     <view key="view" contentMode="scaleToFill" id="DP8-09-dab">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 passes in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9V7-rI-KTV">
+                                <rect key="frame" x="176" y="124" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7Y-ks-r0M">
+                                <rect key="frame" x="190" y="233" width="197" height="30"/>
+                                <state key="normal" title="Add Store Card to Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPassTouched:" destination="Qrb-pG-HfW" eventType="touchUpInside" id="D4i-we-kut"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf3-nK-Af9">
+                                <rect key="frame" x="185" y="271" width="206" height="30"/>
+                                <state key="normal" title="Simulate Updating Store Card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePassTouched:" destination="Qrb-pG-HfW" eventType="touchUpInside" id="jNa-oT-eVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sa-cQ-DlP">
+                                <rect key="frame" x="185" y="309" width="206" height="30"/>
+                                <state key="normal" title="Show Store Card in Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPassTouched:" destination="Qrb-pG-HfW" eventType="touchUpInside" id="ndd-DX-EiN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iru-Dm-Fwd">
+                                <rect key="frame" x="219" y="347" width="135" height="30"/>
+                                <state key="normal" title="Remove Store Card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePassTouched:" destination="Qrb-pG-HfW" eventType="touchUpInside" id="gpy-n9-Z6m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Card is not in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYW-1a-0rc">
+                                <rect key="frame" x="183" y="153" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rYW-1a-0rc" secondAttribute="centerX" id="0JD-0q-UuR"/>
+                            <constraint firstItem="sf3-nK-Af9" firstAttribute="top" secondItem="f7Y-ks-r0M" secondAttribute="bottom" constant="8" id="1Ht-na-ziA"/>
+                            <constraint firstAttribute="centerX" secondItem="sf3-nK-Af9" secondAttribute="centerX" constant="12" id="8Jg-co-MUR"/>
+                            <constraint firstAttribute="centerX" secondItem="2sa-cQ-DlP" secondAttribute="centerX" constant="12" id="CUw-SJ-NLY"/>
+                            <constraint firstAttribute="centerX" secondItem="Iru-Dm-Fwd" secondAttribute="centerX" constant="13.5" id="FdK-Ia-cVJ"/>
+                            <constraint firstItem="Iru-Dm-Fwd" firstAttribute="top" secondItem="2sa-cQ-DlP" secondAttribute="bottom" constant="8" id="K5P-Aw-wQf"/>
+                            <constraint firstItem="2sa-cQ-DlP" firstAttribute="top" secondItem="sf3-nK-Af9" secondAttribute="bottom" constant="8" id="RQ5-WB-icY"/>
+                            <constraint firstAttribute="centerX" secondItem="9V7-rI-KTV" secondAttribute="centerX" constant="-0.5" id="cHw-SB-nFg"/>
+                            <constraint firstItem="rYW-1a-0rc" firstAttribute="top" secondItem="9V7-rI-KTV" secondAttribute="bottom" constant="8" id="h74-1l-oMP"/>
+                            <constraint firstItem="f7Y-ks-r0M" firstAttribute="top" secondItem="rYW-1a-0rc" secondAttribute="bottom" constant="59" id="jSI-hh-FpP"/>
+                            <constraint firstAttribute="centerX" secondItem="f7Y-ks-r0M" secondAttribute="centerX" constant="11.5" id="kJY-Na-R04"/>
+                            <constraint firstItem="9V7-rI-KTV" firstAttribute="top" secondItem="nRb-cg-nbt" secondAttribute="bottom" constant="60" id="yJe-X6-5Pw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Store Card" id="zfb-es-mjA"/>
+                    <connections>
+                        <outlet property="addButton" destination="f7Y-ks-r0M" id="VZR-ee-s8W"/>
+                        <outlet property="deleteButton" destination="Iru-Dm-Fwd" id="7aP-rk-RrI"/>
+                        <outlet property="numPassesLabel" destination="9V7-rI-KTV" id="4o4-eB-RL6"/>
+                        <outlet property="passInBookLabel" destination="rYW-1a-0rc" id="xTD-VO-4u4"/>
+                        <outlet property="showButton" destination="2sa-cQ-DlP" id="Wee-4m-21v"/>
+                        <outlet property="updateButton" destination="sf3-nK-Af9" id="Jwl-6R-lZU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCM-U4-JA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,9 +398,81 @@
                     <view key="view" contentMode="scaleToFill" id="yKl-PU-j0g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 passes in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylm-HP-NWh">
+                                <rect key="frame" x="176" y="110" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coupon is not in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-Og-IZm">
+                                <rect key="frame" x="194" y="139" width="212" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYn-n2-zDX">
+                                <rect key="frame" x="189" y="219" width="177" height="30"/>
+                                <state key="normal" title="Add Coupon to Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPassTouched:" destination="lxM-Dp-tBt" eventType="touchUpInside" id="z8W-NY-dZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpX-8G-es6">
+                                <rect key="frame" x="184" y="257" width="186" height="30"/>
+                                <state key="normal" title="Simulate Updating Coupon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePassTouched:" destination="lxM-Dp-tBt" eventType="touchUpInside" id="ppR-3E-ob6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4o-fb-Gbg">
+                                <rect key="frame" x="184" y="295" width="186" height="30"/>
+                                <state key="normal" title="Show Coupon in Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPassTouched:" destination="lxM-Dp-tBt" eventType="touchUpInside" id="yBn-Zv-uFG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-H0-3FF">
+                                <rect key="frame" x="219" y="333" width="116" height="30"/>
+                                <state key="normal" title="Remove Coupon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePassTouched:" destination="lxM-Dp-tBt" eventType="touchUpInside" id="c1E-fU-MGe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uYn-n2-zDX" firstAttribute="top" secondItem="uHl-Og-IZm" secondAttribute="bottom" constant="59" id="0qb-Xt-w3D"/>
+                            <constraint firstAttribute="centerX" secondItem="Ylm-HP-NWh" secondAttribute="centerX" constant="-0.5" id="2p2-Jk-Agv"/>
+                            <constraint firstAttribute="centerX" secondItem="uYn-n2-zDX" secondAttribute="centerX" constant="22.5" id="BsE-J1-Tv0"/>
+                            <constraint firstAttribute="centerX" secondItem="uHl-Og-IZm" secondAttribute="centerX" id="IZX-6B-ewM"/>
+                            <constraint firstItem="rpX-8G-es6" firstAttribute="top" secondItem="uHl-Og-IZm" secondAttribute="bottom" constant="97" id="KKc-Aj-olW"/>
+                            <constraint firstItem="uHl-Og-IZm" firstAttribute="top" secondItem="Ylm-HP-NWh" secondAttribute="bottom" constant="8" id="LTh-cf-87j"/>
+                            <constraint firstAttribute="centerX" secondItem="rpX-8G-es6" secondAttribute="centerX" constant="23" id="NPh-lJ-yF3"/>
+                            <constraint firstAttribute="centerX" secondItem="CLI-H0-3FF" secondAttribute="centerX" constant="23" id="Z8T-HV-egd"/>
+                            <constraint firstItem="Z4o-fb-Gbg" firstAttribute="top" secondItem="rpX-8G-es6" secondAttribute="bottom" constant="8" id="iub-nW-ACU"/>
+                            <constraint firstItem="CLI-H0-3FF" firstAttribute="top" secondItem="Z4o-fb-Gbg" secondAttribute="bottom" constant="8" id="knf-b7-abf"/>
+                            <constraint firstItem="Ylm-HP-NWh" firstAttribute="top" secondItem="OzH-NI-FRU" secondAttribute="bottom" constant="46" id="ubL-tG-eGg"/>
+                            <constraint firstAttribute="centerX" secondItem="Z4o-fb-Gbg" secondAttribute="centerX" constant="23" id="wKm-oU-zvB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Coupon" id="qUl-YF-1g2"/>
+                    <connections>
+                        <outlet property="addButton" destination="uYn-n2-zDX" id="Xbt-el-Nor"/>
+                        <outlet property="deleteButton" destination="CLI-H0-3FF" id="DoD-SV-TnY"/>
+                        <outlet property="numPassesLabel" destination="Ylm-HP-NWh" id="LVD-KK-KIY"/>
+                        <outlet property="passInBookLabel" destination="uHl-Og-IZm" id="oqc-5v-BaU"/>
+                        <outlet property="showButton" destination="Z4o-fb-Gbg" id="JsC-Sx-D0X"/>
+                        <outlet property="updateButton" destination="rpX-8G-es6" id="dWj-XB-XzH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBZ-CB-a6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,9 +489,81 @@
                     <view key="view" contentMode="scaleToFill" id="j4L-TL-Lh5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 passes in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3t-gb-u8q">
+                                <rect key="frame" x="176" y="113" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boarding Pass is not in Passbook." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-X2-wnN">
+                                <rect key="frame" x="169" y="142" width="263" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxP-XG-Trv">
+                                <rect key="frame" x="189" y="222" width="223" height="30"/>
+                                <state key="normal" title="Add Boarding Pass to Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPassTouched:" destination="T1U-Yz-Ae3" eventType="touchUpInside" id="lNW-Md-GMJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xee-uA-LKW">
+                                <rect key="frame" x="185" y="260" width="231" height="30"/>
+                                <state key="normal" title="Simulate Updating Boarding Pass">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updatePassTouched:" destination="T1U-Yz-Ae3" eventType="touchUpInside" id="8NT-u3-fMs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-SO-Q2b">
+                                <rect key="frame" x="184" y="298" width="232" height="30"/>
+                                <state key="normal" title="Show Boarding Pass in Passbook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPassTouched:" destination="T1U-Yz-Ae3" eventType="touchUpInside" id="chR-Bb-Cl1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obS-1i-BsV">
+                                <rect key="frame" x="220" y="336" width="161" height="30"/>
+                                <state key="normal" title="Remove Boarding Pass">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePassTouched:" destination="T1U-Yz-Ae3" eventType="touchUpInside" id="IaC-HA-O8N"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l2b-SO-Q2b" firstAttribute="top" secondItem="xee-uA-LKW" secondAttribute="bottom" constant="8" id="CA2-cx-VS7"/>
+                            <constraint firstAttribute="centerX" secondItem="l2b-SO-Q2b" secondAttribute="centerX" id="FNy-UM-u18"/>
+                            <constraint firstItem="m3t-gb-u8q" firstAttribute="top" secondItem="G84-1c-CXx" secondAttribute="bottom" constant="49" id="Fzk-R2-ALd"/>
+                            <constraint firstItem="xee-uA-LKW" firstAttribute="top" secondItem="ZxP-XG-Trv" secondAttribute="bottom" constant="8" id="QRa-OQ-Lu1"/>
+                            <constraint firstItem="obS-1i-BsV" firstAttribute="top" secondItem="l2b-SO-Q2b" secondAttribute="bottom" constant="8" id="VMY-4C-htT"/>
+                            <constraint firstAttribute="centerX" secondItem="bNA-X2-wnN" secondAttribute="centerX" constant="-0.5" id="VQd-ZE-hWA"/>
+                            <constraint firstItem="bNA-X2-wnN" firstAttribute="top" secondItem="m3t-gb-u8q" secondAttribute="bottom" constant="8" id="YYl-sm-eHi"/>
+                            <constraint firstAttribute="centerX" secondItem="obS-1i-BsV" secondAttribute="centerX" constant="-0.5" id="bGZ-9r-VRU"/>
+                            <constraint firstAttribute="centerX" secondItem="m3t-gb-u8q" secondAttribute="centerX" constant="-0.5" id="cuO-d3-V1d"/>
+                            <constraint firstItem="ZxP-XG-Trv" firstAttribute="top" secondItem="bNA-X2-wnN" secondAttribute="bottom" constant="59" id="hnq-HT-bXZ"/>
+                            <constraint firstAttribute="centerX" secondItem="xee-uA-LKW" secondAttribute="centerX" constant="-0.5" id="xgd-nh-X9x"/>
+                            <constraint firstAttribute="centerX" secondItem="ZxP-XG-Trv" secondAttribute="centerX" constant="-0.5" id="y5g-Ij-To9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Boarding Pass" id="DQx-su-0wa"/>
+                    <connections>
+                        <outlet property="addButton" destination="ZxP-XG-Trv" id="xAh-Z8-qb1"/>
+                        <outlet property="deleteButton" destination="obS-1i-BsV" id="wRZ-Yy-1eE"/>
+                        <outlet property="numPassesLabel" destination="m3t-gb-u8q" id="aWu-aD-7VS"/>
+                        <outlet property="passInBookLabel" destination="bNA-X2-wnN" id="Daz-vT-uwd"/>
+                        <outlet property="showButton" destination="l2b-SO-Q2b" id="jXc-rn-Zc3"/>
+                        <outlet property="updateButton" destination="xee-uA-LKW" id="PAy-1J-4gk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHQ-Xq-haO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

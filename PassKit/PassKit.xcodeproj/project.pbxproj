@@ -14,6 +14,16 @@
 		1B715FFE1A60F96600EBCD3A /* RESGenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B715FFD1A60F96600EBCD3A /* RESGenericViewController.m */; };
 		1B7160011A60F97800EBCD3A /* RESStoreCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7160001A60F97800EBCD3A /* RESStoreCardViewController.m */; };
 		1B7160041A60FC6D00EBCD3A /* RESPassTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7160031A60FC6D00EBCD3A /* RESPassTemplateViewController.m */; };
+		1B7F01DF1A636E1E0077E1DA /* BoardingPass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01DA1A636E1E0077E1DA /* BoardingPass.pkpass */; };
+		1B7F01E01A636E1E0077E1DA /* Coupon.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01DB1A636E1E0077E1DA /* Coupon.pkpass */; };
+		1B7F01E11A636E1E0077E1DA /* Event.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01DC1A636E1E0077E1DA /* Event.pkpass */; };
+		1B7F01E21A636E1E0077E1DA /* Generic.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01DD1A636E1E0077E1DA /* Generic.pkpass */; };
+		1B7F01E31A636E1E0077E1DA /* StoreCard.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01DE1A636E1E0077E1DA /* StoreCard.pkpass */; };
+		1B7F01E91A636EC80077E1DA /* BoardingPass-Update.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01E41A636EC80077E1DA /* BoardingPass-Update.pkpass */; };
+		1B7F01EA1A636EC80077E1DA /* Coupon-Update.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01E51A636EC80077E1DA /* Coupon-Update.pkpass */; };
+		1B7F01EB1A636EC80077E1DA /* Event-Update.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01E61A636EC80077E1DA /* Event-Update.pkpass */; };
+		1B7F01EC1A636EC80077E1DA /* Generic-Update.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01E71A636EC80077E1DA /* Generic-Update.pkpass */; };
+		1B7F01ED1A636EC80077E1DA /* StoreCard-Update.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F01E81A636EC80077E1DA /* StoreCard-Update.pkpass */; };
 		1BA19E561A5FACE400FC669D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E551A5FACE400FC669D /* main.m */; };
 		1BA19E591A5FACE400FC669D /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E581A5FACE400FC669D /* RESAppDelegate.m */; };
 		1BA19E5F1A5FACE400FC669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E5D1A5FACE400FC669D /* Main.storyboard */; };
@@ -47,6 +57,16 @@
 		1B7160001A60F97800EBCD3A /* RESStoreCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESStoreCardViewController.m; sourceTree = "<group>"; };
 		1B7160021A60FC6D00EBCD3A /* RESPassTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESPassTemplateViewController.h; sourceTree = "<group>"; };
 		1B7160031A60FC6D00EBCD3A /* RESPassTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESPassTemplateViewController.m; sourceTree = "<group>"; };
+		1B7F01DA1A636E1E0077E1DA /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
+		1B7F01DB1A636E1E0077E1DA /* Coupon.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Coupon.pkpass; sourceTree = "<group>"; };
+		1B7F01DC1A636E1E0077E1DA /* Event.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Event.pkpass; sourceTree = "<group>"; };
+		1B7F01DD1A636E1E0077E1DA /* Generic.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Generic.pkpass; sourceTree = "<group>"; };
+		1B7F01DE1A636E1E0077E1DA /* StoreCard.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreCard.pkpass; sourceTree = "<group>"; };
+		1B7F01E41A636EC80077E1DA /* BoardingPass-Update.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BoardingPass-Update.pkpass"; sourceTree = "<group>"; };
+		1B7F01E51A636EC80077E1DA /* Coupon-Update.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coupon-Update.pkpass"; sourceTree = "<group>"; };
+		1B7F01E61A636EC80077E1DA /* Event-Update.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Event-Update.pkpass"; sourceTree = "<group>"; };
+		1B7F01E71A636EC80077E1DA /* Generic-Update.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Generic-Update.pkpass"; sourceTree = "<group>"; };
+		1B7F01E81A636EC80077E1DA /* StoreCard-Update.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = "StoreCard-Update.pkpass"; sourceTree = "<group>"; };
 		1BA19E501A5FACE400FC669D /* PassKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA19E541A5FACE400FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19E551A5FACE400FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +117,23 @@
 			name = "pass details";
 			sourceTree = "<group>";
 		};
+		1B7F01D91A636DD00077E1DA /* Pass Examples */ = {
+			isa = PBXGroup;
+			children = (
+				1B7F01E41A636EC80077E1DA /* BoardingPass-Update.pkpass */,
+				1B7F01E51A636EC80077E1DA /* Coupon-Update.pkpass */,
+				1B7F01E61A636EC80077E1DA /* Event-Update.pkpass */,
+				1B7F01E71A636EC80077E1DA /* Generic-Update.pkpass */,
+				1B7F01E81A636EC80077E1DA /* StoreCard-Update.pkpass */,
+				1B7F01DA1A636E1E0077E1DA /* BoardingPass.pkpass */,
+				1B7F01DB1A636E1E0077E1DA /* Coupon.pkpass */,
+				1B7F01DC1A636E1E0077E1DA /* Event.pkpass */,
+				1B7F01DD1A636E1E0077E1DA /* Generic.pkpass */,
+				1B7F01DE1A636E1E0077E1DA /* StoreCard.pkpass */,
+			);
+			name = "Pass Examples";
+			sourceTree = "<group>";
+		};
 		1BA19E471A5FACE400FC669D = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +158,7 @@
 				1BA19E7B1A5FAD0F00FC669D /* views */,
 				1BA19E7A1A5FAD0000FC669D /* app controllers */,
 				1BA19E791A5FACF600FC669D /* view controllers */,
+				1B7F01D91A636DD00077E1DA /* Pass Examples */,
 				1BA19E531A5FACE400FC669D /* Supporting Files */,
 			);
 			path = PassKit;
@@ -262,9 +300,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7F01E11A636E1E0077E1DA /* Event.pkpass in Resources */,
+				1B7F01DF1A636E1E0077E1DA /* BoardingPass.pkpass in Resources */,
+				1B7F01E01A636E1E0077E1DA /* Coupon.pkpass in Resources */,
+				1B7F01ED1A636EC80077E1DA /* StoreCard-Update.pkpass in Resources */,
+				1B7F01E21A636E1E0077E1DA /* Generic.pkpass in Resources */,
 				1BA19E5F1A5FACE400FC669D /* Main.storyboard in Resources */,
+				1B7F01EB1A636EC80077E1DA /* Event-Update.pkpass in Resources */,
 				1BA19E641A5FACE400FC669D /* LaunchScreen.xib in Resources */,
+				1B7F01E91A636EC80077E1DA /* BoardingPass-Update.pkpass in Resources */,
 				1BA19E611A5FACE400FC669D /* Images.xcassets in Resources */,
+				1B7F01EA1A636EC80077E1DA /* Coupon-Update.pkpass in Resources */,
+				1B7F01EC1A636EC80077E1DA /* Generic-Update.pkpass in Resources */,
+				1B7F01E31A636E1E0077E1DA /* StoreCard.pkpass in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
