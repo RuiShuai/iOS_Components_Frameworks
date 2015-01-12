@@ -137,6 +137,37 @@ failureBlock:handleAssetGroupErrorBlock];
 2014-01-08,周四,上午阅读
 2014-01-09,周五,开始正式练习
 
+//定义分发队列
+dispatch_queue_t workQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+
+//异步进程执行
+dispatch_async(workQueue, ^{
+[self performLongRunningTaskForIteration:iteration];
+});
+
+-(void)performLongRunningTaskForIteration:(id)iteration
+{
+NSNumber *iterationNumber = (NSNumber *)iteration;
+
+__block NSMutableArray *newArray = [[NSMutableArray alloc]initWithCapacity:10];
+
+//定义分发队列
+dispatch_queue_t detailQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
+
+//应用分发线程
+size_t loop = (size_t)[iterationNumber intValue];
+dispatch_apply(loop, detailQueue, ^(size_t i) {
+[newArray addObject:[NSString stringWithFormat:@"Item %@-%zu",iterationNumber,i+1]];
+[NSThread sleepForTimeInterval:0.1];
+NSLog(@"DpQ Concurrent Added %@-%zu",iterationNumber,i+1);
+});
+
+//调用主线程更新UI
+dispatch_async(dispatch_get_main_queue(), ^{
+[self updateTableData:newArray];
+});
+
+}
 
 
 ******************************
@@ -144,8 +175,23 @@ failureBlock:handleAssetGroupErrorBlock];
 
 2014-01-09,周五,中午完成练习
 
+UIRotationGestureRecognizer *rotateRecognizer = [[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(myGestureViewRotated:)];
+[rotateRecognizer setDelegate:self];
+[self.myGestureView addGestureRecognizer:rotateRecognizer];
 
+- (void)myGestureViewRotated:(UIRotationGestureRecognizer *)rotateGesture
+{
+CGFloat newRotateRadians = [rotateGesture rotation];
 
+//set rotationDelta
+[self updateViewTransformWithScaleDelta:0.0 andRotationDelta:newRotateRadians];
+if ([rotateGesture state] == UIGestureRecognizerStateEnded) {
+CGFloat saveRotation = [self rotationFactor] + newRotateRadians;
+[self setRotationFactor:saveRotation];
+[self setCurrentRotationDelta:0.0];
+}
+
+}
 
 ******************************
 18 - Keychain[KeychainPlayground]
