@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7F01F41A638E3A0077E1DA /* RESDynamicDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F01F31A638E3A0077E1DA /* RESDynamicDetectionViewController.m */; };
+		1B7F01F71A638E4B0077E1DA /* RESHitDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F01F61A638E4B0077E1DA /* RESHitDetectionViewController.m */; };
+		1B7F01FA1A638E5F0077E1DA /* RESExclusionPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F01F91A638E5F0077E1DA /* RESExclusionPathViewController.m */; };
+		1B7F01FD1A638E750077E1DA /* RESContentHighlightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F01FC1A638E750077E1DA /* RESContentHighlightingViewController.m */; };
+		1B7F02001A638FBB0077E1DA /* RESCustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F01FF1A638FBB0077E1DA /* RESCustomTextView.m */; };
+		1B7F02031A6390210077E1DA /* RESDynamicTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F02021A6390210077E1DA /* RESDynamicTextStorage.m */; };
+		1B7F02051A63C0010077E1DA /* DF.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7F02041A63C0010077E1DA /* DF.png */; };
 		1BA19E8B1A5FAD5E00FC669D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E8A1A5FAD5E00FC669D /* main.m */; };
 		1BA19E8E1A5FAD5E00FC669D /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E8D1A5FAD5E00FC669D /* RESAppDelegate.m */; };
-		1BA19E911A5FAD5E00FC669D /* RESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19E901A5FAD5E00FC669D /* RESViewController.m */; };
 		1BA19E941A5FAD5E00FC669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E921A5FAD5E00FC669D /* Main.storyboard */; };
 		1BA19E961A5FAD5E00FC669D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E951A5FAD5E00FC669D /* Images.xcassets */; };
 		1BA19E991A5FAD5E00FC669D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19E971A5FAD5E00FC669D /* LaunchScreen.xib */; };
@@ -27,13 +33,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B7F01F21A638E3A0077E1DA /* RESDynamicDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDynamicDetectionViewController.h; sourceTree = "<group>"; };
+		1B7F01F31A638E3A0077E1DA /* RESDynamicDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDynamicDetectionViewController.m; sourceTree = "<group>"; };
+		1B7F01F51A638E4B0077E1DA /* RESHitDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESHitDetectionViewController.h; sourceTree = "<group>"; };
+		1B7F01F61A638E4B0077E1DA /* RESHitDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESHitDetectionViewController.m; sourceTree = "<group>"; };
+		1B7F01F81A638E5F0077E1DA /* RESExclusionPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESExclusionPathViewController.h; sourceTree = "<group>"; };
+		1B7F01F91A638E5F0077E1DA /* RESExclusionPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESExclusionPathViewController.m; sourceTree = "<group>"; };
+		1B7F01FB1A638E750077E1DA /* RESContentHighlightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESContentHighlightingViewController.h; sourceTree = "<group>"; };
+		1B7F01FC1A638E750077E1DA /* RESContentHighlightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESContentHighlightingViewController.m; sourceTree = "<group>"; };
+		1B7F01FE1A638FBB0077E1DA /* RESCustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESCustomTextView.h; sourceTree = "<group>"; };
+		1B7F01FF1A638FBB0077E1DA /* RESCustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESCustomTextView.m; sourceTree = "<group>"; };
+		1B7F02011A6390210077E1DA /* RESDynamicTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESDynamicTextStorage.h; sourceTree = "<group>"; };
+		1B7F02021A6390210077E1DA /* RESDynamicTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESDynamicTextStorage.m; sourceTree = "<group>"; };
+		1B7F02041A63C0010077E1DA /* DF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DF.png; sourceTree = "<group>"; };
 		1BA19E851A5FAD5E00FC669D /* TextKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA19E891A5FAD5E00FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19E8A1A5FAD5E00FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BA19E8C1A5FAD5E00FC669D /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
 		1BA19E8D1A5FAD5E00FC669D /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
-		1BA19E8F1A5FAD5E00FC669D /* RESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESViewController.h; sourceTree = "<group>"; };
-		1BA19E901A5FAD5E00FC669D /* RESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESViewController.m; sourceTree = "<group>"; };
 		1BA19E931A5FAD5E00FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA19E951A5FAD5E00FC669D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1BA19E981A5FAD5E00FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +77,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B7F01EE1A638A160077E1DA /* Dynamic Detection */ = {
+			isa = PBXGroup;
+			children = (
+				1B7F01F21A638E3A0077E1DA /* RESDynamicDetectionViewController.h */,
+				1B7F01F31A638E3A0077E1DA /* RESDynamicDetectionViewController.m */,
+			);
+			name = "Dynamic Detection";
+			sourceTree = "<group>";
+		};
+		1B7F01EF1A638A240077E1DA /* Hit Detection */ = {
+			isa = PBXGroup;
+			children = (
+				1B7F01F51A638E4B0077E1DA /* RESHitDetectionViewController.h */,
+				1B7F01F61A638E4B0077E1DA /* RESHitDetectionViewController.m */,
+				1B7F01FE1A638FBB0077E1DA /* RESCustomTextView.h */,
+				1B7F01FF1A638FBB0077E1DA /* RESCustomTextView.m */,
+			);
+			name = "Hit Detection";
+			sourceTree = "<group>";
+		};
+		1B7F01F01A638A2E0077E1DA /* Exclusion Path */ = {
+			isa = PBXGroup;
+			children = (
+				1B7F01F81A638E5F0077E1DA /* RESExclusionPathViewController.h */,
+				1B7F01F91A638E5F0077E1DA /* RESExclusionPathViewController.m */,
+			);
+			name = "Exclusion Path";
+			sourceTree = "<group>";
+		};
+		1B7F01F11A638A460077E1DA /* Content Highlighting */ = {
+			isa = PBXGroup;
+			children = (
+				1B7F01FB1A638E750077E1DA /* RESContentHighlightingViewController.h */,
+				1B7F01FC1A638E750077E1DA /* RESContentHighlightingViewController.m */,
+				1B7F02011A6390210077E1DA /* RESDynamicTextStorage.h */,
+				1B7F02021A6390210077E1DA /* RESDynamicTextStorage.m */,
+			);
+			name = "Content Highlighting";
+			sourceTree = "<group>";
+		};
 		1BA19E7C1A5FAD5E00FC669D = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +149,7 @@
 		1BA19E881A5FAD5E00FC669D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B7F02041A63C0010077E1DA /* DF.png */,
 				1BA19E951A5FAD5E00FC669D /* Images.xcassets */,
 				1BA19E891A5FAD5E00FC669D /* Info.plist */,
 				1BA19E8A1A5FAD5E00FC669D /* main.m */,
@@ -119,8 +177,10 @@
 		1BA19EAE1A5FADB500FC669D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BA19E8F1A5FAD5E00FC669D /* RESViewController.h */,
-				1BA19E901A5FAD5E00FC669D /* RESViewController.m */,
+				1B7F01EE1A638A160077E1DA /* Dynamic Detection */,
+				1B7F01EF1A638A240077E1DA /* Hit Detection */,
+				1B7F01F01A638A2E0077E1DA /* Exclusion Path */,
+				1B7F01F11A638A460077E1DA /* Content Highlighting */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -227,6 +287,7 @@
 				1BA19E941A5FAD5E00FC669D /* Main.storyboard in Resources */,
 				1BA19E991A5FAD5E00FC669D /* LaunchScreen.xib in Resources */,
 				1BA19E961A5FAD5E00FC669D /* Images.xcassets in Resources */,
+				1B7F02051A63C0010077E1DA /* DF.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA19E911A5FAD5E00FC669D /* RESViewController.m in Sources */,
 				1BA19E8E1A5FAD5E00FC669D /* RESAppDelegate.m in Sources */,
 				1BA19E8B1A5FAD5E00FC669D /* main.m in Sources */,
+				1B7F01F41A638E3A0077E1DA /* RESDynamicDetectionViewController.m in Sources */,
+				1B7F02031A6390210077E1DA /* RESDynamicTextStorage.m in Sources */,
+				1B7F01FD1A638E750077E1DA /* RESContentHighlightingViewController.m in Sources */,
+				1B7F02001A638FBB0077E1DA /* RESCustomTextView.m in Sources */,
+				1B7F01FA1A638E5F0077E1DA /* RESExclusionPathViewController.m in Sources */,
+				1B7F01F71A638E4B0077E1DA /* RESHitDetectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +503,7 @@
 				1BA19EAA1A5FAD5E00FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA19EAB1A5FAD5E00FC669D /* Build configuration list for PBXNativeTarget "TextKitTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +512,7 @@
 				1BA19EAD1A5FAD5E00FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

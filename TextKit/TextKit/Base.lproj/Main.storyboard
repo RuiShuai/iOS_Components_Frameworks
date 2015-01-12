@@ -1,25 +1,391 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GMo-4E-5Ow">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--TextKit  Features-->
+        <scene sceneID="lNb-SF-0KD">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tableViewController id="NtR-g4-iHL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Bc8-Od-nIo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="Txi-Fc-WiY">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="nfD-pN-9w5" style="IBUITableViewCellStyleDefault" id="ybz-YE-4nv">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ybz-YE-4nv" id="suJ-wT-Mk0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Dynamic Link Detection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nfD-pN-9w5">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Z4F-5B-ink" kind="push" id="1M0-Qv-oPi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="x1R-Pr-9OC" style="IBUITableViewCellStyleDefault" id="GdL-2e-p0C">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GdL-2e-p0C" id="blF-iR-gVR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Hit Detection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x1R-Pr-9OC">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Nmv-Df-1S0" kind="push" id="Yq3-E3-QRT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="McU-ik-xQ5" style="IBUITableViewCellStyleDefault" id="0Pq-KT-JQ3">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Pq-KT-JQ3" id="kNV-Gt-xCe">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Exclusion Path" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="McU-ik-xQ5">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Utk-tS-ZQu" kind="push" id="FwX-cH-U9f"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="LsN-Fy-SaX" style="IBUITableViewCellStyleDefault" id="tgv-UY-fQ6">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tgv-UY-fQ6" id="CcM-i0-ZoD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Content Specific Highlighting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LsN-Fy-SaX">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FuP-t7-wLe" kind="push" id="dtG-jw-lHr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="NtR-g4-iHL" id="h8y-LW-68B"/>
+                            <outlet property="delegate" destination="NtR-g4-iHL" id="Hzv-Mr-uqi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="TextKit  Features" id="HLA-t2-X1v"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3J-1E-FOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="611.20000000000005" y="318.07999999999993"/>
+        </scene>
+        <!--Content Hightlighting-->
+        <scene sceneID="aXQ-8e-4ks">
+            <objects>
+                <viewController storyboardIdentifier="RESContentHighlightingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FuP-t7-wLe" customClass="RESContentHighlightingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Wi-PZ-nkH"/>
+                        <viewControllerLayoutGuide type="bottom" id="w4a-bW-BVZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wFx-cZ-fwV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Nk-8o-fpY">
+                                <rect key="frame" x="0.0" y="64" width="320" height="1553"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <mutableString key="text">楼主：目光呆滞的润土 时间：2014-12-24 11:31:48
+
+　　作者：志同道合的人1776 时间：2014-12-22 12:13:56
+　　又到年底了，在2013年年底时，润土先生预测了2014年将会是冰与火的一年，今年的确如此
+
+　　在这，麻烦先生预测一下2015羊年将会如何？从生肖来看，羊年应该好一些吧
+
+　　*************************************************************
+
+　　《2015年政治、经济、社会预测》
+
+　　2014年初股市冰天雪地、年末火山爆发，地产一线火、三线冰，商业网络火、实体冰，官员们小吏冷锅炒饭，贪官热锅蚂蚁……
+
+　　明年既2015年，政治上依然会保持保持反腐的高压态势，今年已经四位副国级的打老虎落马，明年比这四位副国级更大的老虎将呜呼耶，军中比徐才厚更大的军中老虎也将落马。对习来说：反腐是躲不过去的攻坚战，不反腐就等着学崇祯帝自己找歪脖子树……反腐不彻底被腐败集团反攻，就变为光绪帝、眼睁睁地看着贪腐集团弄的整个社会男盗女娼、杀人越货、坑蒙拐骗、民不聊生……
+
+　　2015年将是法治元年，过去很多的冤死悲剧和贪腐的根源在于人治，要从根子上解决也只能从法治层面深化推动整个社会的游戏规则，否则还是重走人治的老路。
+
+　　经济上指望农民拉动内需比登天难，今年十几个农民千幸万苦挖出价值百万的乌木，结果却被收缴，被奖励500元，而这区区的500元平日里也只能找3位民工打一天短工罢了。
+
+　　农民日子难过，企业老板们日子也不好过，聪明如宋卫平的绿城如今也被央企的中交招安了，所以2015年私企、民企的日子更加的艰难，撑不住的跳楼之、跑路之，幸运者做一个闲云野鹤逍遥之。
+
+　　可能有人纳闷政府鼓励市场化，减少政府干预经济，为什么民企日子难过呢？
+　　因为民企的优势在于求快、求新、求变，而国企的劣势也正是无法在快速的变化中寻找到上升的突破点和方向。可是，一旦整个国家的经济发展速度下降到7%左右时，也就是说整个经济发展的方式从过去的高速变为慢速了，那么民企的快、新、变的优势也不那么显现了。这样，融资的成本决定彼此的成本优势，民企融资成本普遍高于10%，什么企业可以拿到低于7%的融资成本呢？拿绿城比喻，绿城的管理和创新远高于中交公司，但是中交能获得低于7%的融资成本，所以中交是市场中的生存者，即使聪明如宋卫平者不被招安，若融资成本高于10%，那么他也只能坐以待毙罢了。
+
+　　2015年也是银行日子最艰难的年份，以前银行日子好过不是因为银行聪明，而是整个社会存在一批钱多人傻胆大的人，他们也想玩小额贷、玩PE、玩钱生钱的游戏，却不想自己的老本包括曾经赚到的钱，全被银行填了烂账的窟窿。2015年，银行的烂账、窟窿再也找不到冤大头填窟窿了。于是乎，跑路者坑的不再是贪心的草民而是黑心的银行了，所以说：明年只要有老板跑路了，银行就倒霉了……
+
+　　明年，西方列强依然会围剿俄罗斯，因为一个强大的俄罗斯是欧洲不稳定的因素，除非俄罗斯愿意归还克里米亚，甘心做个跟班的小弟。
+
+　　可能有人预测西方列强会对中国下手，这个尽管放心，这个世界再也找不到能替代中国的雇工、长工了。只要中国安心打工，不想着当大掌柜，那么中国依然会获得丰厚的外汇，只是郁闷这些外汇找不到最佳的保值升值的渠道罢了。因为他们设计的游戏规则就是禁止政府的主权基金投资他们核心产业。
+
+　　明年，政府将消除公务员、国企高管与产业工人的贫富差距，退休养老金和医保、教育的投入比例将大幅提高。
+
+　　明年一个非常重要的工作就是中央政府如何拆除地方政府债务这个炸弹，所以说明年日子最难过的就是债务繁重的中小城市和经济落后的地方政府，借债无门，被债主堵门、老师堵门、民工堵门……</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Nk-8o-fpY" firstAttribute="leading" secondItem="wFx-cZ-fwV" secondAttribute="leadingMargin" constant="-16" id="4DU-YR-70T"/>
+                            <constraint firstItem="3Nk-8o-fpY" firstAttribute="top" secondItem="1Wi-PZ-nkH" secondAttribute="bottom" id="LyY-lA-USV"/>
+                            <constraint firstItem="w4a-bW-BVZ" firstAttribute="top" secondItem="3Nk-8o-fpY" secondAttribute="bottom" id="cEt-Ko-BNp"/>
+                            <constraint firstAttribute="centerX" secondItem="3Nk-8o-fpY" secondAttribute="centerX" id="tgB-fQ-Aud"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Content Hightlighting" id="UVd-pm-1TE"/>
+                    <connections>
+                        <outlet property="textView" destination="3Nk-8o-fpY" id="aH5-Lz-UdI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyx-fc-qY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078.9333333333334" y="866.20000000000005"/>
+        </scene>
+        <!--Dynamic Link Dection-->
+        <scene sceneID="ggH-Je-CoN">
+            <objects>
+                <viewController storyboardIdentifier="RESDynamicDetectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z4F-5B-ink" customClass="RESDynamicDetectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DIu-cM-VYw"/>
+                        <viewControllerLayoutGuide type="bottom" id="hVm-Oz-tIO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5f-gm-OhC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvb-RK-dAl">
+                                <rect key="frame" x="0.0" y="64" width="320" height="1169"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <mutableString key="text">楼主：目光呆滞的润土 时间：2014-12-29 17:00:03
+
+　　《当下的社会真实的面目是官僚权本主义》
+
+　　9年前，我说这个话题没人信，我也曾暗示：有人从国库里攫取数百亿的财富。现在看来数百亿这个数目只是零头罢了。
+
+　　这么多年来，很多网友说我把社会描写的灰暗。真实的情况，随着习大大打老虎的进展，大家已经看见整个社会的冰山一角的吧。
+
+　　我写我创业的真实故事就是想告诉大家什么？
+
+　　告诉大家一个不尊重宪法的社会，一个没有不尊重个人权利的社会，草根即使可以创造财富，但是其财富也是浮云，财富随时可以被官僚剥夺。
+
+　　当下的社会就是一个法律模糊的社会，社会鼓励你去创造财富，但是财富的合法与否的判定权却归官僚所有，也就是说：财富最终的所有权归官僚。因为法律和所谓判罚正义的裁判权归官僚所有，而这么多年来，个人权利、私人财产的权力，从来没有神圣过，一个常被冤枉被判死刑的国度，谈何保护草根的财产权？
+
+　　今天，我们终于可以看见周永康的白手套如何攫取四川人民的血汗，也如何通过中石油攫取财富的。可以周永康并没有插手电力、中国移动……因为老虎也是讲规矩的，每一个垄断的山头均有一个隐形的大老虎，中石油的周老虎绝对不会染指L老虎、C老虎的山头……
+
+　　当下的社会除了中石油、电力等显现地垄断外，金融、土地则是隐形地垄断……
+
+　　在这样或明或暗的垄断中，草根的创业之路、发财之路基本被彻底堵死。
+
+　　草根们创业想贷点款比登天还难，可是北大青鸟、北大方正、鲁能……贷了多少款，他们还过贷款吗？
+
+　　同样，18亿亩土地红线绝不可碰! 可是红线就在官员的嘴里。也就是说：你拥有土地的值钱与否全在官员的嘴里。同样，规划的权力也在官员的手上，每一任地方官员均是总规划师，他们为了自己的利益把城市规划的乱七八糟，于是，你的黄金地段的土地成了鸡肋，他小舅子的坟场成了新区的黄金宝地……
+
+　　今天大家仅仅看见的是腐败的冰山一角，发改委的小司长个个家里存着亿元的现金，一个小小的北戴河供水公司的经理也是68套房，1.2亿的赃款，谷俊山、徐才厚均是数百亿……
+
+　　以前我们说：资本主义丑恶，官僚资本主义更丑恶。现在想想也纳闷啊，官僚是垄断，资本是市场竞争，官僚资本主义这个定义也揉不到一起啊，所以，我们应该重新定义才对，应该将当下的社会定义为：官僚权本主义才对。权力跟资没有关系，有权的人，不用一分钱也同样可以获得数百亿、数千亿的财富。
+
+　　所以说：只要当下这个官僚权本主义社会没有改变，我们依然是一个草根跟权贵轮回的世界。
+　　这不，徐才厚家族、令计划家族、周永康家族又重新轮回为了草根。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Z4F-5B-ink" id="UdH-Yr-8Uv"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hVm-Oz-tIO" firstAttribute="top" secondItem="uvb-RK-dAl" secondAttribute="bottom" id="4IT-Uz-7ht"/>
+                            <constraint firstItem="uvb-RK-dAl" firstAttribute="leading" secondItem="B5f-gm-OhC" secondAttribute="leadingMargin" constant="-16" id="4qb-jB-erl"/>
+                            <constraint firstItem="uvb-RK-dAl" firstAttribute="top" secondItem="DIu-cM-VYw" secondAttribute="bottom" id="akg-9Z-G9b"/>
+                            <constraint firstAttribute="centerX" secondItem="uvb-RK-dAl" secondAttribute="centerX" id="cgB-xe-cga"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dynamic Link Dection" id="RPU-bX-YRm"/>
+                    <connections>
+                        <outlet property="textView" destination="uvb-RK-dAl" id="gYZ-mE-mXc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKS-PX-eif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078.9333333333334" y="-336.06666666666661"/>
+        </scene>
+        <!--Exclusion Path-->
+        <scene sceneID="pIj-Di-x1e">
+            <objects>
+                <viewController storyboardIdentifier="RESExclusionPathViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Utk-tS-ZQu" customClass="RESExclusionPathViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AMI-7n-TQG"/>
+                        <viewControllerLayoutGuide type="bottom" id="7lJ-cc-EIZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="THh-bK-8Nh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tj7-6U-gj9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="1353"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <mutableString key="text">《他们的特性是：税收、GDP、卖地、收费、罚款》
+
+楼主：目光呆滞的润土 时间：2015-01-04 15:36:17
+
+　　作者：leelinleelin 时间：2015-01-04 00:41:26
+　　好不容易回复上了，天涯非要整两个APP。
+　　土哥对汽车限牌能深度讲解下不？这里面是否牵涉到各种利益？对限牌城市有哪些影响？深圳最近突然限牌有感而问
+
+　　***********************************************************
+
+　　《他们的特性是：税收、GDP、卖地、收费、罚款》
+
+　　一个好的城市管理政府，首先要前瞻性的规划，包括城市功能布局、居住布局、交通布局……
+　　得益于科学、人文、生态的规划、建设，此城市的居民生活舒适、交通便捷。
+
+　　而当下的中国城市政府绝大多数不具有前瞻、科学的规划，他们连自己的定位也找不到北，个个梦想打造全球性国际化大都市，结果是国际化没打造出来，堵市却成功了，悲剧的城市天天堵，幸运的城市是上下班高峰堵……
+
+　　悲剧的根源在于老百姓没有选择，天天堵车，他们官照样当，即使失火死人、踩踏死人，他们依然做官。你们可能纳闷为什么不前瞻性、科学的规划、建设城市呢？因为，前瞻、科学的规划、建设，每一个老百姓都可以透明、准确地预测未来，这样利益就透明了，未来土地的价格、居住的价格全透明，官员可以操作的交换的利益空间就消失了。
+
+　　你了解他们的特性既税收、GDP\\卖地、收费、罚款，你就明白了，未来的城市发展的趋势。老百姓误以为市中心房子值钱，却不知道鬼不生蛋的地方过十年更值钱，因为鬼不生蛋的地方可以操作的利益空间更大。否则，投入的地铁、快速公路、学校、医院的公益资金全为刁民做了嫁妆，官员们也不是傻子，只是老百姓太天真罢了。
+
+　　再说一个前瞻科学的规划，其城市投入的资金并不大，只有混乱不堪，老百姓才怨声载道，于是呼吁加大投入，这样拆了在建、建了再拆，高架改隧道，平道改立交……100亿的GD
+　　P变为200亿的GDP，多少好处进了不法官员的腰包……
+
+　　如果地铁便捷、公交快捷，多数老百姓不会买车的，即使买车，平时上下班也不一定开车，毕竟养个车，每年至少要支出万余元的费用，若加上数千元的罚款，的确是一笔不小的开支。
+
+　　为什么他们突然鼓励老百姓买车呢？
+
+　　因为周边的高速公路收费权被买断20年了，路边的电子警察、路口的电子警察已经安装到位了。未来成倍增加的汽车就是丰盛的猎物啊，他们获得的利益数十倍的翻……
+
+　　等你记住了四叉路口的红灯，却又冒出人行横道的红灯；
+　　等你记住了两股直行、一股左转、一股右转的道，却又变为一股直行，两股左转的道。
+　　路窄不限速，路越宽，却越限速。每一个误可停车的地方，你根本想不到第一辆车就是他们故意放置的诱饵，等你十分钟来取车，已经看见被贴罚单了……
+
+　　鼓励买车是他们，限购还是他们。
+
+　　从他们的特性可以预判到他们执政的步骤就是：先把城市搞乱，然后浑水摸鱼，最后一限了之。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tj7-6U-gj9" firstAttribute="top" secondItem="AMI-7n-TQG" secondAttribute="bottom" id="OXP-h7-e9x"/>
+                            <constraint firstItem="tj7-6U-gj9" firstAttribute="leading" secondItem="THh-bK-8Nh" secondAttribute="leadingMargin" constant="-16" id="Ztp-Hr-axb"/>
+                            <constraint firstItem="7lJ-cc-EIZ" firstAttribute="top" secondItem="tj7-6U-gj9" secondAttribute="bottom" id="oc3-aL-m6j"/>
+                            <constraint firstAttribute="centerX" secondItem="tj7-6U-gj9" secondAttribute="centerX" id="yFq-7q-TEn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exclusion Path" id="Lhb-XK-tOQ"/>
+                    <connections>
+                        <outlet property="textView" destination="tj7-6U-gj9" id="BHE-CW-LJa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yue-Ex-W7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466.6666666666667" y="564.21333333333337"/>
+        </scene>
+        <!--Hit Detection-->
+        <scene sceneID="S7c-ib-hed">
+            <objects>
+                <viewController storyboardIdentifier="RESHitDetectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nmv-Df-1S0" customClass="RESHitDetectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hVg-Ea-T3S"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwv-zC-gLo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kc0-zt-O2K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="RESCustomTextView" translatesAutoresizingMaskIntoConstraints="NO" id="I13-e4-7Lq" customClass="RESCustomTextView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <string key="text">Mary had a little lamb,
+Little lamb, little lamb,
+Mary had a little lamb,
+Its fleece was white as snow
+
+And everywhere that Mary went,
+Mary went, Mary went,
+Everywhere that Mary went
+The lamb was sure to go
+
+It followed her to school one day
+School one day, school one day
+It followed her to school one day
+Which was against the rules.
+
+It made the children laugh and play,
+Laugh and play, laugh and play,
+It made the children laugh and play
+To see a lamb at school</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="I13-e4-7Lq" secondAttribute="centerX" id="04f-lZ-zbj"/>
+                            <constraint firstItem="nwv-zC-gLo" firstAttribute="top" secondItem="I13-e4-7Lq" secondAttribute="bottom" id="2C7-fm-qSi"/>
+                            <constraint firstItem="I13-e4-7Lq" firstAttribute="top" secondItem="hVg-Ea-T3S" secondAttribute="bottom" id="EdG-jK-fKb"/>
+                            <constraint firstItem="I13-e4-7Lq" firstAttribute="leading" secondItem="Kc0-zt-O2K" secondAttribute="leadingMargin" constant="-16" id="WT3-46-uqm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hit Detection" id="ITh-oc-TL5"/>
+                    <connections>
+                        <outlet property="textView" destination="I13-e4-7Lq" id="WhT-J5-VWK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkt-xN-dLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466.6666666666667" y="-78.573333333333338"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e8b-xW-P7v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GMo-4E-5Ow" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xp1-PF-SAh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NtR-g4-iHL" kind="relationship" relationship="rootViewController" id="G63-qA-e8C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rB-po-tfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178.13333333333333" y="318.07999999999993"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
