@@ -149,25 +149,28 @@ failureBlock:handleAssetGroupErrorBlock];
 
 ******************************
 18 - Keychain[KeychainPlayground]
-
 2014-01-09,周五,项目准备
-
-
+2014-01-10,周六,完成keychain章节，UIAlertView + textField交互。
 
 
 ******************************
 24 - Passbook and PassKit[PassKit]
-
-
-
-
-
-
-******************************
 21 - TextKit[TextKit]
+2015-01-11,周一,上午完成PassKit，但没有很好得到结果，怀疑是没有iOS开发者账号缘故；
+下午先阅读TextKit，然后在电脑上写代码，晚上完成。
+对NSTextStorage工作区的功能类仔细研究了一番，写得比较好。
+迭代token字典用到usingBlock，这样的代码值得作为基础，日后直接拿过来使用。
 
-
-
+[[self string] enumerateSubstringsInRange:searchRange
+options:NSStringEnumerationByWords
+usingBlock:
+^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+NSDictionary *attributesForToken = [self.tokens objectForKey:substring];
+if (!attributesForToken) {
+attributesForToken = defaultAttributes;
+}
+[self addAttributes:attributesForToken range:substringRange];
+}];
 
 
 
