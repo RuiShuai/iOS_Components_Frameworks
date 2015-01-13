@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESMyNoteDocument.h"
+#import "RESConflictResolutionViewController.h"
 
-@interface RESNotesDetailViewController : UIViewController
+@interface RESNotesDetailViewController : UIViewController<RESMyNoteDocumentDelegate>
+
+@property (strong,nonatomic) NSURL *myNoteURL;
 @property (strong, nonatomic) IBOutlet UITextView *myNoteTextView;
-
 @property (strong, nonatomic) IBOutlet UIButton *conflictButton;
 
 - (IBAction)resolveConflictTouched:(id)sender;

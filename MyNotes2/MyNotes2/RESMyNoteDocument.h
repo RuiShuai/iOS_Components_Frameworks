@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RESMyNoteDocument : UIDocument
 
+@protocol RESMyNoteDocumentDelegate;
+
+//MyNoteDocument
+@interface RESMyNoteDocument : UIDocument
+@property (nonatomic,copy) NSString *myNoteText;
+@property (nonatomic,weak) id<RESMyNoteDocumentDelegate> delegate;
 @end
+
+//MyNoteDocument Delegate protocol
+@protocol RESMyNoteDocumentDelegate <NSObject>
+@optional
+- (void)documentContentsDidChange:(RESMyNoteDocument *)document;
+@end
+
+

@@ -137,7 +137,7 @@
 				1BA19F541A5FE74500FC669D /* RESNotesDetailViewController.m */,
 				1BA19F5D1A5FF78000FC669D /* RESMyNoteDocument.h */,
 				1BA19F5E1A5FF78000FC669D /* RESMyNoteDocument.m */,
-				1BA19F561A5FF50B00FC669D /* conflict version */,
+				1BA19F561A5FF50B00FC669D /* conflict resolution */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 			name = views;
 			sourceTree = "<group>";
 		};
-		1BA19F561A5FF50B00FC669D /* conflict version */ = {
+		1BA19F561A5FF50B00FC669D /* conflict resolution */ = {
 			isa = PBXGroup;
 			children = (
 				1BA19F571A5FF56300FC669D /* RESConflictResolutionViewController.h */,
@@ -168,7 +168,7 @@
 				1BA19F5A1A5FF57800FC669D /* RESConflictVersionViewController.h */,
 				1BA19F5B1A5FF57800FC669D /* RESConflictVersionViewController.m */,
 			);
-			name = "conflict version";
+			name = "conflict resolution";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +469,7 @@
 				1BA19F491A5FE44B00FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA19F4A1A5FE44B00FC669D /* Build configuration list for PBXNativeTarget "MyNotes2Tests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +478,7 @@
 				1BA19F4C1A5FE44B00FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

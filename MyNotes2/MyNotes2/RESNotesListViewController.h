@@ -8,6 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+#define kRESMyNoteDocumentExtension @"resmynote"
+#define kRESDisplayNoteDetailSegue @"showNoteDetail"
+#define kRESDocumentDirectoryName @"Documents"
+#define kRESMyNoteCellIdentifier @"NoteListCell"
+#define kRESLastUpdatedNoteKey @"lastUpdatedNote"
+
 @interface RESNotesListViewController : UITableViewController
+{
+    NSMutableArray *noteList;
+    NSMetadataQuery *noteQuery;
+}
+
+@property (nonatomic,strong) NSString *lastUpdateNote;
+
+- (NSString *)newMyNoteName;
+- (NSMetadataQuery *)noteListQuery;
+- (void)processFiles:(NSNotification *)notification;
+- (void)updateLastUpdatedNote:(NSNotification *)notification;
+- (IBAction)addButtonTouched:(id)sender;
 
 @end
