@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MessageBoard_JSON/MessageBoard_JSON.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MyNotes2/MyNotes2.xcodeproj">
    </FileRef>
    <FileRef
