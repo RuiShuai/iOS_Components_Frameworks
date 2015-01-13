@@ -240,6 +240,8 @@ iCloud版本冲突处理
 通过这些案例代码的抄写，才算找到了些感觉.
 接下来申请下来开发者账号之后,notification通知值得好好书写.
 
+2015-01-13 20:19:45.977 MyNotes2[904:74991] iCloud URL is not avaliable
+2015-01-13 20:19:48.287 MyNotes2[904:74957] NSUbiquitousKeyValueStore error: com.ruishuai.MyNotes2 has no valid com.apple.developer.ubiquity-kvstore-identifier entitlement
 
 
 
