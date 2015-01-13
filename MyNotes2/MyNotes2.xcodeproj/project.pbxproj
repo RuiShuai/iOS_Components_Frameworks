@@ -131,12 +131,12 @@
 		1BA19F4D1A5FE45200FC669D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1BA19F5D1A5FF78000FC669D /* RESMyNoteDocument.h */,
+				1BA19F5E1A5FF78000FC669D /* RESMyNoteDocument.m */,
 				1BA19F501A5FE6FD00FC669D /* RESNotesListViewController.h */,
 				1BA19F511A5FE6FD00FC669D /* RESNotesListViewController.m */,
 				1BA19F531A5FE74500FC669D /* RESNotesDetailViewController.h */,
 				1BA19F541A5FE74500FC669D /* RESNotesDetailViewController.m */,
-				1BA19F5D1A5FF78000FC669D /* RESMyNoteDocument.h */,
-				1BA19F5E1A5FF78000FC669D /* RESMyNoteDocument.m */,
 				1BA19F561A5FF50B00FC669D /* conflict resolution */,
 			);
 			name = "view controllers";

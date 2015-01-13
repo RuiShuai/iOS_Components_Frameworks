@@ -10,11 +10,14 @@
 #import "RESMyNoteDocument.h"
 #import "RESConflictResolutionViewController.h"
 
-@interface RESNotesDetailViewController : UIViewController<RESMyNoteDocumentDelegate>
+#define kRESLastUpdatedNoteKey @"lastUpdatedNote"
+
+@interface RESNotesDetailViewController : UIViewController<RESMyNoteDocumentDelegate,RESMyNoteConflictDelegate>
 
 @property (strong,nonatomic) NSURL *myNoteURL;
 @property (strong, nonatomic) IBOutlet UITextView *myNoteTextView;
 @property (strong, nonatomic) IBOutlet UIButton *conflictButton;
+@property (strong,nonatomic) RESMyNoteDocument *myNoteDocument;
 
 - (IBAction)resolveConflictTouched:(id)sender;
 

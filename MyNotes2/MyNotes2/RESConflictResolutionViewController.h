@@ -28,7 +28,7 @@
 //ConflictResolution protocol
 @protocol RESMyNoteConflictDelegate <NSObject>
 
-- (void)noteConflictResolved:(NSFileVersion *)selectedVerssion forCurrentVersion:(BOOL)isCurrentVersion;
+- (void)noteConflictResolved:(NSFileVersion *)selectedVersion forCurrentVersion:(BOOL)isCurrentVersion;
 
 @end
 

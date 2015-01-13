@@ -195,6 +195,7 @@ CGFloat saveRotation = [self rotationFactor] + newRotateRadians;
 
 ******************************
 18 - Keychain[KeychainPlayground]
+
 2014-01-09,周五,项目准备
 2014-01-10,周六,完成keychain章节，UIAlertView + textField交互。
 
@@ -202,6 +203,7 @@ CGFloat saveRotation = [self rotationFactor] + newRotateRadians;
 ******************************
 24 - Passbook and PassKit[PassKit]
 21 - TextKit[TextKit]
+
 2015-01-11,周一,上午完成PassKit，但没有很好得到结果，怀疑是没有iOS开发者账号缘故；
 下午先阅读TextKit，然后在电脑上写代码，晚上完成。
 对NSTextStorage工作区的功能类仔细研究了一番，写得比较好。
@@ -222,6 +224,22 @@ attributesForToken = defaultAttributes;
 
 ******************************
 05 - Address Book[AddressBook]
+08 - Getting Started with iCloud[MyNotes]
+
+2015-01-13,周二,上午完成AddressBook,结合之前MyContacts中，添加了授权后，可以正常显示.
+
+下午，开始MyNotes(iCloud),这是一个比较综合的案例,代码写得很有功底,值得仔细研究.
+涉及到:
+UIDocument
+notification通知
+delegate委托
+GCD性能优化
+pageViewController
+iCloud版本冲突处理
+
+通过这些案例代码的抄写，才算找到了些感觉.
+接下来申请下来开发者账号之后,notification通知值得好好书写.
+
 
 
 
@@ -245,10 +263,6 @@ attributesForToken = defaultAttributes;
 07- Getting JSON from the Server [MessageBoard]
 
 
-
-
-******************************
-08 - Getting Started with iCloud
 
 
 

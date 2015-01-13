@@ -14,26 +14,35 @@
 
 @implementation RESConflictVersionViewController
 
+#pragma mark - view life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    NSString *dateString = [dateFormatter stringFromDate:[self.fileVersion modificationDate]];
+    
+    [self.versionLabel setText:[self.fileVersion localizedName]];
+    [self.versionDate setText:dateString];
+    
+    [self.versionComputer setText:[self.fileVersion localizedNameOfSavingComputer]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -
+- (IBAction)selectVersionTouched:(id)sender
+{
+    [self.delegate conflictVersionSelected:self.fileVersion];
 }
-*/
 
-- (IBAction)selectVersionTouched:(id)sender {
-}
+
 @end
