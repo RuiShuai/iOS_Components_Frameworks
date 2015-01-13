@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7F02081A6401680077E1DA /* RESContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F02071A6401680077E1DA /* RESContactsListViewController.m */; };
 		1BA19EC01A5FB03200FC669D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19EBF1A5FB03200FC669D /* main.m */; };
 		1BA19EC31A5FB03200FC669D /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19EC21A5FB03200FC669D /* RESAppDelegate.m */; };
-		1BA19EC61A5FB03200FC669D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA19EC51A5FB03200FC669D /* ViewController.m */; };
 		1BA19EC91A5FB03200FC669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19EC71A5FB03200FC669D /* Main.storyboard */; };
 		1BA19ECB1A5FB03200FC669D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19ECA1A5FB03200FC669D /* Images.xcassets */; };
 		1BA19ECE1A5FB03200FC669D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BA19ECC1A5FB03200FC669D /* LaunchScreen.xib */; };
@@ -27,13 +27,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B7F02061A6401680077E1DA /* RESContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESContactsListViewController.h; sourceTree = "<group>"; };
+		1B7F02071A6401680077E1DA /* RESContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESContactsListViewController.m; sourceTree = "<group>"; };
 		1BA19EBA1A5FB03200FC669D /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA19EBE1A5FB03200FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19EBF1A5FB03200FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BA19EC11A5FB03200FC669D /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
 		1BA19EC21A5FB03200FC669D /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
-		1BA19EC41A5FB03200FC669D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BA19EC51A5FB03200FC669D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1BA19EC81A5FB03200FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA19ECA1A5FB03200FC669D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1BA19ECD1A5FB03200FC669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		1BA19EE31A5FB03700FC669D /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BA19EC41A5FB03200FC669D /* ViewController.h */,
-				1BA19EC51A5FB03200FC669D /* ViewController.m */,
+				1B7F02061A6401680077E1DA /* RESContactsListViewController.h */,
+				1B7F02071A6401680077E1DA /* RESContactsListViewController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA19EC61A5FB03200FC669D /* ViewController.m in Sources */,
+				1B7F02081A6401680077E1DA /* RESContactsListViewController.m in Sources */,
 				1BA19EC31A5FB03200FC669D /* RESAppDelegate.m in Sources */,
 				1BA19EC01A5FB03200FC669D /* main.m in Sources */,
 			);
@@ -437,6 +437,7 @@
 				1BA19EDF1A5FB03200FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA19EE01A5FB03200FC669D /* Build configuration list for PBXNativeTarget "AddressBookTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +446,7 @@
 				1BA19EE21A5FB03200FC669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
