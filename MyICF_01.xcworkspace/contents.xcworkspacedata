@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Bluetooth_Messages/Bluetooth_Messages.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SocialNetworking/SocialNetworking.xcodeproj">
    </FileRef>
    <FileRef
