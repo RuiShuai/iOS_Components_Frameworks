@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESMessageNewViewController.h"
 
-@interface RESMessageBoardViewController : UITableViewController
+#define kMessageBoardURLString     @"http://freezing-cloud-6077.herokuapp.com/messages.json"
+
+//@protocol RESMessageEditDelegate;
+
+@interface RESMessageBoardViewController : UITableViewController<NSURLConnectionDelegate,NSURLConnectionDataDelegate,RESMessageEditDelegate>
+
+@property (nonatomic,strong) NSArray *messageArray;
+
+
+- (IBAction)newMessageTouched:(id)sender;
 
 @end

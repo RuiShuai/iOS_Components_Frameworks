@@ -8,6 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RESMessageNewViewController : UIViewController
+#define kMessageBoardURLString     @"http://freezing-cloud-6077.herokuapp.com/messages.json"
+
+@protocol RESMessageEditDelegate <NSObject>
+
+-(void)createNewMessage:(NSDictionary *)messageDict withPostError:(NSError *)error;
+
+@end
+
+@interface RESMessageNewViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,NSURLConnectionDelegate,NSURLConnectionDataDelegate>
+
+@property (nonatomic,strong) NSDictionary *messageDict;
+@property (nonatomic,weak) id<RESMessageEditDelegate> delegate;
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+@property (strong, nonatomic) IBOutlet UITextView *messageTextView;
+
+
+
+- (IBAction)cancelButtonTouched:(id)sender;
+
+- (IBAction)saveButtonTouched:(id)sender;
 
 @end

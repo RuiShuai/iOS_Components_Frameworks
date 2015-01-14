@@ -245,22 +245,6 @@ iCloud版本冲突处理
 
 
 
-
-
-
-******************************
-03 - Leaderboards
-
-
-
-
-
-******************************
-04 - Achievements
-
-
-
-
 ******************************
 07- Getting JSON from the Server [MessageBoard]
 
@@ -268,26 +252,36 @@ iCloud版本冲突处理
 
 
 
-******************************
-09 - Notifications
-
-
 
 ******************************
-10 - Bluetooth Messages
-
-
-
-
-******************************
-11 - AirPrint
+10 - Bluetooth Messages[Bluetooth_message]
 
 
 
 
 
 ******************************
-15 - SocialNetworking
+15 - SocialNetworking[SocialNetworking]
+
+
+
+
+
+******************************
+09 - Notifications[ShoutOut_APN]
+
+
+
+
+
+
+******************************
+03 - Leaderboards[WhackACac_iPad]
+04 - Achievements
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B652DC81A654E2400B8D0EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652DC71A654E2400B8D0EA /* main.m */; };
-		1B652DCB1A654E2400B8D0EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652DCA1A654E2400B8D0EA /* AppDelegate.m */; };
+		1B652DCB1A654E2400B8D0EA /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652DCA1A654E2400B8D0EA /* RESAppDelegate.m */; };
 		1B652DCE1A654E2400B8D0EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652DCD1A654E2400B8D0EA /* ViewController.m */; };
 		1B652DD11A654E2500B8D0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B652DCF1A654E2400B8D0EA /* Main.storyboard */; };
 		1B652DD31A654E2500B8D0EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B652DD21A654E2500B8D0EA /* Images.xcassets */; };
@@ -30,8 +30,8 @@
 		1B652DC21A654E2400B8D0EA /* WhackACac_GameCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackACac_GameCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B652DC61A654E2400B8D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B652DC71A654E2400B8D0EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B652DC91A654E2400B8D0EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1B652DCA1A654E2400B8D0EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B652DC91A654E2400B8D0EA /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B652DCA1A654E2400B8D0EA /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
 		1B652DCC1A654E2400B8D0EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1B652DCD1A654E2400B8D0EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1B652DD01A654E2500B8D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,13 +81,9 @@
 		1B652DC41A654E2400B8D0EA /* WhackACac_GameCenter */ = {
 			isa = PBXGroup;
 			children = (
-				1B652DC91A654E2400B8D0EA /* AppDelegate.h */,
-				1B652DCA1A654E2400B8D0EA /* AppDelegate.m */,
-				1B652DCC1A654E2400B8D0EA /* ViewController.h */,
-				1B652DCD1A654E2400B8D0EA /* ViewController.m */,
-				1B652DCF1A654E2400B8D0EA /* Main.storyboard */,
-				1B652DD21A654E2500B8D0EA /* Images.xcassets */,
-				1B652DD41A654E2500B8D0EA /* LaunchScreen.xib */,
+				1B652DED1A654E3900B8D0EA /* views */,
+				1B652DEC1A654E3300B8D0EA /* app controllers */,
+				1B652DEB1A654E2B00B8D0EA /* view controllers */,
 				1B652DC51A654E2400B8D0EA /* Supporting Files */,
 			);
 			path = WhackACac_GameCenter;
@@ -96,6 +92,7 @@
 		1B652DC51A654E2400B8D0EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B652DD21A654E2500B8D0EA /* Images.xcassets */,
 				1B652DC61A654E2400B8D0EA /* Info.plist */,
 				1B652DC71A654E2400B8D0EA /* main.m */,
 			);
@@ -117,6 +114,33 @@
 				1B652DE01A654E2500B8D0EA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B652DEB1A654E2B00B8D0EA /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B652DCC1A654E2400B8D0EA /* ViewController.h */,
+				1B652DCD1A654E2400B8D0EA /* ViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		1B652DEC1A654E3300B8D0EA /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B652DC91A654E2400B8D0EA /* RESAppDelegate.h */,
+				1B652DCA1A654E2400B8D0EA /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
+		1B652DED1A654E3900B8D0EA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1B652DCF1A654E2400B8D0EA /* Main.storyboard */,
+				1B652DD41A654E2500B8D0EA /* LaunchScreen.xib */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +187,7 @@
 		1B652DBA1A654E2400B8D0EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RES;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
 				TargetAttributes = {
@@ -220,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B652DCE1A654E2400B8D0EA /* ViewController.m in Sources */,
-				1B652DCB1A654E2400B8D0EA /* AppDelegate.m in Sources */,
+				1B652DCB1A654E2400B8D0EA /* RESAppDelegate.m in Sources */,
 				1B652DC81A654E2400B8D0EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
