@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1B652D291A654AE300B8D0EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D281A654AE300B8D0EA /* main.m */; };
-		1B652D2C1A654AE300B8D0EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D2B1A654AE300B8D0EA /* AppDelegate.m */; };
-		1B652D2F1A654AE300B8D0EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D2E1A654AE300B8D0EA /* ViewController.m */; };
+		1B652D2C1A654AE300B8D0EA /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D2B1A654AE300B8D0EA /* RESAppDelegate.m */; };
 		1B652D321A654AE300B8D0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B652D301A654AE300B8D0EA /* Main.storyboard */; };
 		1B652D341A654AE300B8D0EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B652D331A654AE300B8D0EA /* Images.xcassets */; };
 		1B652D371A654AE300B8D0EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B652D351A654AE300B8D0EA /* LaunchScreen.xib */; };
 		1B652D431A654AE300B8D0EA /* SocialNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D421A654AE300B8D0EA /* SocialNetworkingTests.m */; };
+		1B842D361A68AA8A00504532 /* RESSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B842D351A68AA8A00504532 /* RESSocialViewController.m */; };
+		1B842D391A68AAA200504532 /* RESTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B842D381A68AAA200504532 /* RESTimelineViewController.m */; };
+		1B842D3C1A69015000504532 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B842D3A1A69015000504532 /* avatar.png */; };
+		1B842D3D1A69015000504532 /* Kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B842D3B1A69015000504532 /* Kitten.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +33,20 @@
 		1B652D231A654AE300B8D0EA /* SocialNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B652D271A654AE300B8D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B652D281A654AE300B8D0EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B652D2A1A654AE300B8D0EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1B652D2B1A654AE300B8D0EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B652D2D1A654AE300B8D0EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1B652D2E1A654AE300B8D0EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B652D2A1A654AE300B8D0EA /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B652D2B1A654AE300B8D0EA /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
 		1B652D311A654AE300B8D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B652D331A654AE300B8D0EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1B652D361A654AE300B8D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1B652D3C1A654AE300B8D0EA /* SocialNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B652D411A654AE300B8D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B652D421A654AE300B8D0EA /* SocialNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialNetworkingTests.m; sourceTree = "<group>"; };
+		1B842D341A68AA8A00504532 /* RESSocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESSocialViewController.h; sourceTree = "<group>"; };
+		1B842D351A68AA8A00504532 /* RESSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESSocialViewController.m; sourceTree = "<group>"; };
+		1B842D371A68AAA200504532 /* RESTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTimelineViewController.h; sourceTree = "<group>"; };
+		1B842D381A68AAA200504532 /* RESTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTimelineViewController.m; sourceTree = "<group>"; };
+		1B842D3A1A69015000504532 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		1B842D3B1A69015000504532 /* Kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +99,8 @@
 		1B652D261A654AE300B8D0EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B842D3A1A69015000504532 /* avatar.png */,
+				1B842D3B1A69015000504532 /* Kitten.jpg */,
 				1B652D331A654AE300B8D0EA /* Images.xcassets */,
 				1B652D271A654AE300B8D0EA /* Info.plist */,
 				1B652D281A654AE300B8D0EA /* main.m */,
@@ -119,8 +128,10 @@
 		1B652D4C1A654AE900B8D0EA /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B652D2D1A654AE300B8D0EA /* ViewController.h */,
-				1B652D2E1A654AE300B8D0EA /* ViewController.m */,
+				1B842D341A68AA8A00504532 /* RESSocialViewController.h */,
+				1B842D351A68AA8A00504532 /* RESSocialViewController.m */,
+				1B842D371A68AAA200504532 /* RESTimelineViewController.h */,
+				1B842D381A68AAA200504532 /* RESTimelineViewController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -128,8 +139,8 @@
 		1B652D4D1A654AF000B8D0EA /* app controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B652D2A1A654AE300B8D0EA /* AppDelegate.h */,
-				1B652D2B1A654AE300B8D0EA /* AppDelegate.m */,
+				1B652D2A1A654AE300B8D0EA /* RESAppDelegate.h */,
+				1B652D2B1A654AE300B8D0EA /* RESAppDelegate.m */,
 			);
 			name = "app controllers";
 			sourceTree = "<group>";
@@ -224,9 +235,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B842D3C1A69015000504532 /* avatar.png in Resources */,
 				1B652D321A654AE300B8D0EA /* Main.storyboard in Resources */,
 				1B652D371A654AE300B8D0EA /* LaunchScreen.xib in Resources */,
 				1B652D341A654AE300B8D0EA /* Images.xcassets in Resources */,
+				1B842D3D1A69015000504532 /* Kitten.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B652D2F1A654AE300B8D0EA /* ViewController.m in Sources */,
-				1B652D2C1A654AE300B8D0EA /* AppDelegate.m in Sources */,
+				1B652D2C1A654AE300B8D0EA /* RESAppDelegate.m in Sources */,
+				1B842D361A68AA8A00504532 /* RESSocialViewController.m in Sources */,
+				1B842D391A68AAA200504532 /* RESTimelineViewController.m in Sources */,
 				1B652D291A654AE300B8D0EA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +451,7 @@
 				1B652D481A654AE300B8D0EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B652D491A654AE300B8D0EA /* Build configuration list for PBXNativeTarget "SocialNetworkingTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +460,7 @@
 				1B652D4B1A654AE300B8D0EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
