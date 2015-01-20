@@ -6,17 +6,20 @@
 //  Copyright (c) 2015年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "RESAppDelegate.h"
 
-@interface AppDelegate ()
+@interface RESAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation RESAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //
+    _mcManager = [[MCManager alloc]init];
+    
     return YES;
 }
 

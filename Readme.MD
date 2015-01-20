@@ -250,6 +250,11 @@ iCloud版本冲突处理
 
 
 
+******************************
+15 - SocialNetworking[SocialNetworking]
+
+
+
 
 
 
@@ -257,11 +262,50 @@ iCloud版本冲突处理
 10 - Bluetooth Messages[Bluetooth_message]
 
 
+#import "RESBluetoothConnectViewController.h"
+#import "UIActionSheet+Blocks.h"
+#define kBluetoothMessagesServiceType  @"bluetoothmessages-service"
+#define kActionSheetAdvertiser 1
+
+#pragma mark - MCNearbyServiceAdvertiser delegate
+-(void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL, MCSession *))invitationHandler
+{
+//被阻止
+if ([self.mutableBlockedPeers containsObject:peerID]) {
+invitationHandler(NO,nil);
+return;
+}
+
+
+//actionSheet(category)
+[UIActionSheet showInView:self.view
+withTitle:[NSString stringWithFormat:NSLocalizedString(@"Received Invitation from %@", @"Received Invitation from {Peer}"), peerID.displayName]
+cancelButtonTitle:NSLocalizedString(@"Reject", nil)
+destructiveButtonTitle:NSLocalizedString(@"Block", nil)
+otherButtonTitles:@[NSLocalizedString(@"Accept", nil)]
+tapBlock:^(UIActionSheet *actionSheet, NSInteger buttonIndex) {
+
+BOOL acceptedInvitation = (buttonIndex == [actionSheet firstOtherButtonIndex]);
+if (buttonIndex == [actionSheet destructiveButtonIndex]) {
+[self.mutableBlockedPeers addObject:peerID];
+}
+
+//Creating a session
+MCSession *session = [[MCSession alloc]initWithPeer:self.localPeerID securityIdentity:nil encryptionPreference:MCEncryptionNone];
+
+session.delegate = self;
+self.session = session;
+
+invitationHandler(acceptedInvitation,(acceptedInvitation ? session :nil));
+
+}];
 
 
 
-******************************
-15 - SocialNetworking[SocialNetworking]
+
+
+}
+
 
 
 

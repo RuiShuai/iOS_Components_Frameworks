@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCManager.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface RESAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) MCManager *mcManager;
 
 @end
 
