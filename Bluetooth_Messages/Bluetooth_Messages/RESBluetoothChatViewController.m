@@ -135,8 +135,17 @@
     //get message
     NSString *message = [[chatObjectArray objectAtIndex:indexPath.row] objectForKey:@"message"];
     
-    //NSDictionary *attrDict = @{};
     CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(180, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
+    //
+    //NSDictionary *attrs = @{@"NSStringDrawingUsesFontLeading":@1,@"NSStringDrawingTruncatesLastVisibleLine":@5,@"NSStringDrawingUsesLineFragmentOrigin":@0,@"NSStringDrawingUsesDeviceMetrics":@3};
+    //CGSize size  = [message sizeWithAttributes:attrs];
+    /*
+    NSStringDrawingTruncatesLastVisibleLine = 1 << 5, // Truncates and adds the ellipsis character to the last visible line if the text doesn't fit into the bounds specified. Ignored if NSStringDrawingUsesLineFragmentOrigin is not also set.
+    NSStringDrawingUsesLineFragmentOrigin = 1 << 0, // The specified origin is the line fragment origin, not the base line origin
+    NSStringDrawingUsesFontLeading = 1 << 1, // Uses the font leading for calculating line heights
+    NSStringDrawingUsesDeviceMetrics = 1 << 3, // Uses image glyph bounds instead of typographic bounds
+    */
+    
     UIImage *bubbleImage;
     
     //green chat bubble on right side of screen
@@ -171,6 +180,11 @@
 {
     NSString *message = [[chatObjectArray objectAtIndex:indexPath.row] objectForKey:@"message"];
     CGSize size = [message sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(180, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
+    
+    //NSDictionary *attrs = @{@"NSStringDrawingUsesFontLeading":@1,@"NSStringDrawingTruncatesLastVisibleLine":@5,@"NSStringDrawingUsesLineFragmentOrigin":@0,@"NSStringDrawingUsesDeviceMetrics":@3};
+    //CGSize size  = [message sizeWithAttributes:attrs];
+    
+    
     return size.height + 17.0f;
 }
 
