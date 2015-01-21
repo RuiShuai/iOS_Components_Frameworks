@@ -74,12 +74,29 @@
 {
     //start receive resource
     
+    NSDictionary *dict = @{@"resourceName":resourceName,
+                           @"peerID":peerID,
+                           @"progress":progress};
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MCDidStartReceivingResourceNotification" object:nil userInfo:dict];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [progress addObserver:self forKeyPath:@"fractionCompleted" options:NSKeyValueObservingOptionNew context:nil];
+    });
+    
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MCReceivingProgressNotification" object:nil userInfo:@{@"progress":(NSProgress *)object}];
 }
 
 -(void)session:(MCSession *)session didFinishReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID atURL:(NSURL *)localURL withError:(NSError *)error
 {
     //end receive resource
     
+    NSDictionary *dict = @{@"resourceName":resourceName,@"peerID":peerID,@"localURL":localURL};
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"MCdidFinishReceivingResourceNotification" object:nil userInfo:dict];
 }
 
 -(void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID

@@ -43,7 +43,7 @@
 }
 
 
-#pragma mark - 
+#pragma mark - state notification
 -(void) peerDidChangeStateWithNotification:(NSNotification *)notification
 {
     //peerID state
@@ -103,10 +103,13 @@
     [_tblConnectedDevices reloadData];
 }
 
-- (IBAction)chatTouched:(id)sender {
+- (IBAction)beginChatAction:(id)sender {
 }
 
-    
+- (IBAction)fileSharingAction:(id)sender {
+}
+
+
 #pragma mark - MCBrowserViewController delegate
 
 -(void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController

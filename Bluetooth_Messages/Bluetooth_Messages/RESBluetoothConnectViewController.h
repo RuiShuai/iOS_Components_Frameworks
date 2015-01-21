@@ -25,7 +25,9 @@
 - (IBAction)disconnect:(id)sender;
 
 
-- (IBAction)chatTouched:(id)sender;
+- (IBAction)beginChatAction:(id)sender;
+- (IBAction)fileSharingAction:(id)sender;
+
 
 
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B2D53F31A6E137300DD8524 /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D53F21A6E137300DD8524 /* MCManager.m */; };
+		1B2D53F61A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D53F51A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.m */; };
+		1B2D53F91A6E9E9800DD8524 /* sample_file1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D53F71A6E9E9800DD8524 /* sample_file1.txt */; };
+		1B2D53FA1A6E9E9800DD8524 /* sample_file2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B2D53F81A6E9E9800DD8524 /* sample_file2.txt */; };
 		1B652D5E1A654C0800B8D0EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D5D1A654C0800B8D0EA /* main.m */; };
 		1B652D611A654C0800B8D0EA /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B652D601A654C0800B8D0EA /* RESAppDelegate.m */; };
 		1B652D671A654C0800B8D0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B652D651A654C0800B8D0EA /* Main.storyboard */; };
@@ -34,6 +37,10 @@
 /* Begin PBXFileReference section */
 		1B2D53F11A6E137300DD8524 /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
 		1B2D53F21A6E137300DD8524 /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
+		1B2D53F41A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESBluetoothShareResourceViewController.h; sourceTree = "<group>"; };
+		1B2D53F51A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESBluetoothShareResourceViewController.m; sourceTree = "<group>"; };
+		1B2D53F71A6E9E9800DD8524 /* sample_file1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file1.txt; sourceTree = "<group>"; };
+		1B2D53F81A6E9E9800DD8524 /* sample_file2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample_file2.txt; sourceTree = "<group>"; };
 		1B652D581A654C0800B8D0EA /* Bluetooth_Messages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluetooth_Messages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B652D5C1A654C0800B8D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B652D5D1A654C0800B8D0EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +123,8 @@
 		1B652D5B1A654C0800B8D0EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B2D53F71A6E9E9800DD8524 /* sample_file1.txt */,
+				1B2D53F81A6E9E9800DD8524 /* sample_file2.txt */,
 				1B842D3E1A69494C00504532 /* ChatBar.png */,
 				1B842D401A69495500504532 /* SendButton.png */,
 				1B652D681A654C0800B8D0EA /* Images.xcassets */,
@@ -149,6 +158,8 @@
 				1B842D431A6949E600504532 /* RESBluetoothConnectViewController.m */,
 				1B842D451A694A0800504532 /* RESBluetoothChatViewController.h */,
 				1B842D461A694A0800504532 /* RESBluetoothChatViewController.m */,
+				1B2D53F41A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.h */,
+				1B2D53F51A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -261,9 +272,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2D53F91A6E9E9800DD8524 /* sample_file1.txt in Resources */,
 				1B652D671A654C0800B8D0EA /* Main.storyboard in Resources */,
 				1B652D6C1A654C0800B8D0EA /* LaunchScreen.xib in Resources */,
 				1B652D691A654C0800B8D0EA /* Images.xcassets in Resources */,
+				1B2D53FA1A6E9E9800DD8524 /* sample_file2.txt in Resources */,
 				1B842D411A69495500504532 /* SendButton.png in Resources */,
 				1B842D3F1A69494C00504532 /* ChatBar.png in Resources */,
 			);
@@ -287,6 +300,7 @@
 				1B2D53F31A6E137300DD8524 /* MCManager.m in Sources */,
 				1B842D441A6949E600504532 /* RESBluetoothConnectViewController.m in Sources */,
 				1B652D611A654C0800B8D0EA /* RESAppDelegate.m in Sources */,
+				1B2D53F61A6E9A9300DD8524 /* RESBluetoothShareResourceViewController.m in Sources */,
 				1B842D4B1A695B0300504532 /* UIActionSheet+Blocks.m in Sources */,
 				1B652D5E1A654C0800B8D0EA /* main.m in Sources */,
 			);
