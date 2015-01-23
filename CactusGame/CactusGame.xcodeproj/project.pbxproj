@@ -14,7 +14,7 @@
 		1B75B0F01A71CF3500680E00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */; };
 		1B75B0FC1A71CF3500680E00 /* CactusGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */; };
 		1B75B10B1A71D2CE00680E00 /* RESGameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B10A1A71D2CE00680E00 /* RESGameCenterManager.m */; };
-		1B75B10E1A71D30900680E00 /* RESGameBodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B10D1A71D30900680E00 /* RESGameBodyViewController.m */; };
+		1B75B10E1A71D30900680E00 /* RESGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B10D1A71D30900680E00 /* RESGamePlayViewController.m */; };
 		1B75B1111A71D4B200680E00 /* RESGameControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B1101A71D4B200680E00 /* RESGameControlViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +42,8 @@
 		1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CactusGameTests.m; sourceTree = "<group>"; };
 		1B75B1091A71D2CE00680E00 /* RESGameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGameCenterManager.h; sourceTree = "<group>"; };
 		1B75B10A1A71D2CE00680E00 /* RESGameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGameCenterManager.m; sourceTree = "<group>"; };
-		1B75B10C1A71D30900680E00 /* RESGameBodyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGameBodyViewController.h; sourceTree = "<group>"; };
-		1B75B10D1A71D30900680E00 /* RESGameBodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGameBodyViewController.m; sourceTree = "<group>"; };
+		1B75B10C1A71D30900680E00 /* RESGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGamePlayViewController.h; sourceTree = "<group>"; };
+		1B75B10D1A71D30900680E00 /* RESGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGamePlayViewController.m; sourceTree = "<group>"; };
 		1B75B10F1A71D4B200680E00 /* RESGameControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGameControlViewController.h; sourceTree = "<group>"; };
 		1B75B1101A71D4B200680E00 /* RESGameControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGameControlViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,8 +146,8 @@
 			children = (
 				1B75B10F1A71D4B200680E00 /* RESGameControlViewController.h */,
 				1B75B1101A71D4B200680E00 /* RESGameControlViewController.m */,
-				1B75B10C1A71D30900680E00 /* RESGameBodyViewController.h */,
-				1B75B10D1A71D30900680E00 /* RESGameBodyViewController.m */,
+				1B75B10C1A71D30900680E00 /* RESGamePlayViewController.h */,
+				1B75B10D1A71D30900680E00 /* RESGamePlayViewController.m */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B75B0E51A71CF3500680E00 /* RESAppDelegate.m in Sources */,
-				1B75B10E1A71D30900680E00 /* RESGameBodyViewController.m in Sources */,
+				1B75B10E1A71D30900680E00 /* RESGamePlayViewController.m in Sources */,
 				1B75B10B1A71D2CE00680E00 /* RESGameCenterManager.m in Sources */,
 				1B75B0E21A71CF3500680E00 /* main.m in Sources */,
 				1B75B1111A71D4B200680E00 /* RESGameControlViewController.m in Sources */,
@@ -393,6 +393,7 @@
 				INFOPLIST_FILE = CactusGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -403,6 +404,7 @@
 				INFOPLIST_FILE = CactusGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESGameCenterManager.h"
 
-@interface RESGameControlViewController : UIViewController
+@interface RESGameControlViewController : UIViewController<GameCenterManagerDelegate,GKGameCenterControllerDelegate>
+
+- (IBAction)play:(id)sender;
+- (IBAction)leaderboards:(id)sender;
+- (IBAction)achievements:(id)sender;
 
 @end
