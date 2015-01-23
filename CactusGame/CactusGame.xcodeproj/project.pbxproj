@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1B75B0E21A71CF3500680E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E11A71CF3500680E00 /* main.m */; };
-		1B75B0E51A71CF3500680E00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E41A71CF3500680E00 /* AppDelegate.m */; };
-		1B75B0E81A71CF3500680E00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E71A71CF3500680E00 /* ViewController.m */; };
+		1B75B0E51A71CF3500680E00 /* RESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E41A71CF3500680E00 /* RESAppDelegate.m */; };
 		1B75B0EB1A71CF3500680E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0E91A71CF3500680E00 /* Main.storyboard */; };
 		1B75B0ED1A71CF3500680E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0EC1A71CF3500680E00 /* Images.xcassets */; };
 		1B75B0F01A71CF3500680E00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */; };
 		1B75B0FC1A71CF3500680E00 /* CactusGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */; };
+		1B75B10B1A71D2CE00680E00 /* RESGameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B10A1A71D2CE00680E00 /* RESGameCenterManager.m */; };
+		1B75B10E1A71D30900680E00 /* RESGameBodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B10D1A71D30900680E00 /* RESGameBodyViewController.m */; };
+		1B75B1111A71D4B200680E00 /* RESGameControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B1101A71D4B200680E00 /* RESGameControlViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +32,20 @@
 		1B75B0DC1A71CF3500680E00 /* CactusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CactusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B75B0E01A71CF3500680E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B75B0E11A71CF3500680E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B75B0E31A71CF3500680E00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1B75B0E41A71CF3500680E00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B75B0E61A71CF3500680E00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1B75B0E71A71CF3500680E00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B75B0E31A71CF3500680E00 /* RESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESAppDelegate.h; sourceTree = "<group>"; };
+		1B75B0E41A71CF3500680E00 /* RESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESAppDelegate.m; sourceTree = "<group>"; };
 		1B75B0EA1A71CF3500680E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B75B0EC1A71CF3500680E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1B75B0EF1A71CF3500680E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1B75B0F51A71CF3500680E00 /* CactusGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CactusGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B75B0FA1A71CF3500680E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CactusGameTests.m; sourceTree = "<group>"; };
+		1B75B1091A71D2CE00680E00 /* RESGameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGameCenterManager.h; sourceTree = "<group>"; };
+		1B75B10A1A71D2CE00680E00 /* RESGameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGameCenterManager.m; sourceTree = "<group>"; };
+		1B75B10C1A71D30900680E00 /* RESGameBodyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGameBodyViewController.h; sourceTree = "<group>"; };
+		1B75B10D1A71D30900680E00 /* RESGameBodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGameBodyViewController.m; sourceTree = "<group>"; };
+		1B75B10F1A71D4B200680E00 /* RESGameControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESGameControlViewController.h; sourceTree = "<group>"; };
+		1B75B1101A71D4B200680E00 /* RESGameControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESGameControlViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,10 @@
 		1B75B0DE1A71CF3500680E00 /* CactusGame */ = {
 			isa = PBXGroup;
 			children = (
-				1B75B0E31A71CF3500680E00 /* AppDelegate.h */,
-				1B75B0E41A71CF3500680E00 /* AppDelegate.m */,
-				1B75B0E61A71CF3500680E00 /* ViewController.h */,
-				1B75B0E71A71CF3500680E00 /* ViewController.m */,
-				1B75B0E91A71CF3500680E00 /* Main.storyboard */,
-				1B75B0EC1A71CF3500680E00 /* Images.xcassets */,
-				1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */,
+				1B75B1051A71CF9200680E00 /* views */,
+				1B75B1061A71CF9B00680E00 /* app controllers */,
+				1B75B1071A71CFA300680E00 /* view controllers */,
+				1B75B1081A71CFAA00680E00 /* game center manager */,
 				1B75B0DF1A71CF3500680E00 /* Supporting Files */,
 			);
 			path = CactusGame;
@@ -96,6 +99,7 @@
 		1B75B0DF1A71CF3500680E00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B75B0EC1A71CF3500680E00 /* Images.xcassets */,
 				1B75B0E01A71CF3500680E00 /* Info.plist */,
 				1B75B0E11A71CF3500680E00 /* main.m */,
 			);
@@ -117,6 +121,44 @@
 				1B75B0FA1A71CF3500680E00 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B75B1051A71CF9200680E00 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0E91A71CF3500680E00 /* Main.storyboard */,
+				1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		1B75B1061A71CF9B00680E00 /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0E31A71CF3500680E00 /* RESAppDelegate.h */,
+				1B75B0E41A71CF3500680E00 /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
+		1B75B1071A71CFA300680E00 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B10F1A71D4B200680E00 /* RESGameControlViewController.h */,
+				1B75B1101A71D4B200680E00 /* RESGameControlViewController.m */,
+				1B75B10C1A71D30900680E00 /* RESGameBodyViewController.h */,
+				1B75B10D1A71D30900680E00 /* RESGameBodyViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		1B75B1081A71CFAA00680E00 /* game center manager */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B1091A71D2CE00680E00 /* RESGameCenterManager.h */,
+				1B75B10A1A71D2CE00680E00 /* RESGameCenterManager.m */,
+			);
+			name = "game center manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +205,7 @@
 		1B75B0D41A71CF3500680E00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RES;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
 				TargetAttributes = {
@@ -219,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B75B0E81A71CF3500680E00 /* ViewController.m in Sources */,
-				1B75B0E51A71CF3500680E00 /* AppDelegate.m in Sources */,
+				1B75B0E51A71CF3500680E00 /* RESAppDelegate.m in Sources */,
+				1B75B10E1A71D30900680E00 /* RESGameBodyViewController.m in Sources */,
+				1B75B10B1A71D2CE00680E00 /* RESGameCenterManager.m in Sources */,
 				1B75B0E21A71CF3500680E00 /* main.m in Sources */,
+				1B75B1111A71D4B200680E00 /* RESGameControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

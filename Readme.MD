@@ -310,18 +310,19 @@ invitationHandler(acceptedInvitation,(acceptedInvitation ? session :nil));
 
 
 
+******************************
+03 - Leaderboards[CactusGame]
+04 - Achievements
+
+2015-01-23，周五，
+WhackACac_iPad
+
+
+
+
 
 ******************************
 09 - Notifications[ShoutOut_APN]
-
-
-
-
-
-
-******************************
-03 - Leaderboards[WhackACac_iPad]
-04 - Achievements
 
 
 

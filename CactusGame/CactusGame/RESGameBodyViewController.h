@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RESGameViewController : UIViewController
+@interface RESGameBodyViewController : UIViewController
 
 @end

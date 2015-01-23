@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 RuiShuai Co., Ltd. All rights reserved.
 //
 
-#import "RESGameViewController.h"
+#import "RESGameBodyViewController.h"
 
-@interface RESGameViewController ()
+@interface RESGameBodyViewController ()
 
 @end
 
-@implementation RESGameViewController
+@implementation RESGameBodyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

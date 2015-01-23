@@ -2,10 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:WhackACac_GameCenter/WhackACac_GameCenter.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ShoutOut_APN/ShoutOut_APN.xcodeproj">
+      location = "group:CactusGame/CactusGame.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Bluetooth_Messages/Bluetooth_Messages.xcodeproj">
