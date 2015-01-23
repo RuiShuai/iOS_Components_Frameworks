@@ -12,7 +12,13 @@
 #define kGameOverAlert 1
 #define kPauseAlert 2
 #define kLeaderboardIdentifier @"com.ruishuai.cactus.leaderboard"
+#define kAchievementPlay5 @"com.ruishuai.cactus.play5"
 
+#define kAchievementKillOne @"com.ruishuai.cactus.killOne"
+#define kAchievementKillHundred @"com.ruishuai.cactus.killHundred"
+#define kAchievementKillThousand @"com.ruishuai.cactus.killThousand"
+#define kAchievementScore100 @"com.ruishuai.cactus.score100"
+#define kAchievementPlay5Mins @"com.ruishuai.cactus.play5Mins"
 
 @interface RESGamePlayViewController ()
 {
@@ -46,8 +52,40 @@
     [self updateLife];
     
     //make one cactus right away
+    [self performSelector:@selector(spawnCactus) withObject:nil];
     [self performSelector:@selector(spawnCactus) withObject:nil afterDelay:1.0];
     
+    //timer
+    play5MinTimer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(play5MinTick) userInfo:nil repeats:YES];
+    
+    //achievement
+    [GKAchievementDescription loadAchievementDescriptionsWithCompletionHandler:^(NSArray *descriptions, NSError *error) {
+        
+        if (error!=nil) {
+            NSLog(@"An error occurred loading achievement descriptions:%@",[error localizedDescription]);
+        }
+        
+        for (GKAchievementDescription *achievementDescription in descriptions) {
+            NSLog(@"%@",achievementDescription);
+        }
+        
+    }];
+    
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    GKAchievement *play5MatchesAchievement = [[RESGameCenterManager sharedManager]achievementForIdentifier:kAchievementPlay5];
+    
+    if (![play5MatchesAchievement isCompleted]) {
+        double matchesPlayed = [play5MatchesAchievement percentComplete]/20.0f;
+        matchesPlayed++;
+        
+        [[RESGameCenterManager sharedManager] reportAchievement:kAchievementPlay5 withPercentageComplete:matchesPlayed*20.0f];
+    }
+    
+    [super viewWillDisappear:animated];
 }
 
 -(BOOL)shouldAutorotate
@@ -166,6 +204,30 @@
     score++;
     [self displayNewScore:score];
     
+    //achievement
+    GKAchievement *killOneAchievement = [[RESGameCenterManager sharedManager] achievementForIdentifier:kAchievementKillOne];
+    if (![killOneAchievement isCompleted]) {
+        [[RESGameCenterManager sharedManager] reportAchievement:kAchievementKillOne withPercentageComplete:100.00];
+    }
+    
+    GKAchievement *killThousandAchievement = [[RESGameCenterManager sharedManager]achievementForIdentifier:kAchievementKillThousand];
+    double localKills = [[[NSUserDefaults standardUserDefaults]objectForKey:@"kills"] doubleValue];
+    double remoteKills = [killThousandAchievement percentComplete]*10.0;
+    if (remoteKills > localKills) {
+        localKills = remoteKills;
+    }
+    
+    localKills++;
+    if (localKills <= 1000) {
+        if (localKills <= 100) {
+            [[RESGameCenterManager sharedManager] reportAchievement:kAchievementKillHundred withPercentageComplete:localKills];
+        }
+        [[RESGameCenterManager sharedManager] reportAchievement:kAchievementKillThousand withPercentageComplete:(localKills/10.0)];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithDouble:localKills] forKey:@"kills"];
+    
+    //next cactus
     [self performSelector:@selector(spawnCactus) withObject:nil afterDelay:(arc4random()%3)+.5];
     
 }
@@ -234,8 +296,31 @@
     }
     
     scoreLabel.text = [NSString stringWithFormat:@"%06.0f",updatedScore];
+    
+    //achievement
+    GKAchievement *score100Achievement = [[RESGameCenterManager sharedManager]achievementForIdentifier:kAchievementScore100];
+    if (![score100Achievement isCompleted]) {
+        [[RESGameCenterManager sharedManager] reportAchievement:kAchievementScore100 withPercentageComplete:score];
+    }
 }
 
+
+-(void)play5MinTick
+{
+    if (paused || gameOver) {
+        return;
+    }
+    GKAchievement *play5MinAchievement = [[RESGameCenterManager sharedManager]achievementForIdentifier:kAchievementPlay5Mins];
+    if ([play5MinAchievement isCompleted]) {
+        [play5MinTimer invalidate];
+        play5MinTimer = nil;
+        return;
+    }
+    
+    double percentageComplete = play5MinAchievement.percentComplete + 1.0;
+    [[RESGameCenterManager sharedManager] reportAchievement:kAchievementPlay5Mins withPercentageComplete:percentageComplete];
+    
+}
 
 #pragma mark - 
 #pragma mark UIAlertViewDelegate
@@ -269,6 +354,19 @@
     else
     {
         NSLog(@"Successfully submitted score");
+    }
+}
+
+-(void)gameCenterAchievementReported:(NSError *)error
+{
+    if(error != nil)
+    {
+        NSLog(@"An error occurred trying to report an achievement to Game Center: %@", [error localizedDescription]);
+    }
+    
+    else
+    {
+        NSLog(@"Achievement successfully updated");
     }
 }
 

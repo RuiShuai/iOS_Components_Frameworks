@@ -21,16 +21,19 @@
     IBOutlet UIImageView *duneOne;
     IBOutlet UIImageView *duneTwo;
     IBOutlet UIImageView *duneThree;
+    
+    NSTimer *play5MinTimer;
 }
 
 -(IBAction)pause:(id)sender;
-
-
 
 -(void)spawnCactus;
 -(void)cactusHit:(UIButton *)sender;
 -(void)cactusMissed:(UIButton *)sender;
 -(void)updateLife;
 -(void)displayNewScore:(float)updatedScore;
+-(void)play5MinTick;
+
+
 
 @end

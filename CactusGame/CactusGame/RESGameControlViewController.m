@@ -126,6 +126,33 @@
     }
 }
 
+
+-(void)gameCenterScoreReported:(NSError *)error
+{
+    if(error != nil)
+    {
+        NSLog(@"An error occurred trying to report a score to Game Center: %@", [error localizedDescription]);
+    }
+    
+    else
+    {
+        NSLog(@"Successfully submitted score");
+    }
+}
+
+-(void)gameCenterAchievementReported:(NSError *)error
+{
+    if(error != nil)
+    {
+        NSLog(@"An error occurred trying to report an achievement to Game Center: %@", [error localizedDescription]);
+    }
+    
+    else
+    {
+        NSLog(@"Achievement successfully updated");
+    }
+}
+
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

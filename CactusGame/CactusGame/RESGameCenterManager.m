@@ -60,8 +60,13 @@ static RESGameCenterManager *sharedManager = nil;
             
             //call delegate perform gameCenterLoggedIn:
             [self callDelegateOnMainThread:@selector(gameCenterLoggedIn:) withArg:NULL error:error];
+            //
+            [self submitAllSavedScores];
             
+            //Remove comment to reset all achievements on authenication
+            //[self resetAchievements];
             
+            [self populateAchievementCache];
             
         }];
         
@@ -100,6 +105,8 @@ static RESGameCenterManager *sharedManager = nil;
                 }
                 //
                 [self submitAllSavedScores];
+               
+                [self populateAchievementCache];
             }
             
         }];
@@ -193,6 +200,95 @@ static RESGameCenterManager *sharedManager = nil;
         
         [self callDelegateOnMainThread:@selector(gameCenterScoreReported:) withArg:NULL error:error];
     }];
+}
+
+
+#pragma mark -
+#pragma mark Achievements
+-(GKAchievement *)achievementForIdentifier:(NSString *)identifier
+{
+    GKAchievement *achievement = nil;
+    achievement = [self.achievementDictionary objectForKey:identifier];
+    if (achievement==nil) {
+        achievement = [[GKAchievement alloc]initWithIdentifier:identifier];
+        [self.achievementDictionary setObject:achievement forKey:identifier];
+    }
+    return achievement;
+}
+
+-(void)reportAchievement:(NSString *)identifier withPercentageComplete:(double)percentComplete
+{
+    if (self.achievementDictionary == nil) {
+        NSLog(@"An achievement cache must be populated before submitting achievement progress");
+        return;
+    }
+    
+    GKAchievement *achievement = [self.achievementDictionary objectForKey:identifier];
+    if (achievement == nil) {
+        achievement = [[GKAchievement alloc]initWithIdentifier:identifier];
+        [achievement setPercentComplete:percentComplete];
+        [self.achievementDictionary setObject:achievement forKey:identifier];
+    }
+    else
+    {
+        if ([achievement percentComplete]>=100.0 || [achievement percentComplete] >= percentComplete)
+        {
+            NSLog(@"Attempting to update achievement %@ which is either already completed or is decreasing percentage complete (%f)",identifier,percentComplete);
+            return;
+        }
+        [achievement setPercentComplete:percentComplete];
+        [self.achievementDictionary setObject:achievement forKey:identifier];
+    }
+    
+    achievement.showsCompletionBanner = YES;
+    [achievement reportAchievementWithCompletionHandler:^(NSError *error)
+    {
+        if (error!=nil)
+        {
+            NSLog(@"There was an error submitting achievement %@: %@",identifier,[error localizedDescription]);
+        }
+        [self callDelegateOnMainThread:@selector(gameCenterAchievementReported:) withArg:NULL error:error];
+    }];
+    
+}
+
+-(void)resetAchievements
+{
+    [self.achievementDictionary removeAllObjects];
+    
+    [GKAchievement resetAchievementsWithCompletionHandler:^(NSError *error)
+    {
+        if (error==nil) {
+            NSLog(@"All achievements have been successfully reset");
+        }else{
+            NSLog(@"Unable to reset achievements :%@",[error localizedDescription]);
+        }
+    }];
+    
+}
+
+-(void)populateAchievementCache
+{
+    if (self.achievementDictionary != nil)
+    {
+        NSLog(@"Repopulating achievement cache: %@",self.achievementDictionary);
+    }
+    else
+    {
+        self.achievementDictionary = [[NSMutableDictionary alloc]init];
+    }
+    
+    [GKAchievement loadAchievementsWithCompletionHandler:^(NSArray *achievements, NSError *error) {
+        if (error!=nil) {
+            NSLog(@"An error occurred while populating the achievementcache: %@",[error localizedDescription]);
+        }
+        else{
+            for (GKAchievement *achievement in achievements) {
+                [self.achievementDictionary setObject:achievement forKey:[achievement identifier]];
+            }
+        }
+    }];
+    
 }
 
 @end
