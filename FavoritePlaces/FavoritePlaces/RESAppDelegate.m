@@ -8,6 +8,7 @@
 
 #import "RESAppDelegate.h"
 #import "RESLocationManager.h"
+
 //#define FIRSTRUN 1
 
 #ifdef FIRSTRUN
@@ -24,9 +25,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-#ifdef FIRSTRUN
+#ifdef FIRSTRUN 
     //Prepopulate the database
-    [RUSDateStarter setupStarterData];
+    [RESDateStarter setupStarterData];
     NSLog(@"Finished prepopulating database.");
     //exit(EXIT_SUCCESS);
     

@@ -443,6 +443,7 @@
 				INFOPLIST_FILE = LongRunningTasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -453,6 +454,7 @@
 				INFOPLIST_FILE = LongRunningTasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -509,6 +511,7 @@
 				1B9A1E631A5E817F001873A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B9A1E641A5E817F001873A8 /* Build configuration list for PBXNativeTarget "LongRunningTasksTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +520,7 @@
 				1B9A1E661A5E817F001873A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

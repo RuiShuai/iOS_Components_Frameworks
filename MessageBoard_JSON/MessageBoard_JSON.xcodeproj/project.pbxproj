@@ -377,6 +377,7 @@
 				INFOPLIST_FILE = MessageBoard_JSON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -387,6 +388,7 @@
 				INFOPLIST_FILE = MessageBoard_JSON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -443,6 +445,7 @@
 				1B652D0D1A65484800B8D0EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B652D0E1A65484800B8D0EA /* Build configuration list for PBXNativeTarget "MessageBoard_JSONTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +454,7 @@
 				1B652D101A65484800B8D0EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9201051A6FD42D00E72684 /* MyNotes2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyNotes2.entitlements; sourceTree = "<group>"; };
 		1BA19F241A5FE44B00FC669D /* MyNotes2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA19F281A5FE44B00FC669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA19F291A5FE44B00FC669D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		1BA19F261A5FE44B00FC669D /* MyNotes2 */ = {
 			isa = PBXGroup;
 			children = (
+				1B9201051A6FD42D00E72684 /* MyNotes2.entitlements */,
 				1BA19F4F1A5FE46300FC669D /* views */,
 				1BA19F4E1A5FE45C00FC669D /* app controllers */,
 				1BA19F4D1A5FE45200FC669D /* view controllers */,
@@ -221,6 +223,12 @@
 				TargetAttributes = {
 					1BA19F231A5FE44B00FC669D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4WCQT3EFW6;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					1BA19F3C1A5FE44B00FC669D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -400,9 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNotes2/MyNotes2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyNotes2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,9 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyNotes2/MyNotes2.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyNotes2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

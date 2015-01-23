@@ -59,6 +59,7 @@ static RESCoreDataManager *_sharedManager = nil;
 
     NSLog(@"storeURL path:%@",[storeURL path]);
     
+    
     //判断沙箱目录中是否存在sqlite文件？
     BOOL dataFileAlreadyExists = [[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]];
 

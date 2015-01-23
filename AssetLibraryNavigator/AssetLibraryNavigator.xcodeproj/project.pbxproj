@@ -403,6 +403,7 @@
 				INFOPLIST_FILE = AssetLibraryNavigator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -413,6 +414,7 @@
 				INFOPLIST_FILE = AssetLibraryNavigator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -469,6 +471,7 @@
 				1B7EFEE01A5B8B9F000FBA4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B7EFEE11A5B8B9F000FBA4E /* Build configuration list for PBXNativeTarget "AssetLibraryNavigatorTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +480,7 @@
 				1B7EFEE31A5B8B9F000FBA4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

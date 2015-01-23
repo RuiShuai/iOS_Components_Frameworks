@@ -371,6 +371,7 @@
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -381,6 +382,7 @@
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -437,6 +439,7 @@
 				1B6924671A50EC5100A57E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B6924681A50EC5100A57E61 /* Build configuration list for PBXNativeTarget "MediaPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +448,7 @@
 				1B69246A1A50EC5100A57E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

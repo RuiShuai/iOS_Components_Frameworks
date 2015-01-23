@@ -55,6 +55,7 @@ static RESCoreDataManager *_sharedManager = nil;
                        URLByAppendingPathComponent:@"MyMovies.sqlite"];
     //NSLog(@"%@",storeURL);
     
+    
     //判断沙箱目录中是否存在sqlite文件？
     BOOL dataFileAlreadyExists = [[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]];
     
@@ -64,6 +65,7 @@ static RESCoreDataManager *_sharedManager = nil;
         //从bundle资源文件夹中复制一份到沙箱目录中
         [[NSFileManager defaultManager] copyItemAtPath:bundleStore toPath:[storeURL path] error:&error];
     }
+    
     
     // Create the coordinator and store
     
