@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B75B0E21A71CF3500680E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E11A71CF3500680E00 /* main.m */; };
+		1B75B0E51A71CF3500680E00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E41A71CF3500680E00 /* AppDelegate.m */; };
+		1B75B0E81A71CF3500680E00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0E71A71CF3500680E00 /* ViewController.m */; };
+		1B75B0EB1A71CF3500680E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0E91A71CF3500680E00 /* Main.storyboard */; };
+		1B75B0ED1A71CF3500680E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0EC1A71CF3500680E00 /* Images.xcassets */; };
+		1B75B0F01A71CF3500680E00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */; };
+		1B75B0FC1A71CF3500680E00 /* CactusGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B75B0F61A71CF3500680E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B75B0D41A71CF3500680E00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B75B0DB1A71CF3500680E00;
+			remoteInfo = CactusGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B75B0DC1A71CF3500680E00 /* CactusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CactusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B75B0E01A71CF3500680E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B75B0E11A71CF3500680E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B75B0E31A71CF3500680E00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B75B0E41A71CF3500680E00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B75B0E61A71CF3500680E00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1B75B0E71A71CF3500680E00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B75B0EA1A71CF3500680E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B75B0EC1A71CF3500680E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B75B0EF1A71CF3500680E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1B75B0F51A71CF3500680E00 /* CactusGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CactusGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B75B0FA1A71CF3500680E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CactusGameTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B75B0D91A71CF3500680E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B75B0F21A71CF3500680E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B75B0D31A71CF3500680E00 = {
+			isa = PBXGroup;
+			children = (
+				1B75B0DE1A71CF3500680E00 /* CactusGame */,
+				1B75B0F81A71CF3500680E00 /* CactusGameTests */,
+				1B75B0DD1A71CF3500680E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B75B0DD1A71CF3500680E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0DC1A71CF3500680E00 /* CactusGame.app */,
+				1B75B0F51A71CF3500680E00 /* CactusGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B75B0DE1A71CF3500680E00 /* CactusGame */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0E31A71CF3500680E00 /* AppDelegate.h */,
+				1B75B0E41A71CF3500680E00 /* AppDelegate.m */,
+				1B75B0E61A71CF3500680E00 /* ViewController.h */,
+				1B75B0E71A71CF3500680E00 /* ViewController.m */,
+				1B75B0E91A71CF3500680E00 /* Main.storyboard */,
+				1B75B0EC1A71CF3500680E00 /* Images.xcassets */,
+				1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */,
+				1B75B0DF1A71CF3500680E00 /* Supporting Files */,
+			);
+			path = CactusGame;
+			sourceTree = "<group>";
+		};
+		1B75B0DF1A71CF3500680E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0E01A71CF3500680E00 /* Info.plist */,
+				1B75B0E11A71CF3500680E00 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B75B0F81A71CF3500680E00 /* CactusGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0FB1A71CF3500680E00 /* CactusGameTests.m */,
+				1B75B0F91A71CF3500680E00 /* Supporting Files */,
+			);
+			path = CactusGameTests;
+			sourceTree = "<group>";
+		};
+		1B75B0F91A71CF3500680E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B75B0FA1A71CF3500680E00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B75B0DB1A71CF3500680E00 /* CactusGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B75B0FF1A71CF3500680E00 /* Build configuration list for PBXNativeTarget "CactusGame" */;
+			buildPhases = (
+				1B75B0D81A71CF3500680E00 /* Sources */,
+				1B75B0D91A71CF3500680E00 /* Frameworks */,
+				1B75B0DA1A71CF3500680E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CactusGame;
+			productName = CactusGame;
+			productReference = 1B75B0DC1A71CF3500680E00 /* CactusGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B75B0F41A71CF3500680E00 /* CactusGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B75B1021A71CF3500680E00 /* Build configuration list for PBXNativeTarget "CactusGameTests" */;
+			buildPhases = (
+				1B75B0F11A71CF3500680E00 /* Sources */,
+				1B75B0F21A71CF3500680E00 /* Frameworks */,
+				1B75B0F31A71CF3500680E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B75B0F71A71CF3500680E00 /* PBXTargetDependency */,
+			);
+			name = CactusGameTests;
+			productName = CactusGameTests;
+			productReference = 1B75B0F51A71CF3500680E00 /* CactusGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B75B0D41A71CF3500680E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "RuiShuai Co., Ltd";
+				TargetAttributes = {
+					1B75B0DB1A71CF3500680E00 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1B75B0F41A71CF3500680E00 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 1B75B0DB1A71CF3500680E00;
+					};
+				};
+			};
+			buildConfigurationList = 1B75B0D71A71CF3500680E00 /* Build configuration list for PBXProject "CactusGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B75B0D31A71CF3500680E00;
+			productRefGroup = 1B75B0DD1A71CF3500680E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B75B0DB1A71CF3500680E00 /* CactusGame */,
+				1B75B0F41A71CF3500680E00 /* CactusGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B75B0DA1A71CF3500680E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B75B0EB1A71CF3500680E00 /* Main.storyboard in Resources */,
+				1B75B0F01A71CF3500680E00 /* LaunchScreen.xib in Resources */,
+				1B75B0ED1A71CF3500680E00 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B75B0F31A71CF3500680E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B75B0D81A71CF3500680E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B75B0E81A71CF3500680E00 /* ViewController.m in Sources */,
+				1B75B0E51A71CF3500680E00 /* AppDelegate.m in Sources */,
+				1B75B0E21A71CF3500680E00 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B75B0F11A71CF3500680E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B75B0FC1A71CF3500680E00 /* CactusGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B75B0F71A71CF3500680E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B75B0DB1A71CF3500680E00 /* CactusGame */;
+			targetProxy = 1B75B0F61A71CF3500680E00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B75B0E91A71CF3500680E00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B75B0EA1A71CF3500680E00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B75B0EE1A71CF3500680E00 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B75B0EF1A71CF3500680E00 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B75B0FD1A71CF3500680E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1B75B0FE1A71CF3500680E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B75B1001A71CF3500680E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CactusGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B75B1011A71CF3500680E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CactusGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B75B1031A71CF3500680E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CactusGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CactusGame.app/CactusGame";
+			};
+			name = Debug;
+		};
+		1B75B1041A71CF3500680E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CactusGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CactusGame.app/CactusGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B75B0D71A71CF3500680E00 /* Build configuration list for PBXProject "CactusGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B75B0FD1A71CF3500680E00 /* Debug */,
+				1B75B0FE1A71CF3500680E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B75B0FF1A71CF3500680E00 /* Build configuration list for PBXNativeTarget "CactusGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B75B1001A71CF3500680E00 /* Debug */,
+				1B75B1011A71CF3500680E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B75B1021A71CF3500680E00 /* Build configuration list for PBXNativeTarget "CactusGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B75B1031A71CF3500680E00 /* Debug */,
+				1B75B1041A71CF3500680E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B75B0D41A71CF3500680E00 /* Project object */;
+}
