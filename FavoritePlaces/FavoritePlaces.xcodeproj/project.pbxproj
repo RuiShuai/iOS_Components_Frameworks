@@ -120,6 +120,15 @@
 			name = "core data manager";
 			sourceTree = "<group>";
 		};
+		1B6EC7981A74A55C00BCB5E5 /* app controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B669C1A47F95600DEFD5C /* RESAppDelegate.h */,
+				1B7B669D1A47F95600DEFD5C /* RESAppDelegate.m */,
+			);
+			name = "app controllers";
+			sourceTree = "<group>";
+		};
 		1B7B668C1A47F95600DEFD5C = {
 			isa = PBXGroup;
 			children = (
@@ -142,8 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				1B7B66CA1A47FAF600DEFD5C /* views */,
+				1B6EC7981A74A55C00BCB5E5 /* app controllers */,
 				1B7B66C81A47FACC00DEFD5C /* view controllers */,
-				1BEB122D1A4907F500F70092 /* logics */,
+				1BEB122D1A4907F500F70092 /* location manager */,
 				1B7B66C91A47FADE00DEFD5C /* models */,
 				1B7B66981A47F95600DEFD5C /* Supporting Files */,
 			);
@@ -182,8 +192,6 @@
 		1B7B66C81A47FACC00DEFD5C /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B7B669C1A47F95600DEFD5C /* RESAppDelegate.h */,
-				1B7B669D1A47F95600DEFD5C /* RESAppDelegate.m */,
 				1B7B66C11A47F9E200DEFD5C /* RESMainViewController.h */,
 				1B7B66C21A47F9E200DEFD5C /* RESMainViewController.m */,
 				1B7B66CB1A47FB4C00DEFD5C /* RESFavoritePlaceViewController.h */,
@@ -213,13 +221,13 @@
 			name = views;
 			sourceTree = "<group>";
 		};
-		1BEB122D1A4907F500F70092 /* logics */ = {
+		1BEB122D1A4907F500F70092 /* location manager */ = {
 			isa = PBXGroup;
 			children = (
 				1B7B66CE1A47FB7B00DEFD5C /* RESLocationManager.h */,
 				1B7B66CF1A47FB7B00DEFD5C /* RESLocationManager.m */,
 			);
-			name = logics;
+			name = "location manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

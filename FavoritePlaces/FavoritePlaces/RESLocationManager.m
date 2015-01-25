@@ -34,6 +34,11 @@ static RESLocationManager *_sharedLocationManager;
         [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
         [self.locationManager setDistanceFilter:100.0f];
         [self.locationManager setDelegate:self];
+        
+        //iOS8
+        [self.locationManager requestAlwaysAuthorization];
+        [self.locationManager requestWhenInUseAuthorization];
+        
         [self setCompletionBlocks:[[NSMutableArray alloc] initWithCapacity:3.0]];
         [self setGeocoder:[[CLGeocoder alloc] init]];
     }
@@ -107,6 +112,14 @@ static RESLocationManager *_sharedLocationManager;
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
+    
+    if ([error code] == kCLErrorDenied)
+    {
+        //访问被拒绝
+    }
+    if ([error code] == kCLErrorLocationUnknown) {
+        //无法获取位置信息
+    }
     //停止更新
     [self.locationManager stopUpdatingLocation];
     [self setLocationError:error];
@@ -129,7 +142,7 @@ static RESLocationManager *_sharedLocationManager;
         
     }
     
-    if (status == kCLAuthorizationStatusAuthorizedAlways | status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         //Location services have just been authorized on the device,start updating now.
         [self.locationManager startUpdatingLocation];
         [self setLocationError:nil];
