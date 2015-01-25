@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bOs-Hl-eLO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather List View Controller-->
+        <scene sceneID="WxM-tQ-xnZ">
+            <objects>
+                <tableViewController storyboardIdentifier="RESWeatherListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BCO-fe-4yS" customClass="RESWeatherListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="br0-bL-hSX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="WeatherCell" textLabel="BtB-DO-Gdj" style="IBUITableViewCellStyleDefault" id="o4k-d9-U89">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o4k-d9-U89" id="tsn-1V-yb5">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BtB-DO-Gdj">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="FvZ-8U-WKr" kind="show" identifier="WeatherDetailSegue" id="xCT-VY-CZK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BCO-fe-4yS" id="4sx-zY-ewr"/>
+                            <outlet property="delegate" destination="BCO-fe-4yS" id="PHd-wi-Ky1"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="JSON" id="w7U-IP-K3G">
+                            <connections>
+                                <action selector="jsonTapped:" destination="BCO-fe-4yS" id="Gdz-ee-NX0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="PLIST" id="fFg-T6-hvr">
+                            <connections>
+                                <action selector="plistTapped:" destination="BCO-fe-4yS" id="UdL-Hb-8w7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="XML" id="ZAc-g7-1dO">
+                            <connections>
+                                <action selector="xmlTapped:" destination="BCO-fe-4yS" id="6pm-PK-nFe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PEk-Qm-6Vv"/>
+                        <barButtonItem title="Client" id="qLM-1N-Z81">
+                            <connections>
+                                <action selector="clientTapped:" destination="BCO-fe-4yS" id="eHQ-qi-saq"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="XuC-2V-QXb">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="upM-F2-xg6">
+                            <connections>
+                                <action selector="clearTapped:" destination="BCO-fe-4yS" id="oF8-F2-e2v"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="API" id="c0b-Yy-HQM">
+                            <connections>
+                                <action selector="apiTapped:" destination="BCO-fe-4yS" id="vPs-kH-0xj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzm-x4-SPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="224"/>
+        </scene>
+        <!--Weather Animation View Controller-->
+        <scene sceneID="0zY-36-X8c">
+            <objects>
+                <viewController storyboardIdentifier="RESWeatherAnimationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FvZ-8U-WKr" customClass="RESWeatherAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="axz-vV-vv1"/>
+                        <viewControllerLayoutGuide type="bottom" id="eRp-RP-dl0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vOh-q1-Sug">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0C-Vs-3UY">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-ta-LyX">
+                                <rect key="frame" x="204" y="427" width="192" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="Saj-e5-id3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z0C-Vs-3UY" firstAttribute="top" secondItem="axz-vV-vv1" secondAttribute="bottom" id="02o-L5-Paa"/>
+                            <constraint firstItem="Z0C-Vs-3UY" firstAttribute="leading" secondItem="vOh-q1-Sug" secondAttribute="leadingMargin" constant="-16" id="1ja-h2-RM4"/>
+                            <constraint firstItem="eRp-RP-dl0" firstAttribute="top" secondItem="Z0C-Vs-3UY" secondAttribute="bottom" id="ao9-2u-p8b"/>
+                            <constraint firstAttribute="centerX" secondItem="Z0C-Vs-3UY" secondAttribute="centerX" id="osc-uM-Zjk"/>
+                            <constraint firstAttribute="centerX" secondItem="bG5-ta-LyX" secondAttribute="centerX" id="voO-Jk-Yii"/>
+                            <constraint firstItem="eRp-RP-dl0" firstAttribute="top" secondItem="bG5-ta-LyX" secondAttribute="bottom" constant="95" id="yBT-CX-Cag"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="tXj-OL-Cj6"/>
+                        <barButtonItem systemItem="trash" id="n0Z-Pw-JK8">
+                            <connections>
+                                <action selector="deleteBackgroundImage:" destination="FvZ-8U-WKr" id="rqb-He-fD3"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="fuQ-46-QZE">
+                        <barButtonItem key="rightBarButtonItem" title="Update Background" id="DGL-EY-XWF">
+                            <connections>
+                                <action selector="updateBackgroundImage:" destination="FvZ-8U-WKr" id="NMj-dM-r4w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Z0C-Vs-3UY" id="C9Y-MQ-5mP"/>
+                        <outlet property="temperatureLabel" destination="bG5-ta-LyX" id="0ld-GC-lEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOP-Ad-2U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="224"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uNv-Am-QJj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bOs-Hl-eLO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qay-cn-4gS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BCO-fe-4yS" kind="relationship" relationship="rootViewController" id="OMA-nY-DX1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Eh-f7-M4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="224"/>
+        </scene>
+    </scenes>
+</document>

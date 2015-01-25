@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WeatherAFN/WeatherAFN.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CactusGame/CactusGame.xcodeproj">
    </FileRef>
    <FileRef
@@ -60,8 +63,5 @@
    </FileRef>
    <FileRef
       location = "group:Readme.MD">
-   </FileRef>
-   <FileRef
-      location = "group:Exceptions.md">
    </FileRef>
 </Workspace>
